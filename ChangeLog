@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 12 11:39:20 PDT 2001
+xmlUtil/xml test-dict.xml testIdDict.xml flight.xml flightCALDimPrim.xml flightCALMatPrim.xml flightIdDict.xml gdd.dtd
+
+Modified Files:
+	flight.xml flightCALDimPrim.xml flightCALMatPrim.xml 
+	flightIdDict.xml gdd.dtd 
+Added Files:
+	test-dict.xml testIdDict.xml 
+Log Message:
+Minor fixes to old files; add new files for testing id dictionary
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun 12 11:37:37 PDT 2001
 xmlUtil/cmt requirements
 
