@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Wed Feb 20 08:56:32 PST 2002
+xmlUtil/src
+
+Modified Files:
+	makeXmlForProg.cxx 
+Log Message:
+1. Capture transcoding problems in makeXmlForProg.cxx
+2. Modify requirements to build (non-component) dll/shareable 
+
+    *
+------------------------------------------------------------
+User: jrb  Wed Feb 20 08:56:32 PST 2002
 xmlUtil/cmt
 
 Modified Files:
@@ -224,7 +235,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.144 2002/01/31 20:08:06 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.145 2002/02/20 16:56:32 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
