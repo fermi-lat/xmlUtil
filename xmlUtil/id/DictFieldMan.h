@@ -1,11 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.3 2001/06/12 18:34:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.4 2001/06/12 19:57:06 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELDMAN_H
 #define XMLUTIL_DICTFIELDMAN_H
 
 #include <string>
 #ifdef __GNUG__
-#include <hash_map>
+# if (__GNUC__ >= 3 )
+#   include <ext/hash_map>
+# else
+#   include <hash_map>
+# endif
+
 #else
 #include <map>
 #endif
