@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: jrb  Thu Aug  9 15:28:56 PDT 2001
+xmlUtil/xmlUtil/id IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdConversion.h IdConverter.h IdDict.h IdOperation.h NamedId.h IdOpFactory.h
+
+Modified Files:
+	IdConversion.h IdConverter.h IdDict.h IdOperation.h NamedId.h 
+Added Files:
+	IdOpCompress.h IdOpDisappear.h IdOpTruncate.h 
+Removed Files:
+	IdOpFactory.h 
+Log Message:
+Changes for Identifier conversion (still in progress)
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Aug  9 15:28:56 PDT 2001
 xmlUtil/xml gdd.dtd
 
 Modified Files:
