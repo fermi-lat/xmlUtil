@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 12 17:07:44 PST 2001
+xmlUtil/xmlUtil/id
+
+Modified Files:
+	IdKey.h 
+Log Message:
+IdKey object can be built from vector or deque
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Dec 12 17:07:12 PST 2001
 xmlUtil/src/id
 
