@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct  1 09:34:44 PDT 2003
+xmlUtil/src/id
+
+Modified Files:
+	DictFieldMan.cxx DictNode.cxx IdDict.cxx NamedId.cxx 
+Log Message:
+Make some new services available to recover field names from ids.
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Aug 13 14:02:29 PDT 2003
 xmlUtil/doc
 
@@ -883,7 +893,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.208 2003/08/12 00:48:27 hansl Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.209 2003/08/13 21:02:29 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
