@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec 10 11:36:02 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flight.xml flightACDMatPrim.xml flightDerivedConstants.xml 
+	flightGlobalMatPrim.xml flightNADDimPrim.xml 
+Log Message:
+Add spacecraft.  Also get rid of unneeded reference to "someStuff"
+fake material.
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec 10 09:20:59 PST 2001
 xmlUtil/xml
 
