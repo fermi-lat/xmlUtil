@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec  4 17:13:58 PST 2001
+xmlUtil/src/id
+
+Modified Files:
+	DictNode.cxx IdDict.cxx 
+Log Message:
+Fix a bug or two; add diagnostics
+
+    *
+------------------------------------------------------------
 User: riccardo  Tue Dec  4 02:20:29 PST 2001
 xmlUtil/xml
 
