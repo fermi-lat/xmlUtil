@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.5 2001/06/26 16:23:41 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.6 2001/09/20 19:44:53 jrb Exp $
 #ifndef XMLUTIL_DICTNODE_H
 #define XMLUTIL_DICTNODE_H
 
@@ -70,7 +70,7 @@ namespace xmlUtil {
     //! Given an identifier, see if it is "allowed" by this node and
     //! a sequence of its descendents.  If there is a non-null
     //! NamedId argument, build up the associated NamedId
-    bool allowIdentifier(Identifier& id, NamedId* named = 0);
+    bool allowIdentifier(const Identifier& id, NamedId* named = 0);
 
     //! return true iff there is a path starting with current node
     //! which could produce the NamedId \a nId
@@ -121,7 +121,7 @@ namespace xmlUtil {
 
 
     //! Called by version without iterators
-    bool allowIdentifier(Identifier::iterator idIt, 
+    bool allowIdentifier(Identifier::const_iterator idIt, 
                          Identifier::const_iterator end,
                          NamedId* named=0);
 

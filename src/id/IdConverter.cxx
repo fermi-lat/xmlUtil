@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.1 2001/08/24 22:46:37 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.2 2001/09/20 19:44:53 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdConverter.h"
@@ -64,7 +64,7 @@ namespace xmlUtil {
     if (sorted != YES) {
       ConversionIt start = convCol.begin(), last = convCol.end();
       IdConverterLessThan weakOrder;
-      sort(start, last, weakOrder);  // sort them
+      std::sort(start, last, weakOrder);  // sort them
       sorted = YES;
     }
   }

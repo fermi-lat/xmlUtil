@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.2 2001/08/24 22:46:37 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.3 2001/09/20 19:44:53 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdOperation.h"
@@ -32,7 +32,7 @@ namespace xmlUtil {
     return inputId.hasSubpath(*path);
   }
 
-  bool IdConversion::satisfies(NamedId& inputId) {
+  bool IdConversion::satisfies(const NamedId& inputId) {
     if (condition == 0) return true;
 
     return (inputId.hasField(*condition) >= 0);
