@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 10:59:54 PST 2004
+xmlUtil/xmlUtil/id
+
+Modified Files:
+	DictConstraints.h DictField.h DictNode.h IdConversion.h 
+	IdConverter.h IdDict.h IdOpCompress.h IdOpDisappear.h 
+	IdOpTruncate.h IdOperation.h 
+Log Message:
+Upgrade to Xerces 2.6.0
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 10:59:41 PST 2004
 xmlUtil/xmlUtil/docMan
 
@@ -1435,7 +1447,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.264 2004/11/10 18:59:29 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.265 2004/11/10 18:59:41 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
