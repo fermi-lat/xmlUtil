@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Mar 29 16:07:36 PST 2001
+xmlUtil/cmt flight-doc.diff flight-prog.diff
+
+Removed Files:
+	flight-doc.diff flight-prog.diff 
+Log Message:
+The .diff files slipped in by mistake
+    *
+------------------------------------------------------------
 User: jrb  Thu Mar 29 16:03:32 PST 2001
 xmlUtil - Imported sources
 
