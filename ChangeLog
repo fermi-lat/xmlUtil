@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Wed May  9 16:52:43 PDT 2001
+xmlUtil/xmlUtil/id DictConstraints.h DictField.h DictFieldMan.h DictNode.h IdConversion.h IdConverter.h IdDict.h IdOpFactory.h IdOperation.h NamedId.h
+
+Added Files:
+	DictConstraints.h DictField.h DictFieldMan.h DictNode.h 
+	IdConversion.h IdConverter.h IdDict.h IdOpFactory.h 
+	IdOperation.h NamedId.h 
+Log Message:
+1.  New (untested) header files for Identifier Dictionary classes and
+    some Identifier Converter classes
+2.  Corresponding updates to mainpage.h
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May  9 16:52:42 PDT 2001
 xmlUtil/xmlUtil Arith.h Substitute.h mainpage.h
 
