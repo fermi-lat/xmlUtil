@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.3 2002/04/05 18:28:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.4 2003/03/15 01:07:50 jrb Exp $
 #ifndef XMLUTIL_ARITH_H 
 #define XMLUTIL_ARITH_H
 
@@ -21,6 +21,7 @@ namespace xmlUtil {
       ETAG_quo,
       ETAG_uminus,
       ETAG_max,
+      ETAG_half,
       ETAG_n 
     } ;
 
@@ -70,6 +71,7 @@ namespace xmlUtil {
     static  ptrDOMString lengthString;
     static  ptrDOMString cmString;
     static  ptrDOMString mString;
+    static  ptrDOMString halfString;
   };
 
 }
