@@ -1,11 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.2 2001/03/30 19:46:20 jrb Exp $
-/*! \file Standalone program to transform source xml file into a 
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $
+/*! \file Standalone program to transform source xml file into a
     preprocessed version suitable for most clients programs (such
     as Simulation and Reconstruction).     Clients needing to
     extract documentation from the xml file will go a different
     route (see makeXmlForDoc.cxx.)
 
-  
     In particular this program will
       - add a <source> element to the output, indicating how and
         from what the output was generated
@@ -35,13 +34,11 @@
 #include <fstream>
 
 std::ostream *openOut(char * outfile);
-// void addSourceElt(DOM_Document doc);
 void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
-// char * stripDollar(char *toStrip);
 
-const char chDoubleQuote = 0x22;
-const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: makeXmlForProg.cxx,v 1.2 2001/03/30 19:46:20 jrb Exp $");
+const char chDoubleQ = 0x22;
+const std::string dquote(&chDoubleQ);
+const std::string myId("$Id: makeXmlForProg.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $");
 
 // Can't literally put in the string we want or CVS will mess it up.
 // Instead make a copy of this template, replacing the # with $

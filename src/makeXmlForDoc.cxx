@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.2 2001/04/23 23:26:02 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for documentation.  Typically
     will be transformed further, e.g. to html by an xslt transform.
@@ -35,9 +35,9 @@ void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
 
 char * stripDollar(char *toStrip);
 
-const char chDoubleQuote = 0x22;
-const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: makeXmlForDoc.cxx,v 1.2 2001/04/23 23:26:02 jrb Exp $");
+const char chDoubleQ = 0x22;
+const std::string dquote(&chDoubleQ);
+const std::string myId("$Id: makeXmlForDoc.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $");
 // Can't literally put in the string we want or CVS will mess it up.
 // Instead make a copy of this template, replacing the # with $
 const std::string idTemplate("#Id: not committed $");
