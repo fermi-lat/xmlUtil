@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jun  1 14:26:17 PDT 2001
+xmlUtil/xmlUtil/id DictConstraints.h DictNode.h
+
+Modified Files:
+	DictConstraints.h DictNode.h 
+Log Message:
+Some progress on id dictionary classes
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun  1 14:25:48 PDT 2001
 xmlUtil/src/id DictConstraints.cxx DictNode.cxx IdDict.cxx
 
