@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 19 12:45:48 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flight.xml flightDerivedConstants.xml 
+	flightGlobalCountPrim.xml flightGlobalMatPrim.xml 
+	flightIdDict.xml flightNADDimPrim.xml 
+Added Files:
+	flightNADGeo.xml 
+Log Message:
+First attempt at solar panels
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec 13 09:40:39 PST 2001
 xmlUtil/src/id
 
