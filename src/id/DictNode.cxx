@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.8 2001/12/05 01:13:57 jrb Exp $
-#include "dom/DOM_Element.hpp"
-#include "dom/DOMString.hpp"
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.9 2001/12/05 01:45:22 jrb Exp $
+#include <dom/DOM_Element.hpp>
+#include <dom/DOMString.hpp>
 #include "xml/Dom.h"
 #include "xmlUtil/id/DictNode.h"
 #include "xmlUtil/id/DictFieldMan.h"

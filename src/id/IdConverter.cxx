@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.4 2001/09/25 21:43:04 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.5 2001/09/25 22:04:56 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdConverter.h"
 #include "xmlUtil/id/IdDictMan.h"
 #include "xmlUtil/id/IdDict.h"
-#include "dom/DOM_Element.hpp"
+#include <dom/DOM_Element.hpp>
 #include "xml/Dom.h"
 #include <algorithm>
 #include "xmlUtil/id/IdConverterLessThan.h"

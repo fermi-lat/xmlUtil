@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.5 2001/09/25 21:43:04 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.6 2001/09/25 22:04:56 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdOperation.h"
 #include "xml/Dom.h"
-#include "dom/DOMString.hpp"
+#include <dom/DOMString.hpp>
 #include "xmlUtil/id/IdOpTruncate.h"
 #include "xmlUtil/id/IdOpDisappear.h"
 #include "xmlUtil/id/IdOpCompress.h"
