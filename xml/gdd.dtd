@@ -526,9 +526,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.12 2001/10/26 23:01:49 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.13 2001/10/29 23:11:42 jrb Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.12 2001/10/26 23:01:49 jrb Exp $ for the
+     CVS macro $Id: gdd.dtd,v 1.13 2001/10/29 23:11:42 jrb Exp $ for the
      pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
@@ -538,6 +538,12 @@
 <!ELEMENT  source  (#PCDATA) >
 <!ATTLIST  source  inputId          CDATA #IMPLIED
                    creatorId        CDATA #IMPLIED >
+
+<!-- generic material parameters -->
+<!ENTITY % materialProperties 'name         ID         #REQUIRED
+                               RGB          NMTOKENS   #IMPLIED
+                               transparency NMTOKEN    #IMPLIED                    
+                               '>
 
 <!ELEMENT  materials ( element | composite )+> 
 <!ATTLIST  materials
@@ -550,15 +556,15 @@
 <!ELEMENT  element  EMPTY>
 <!ATTLIST  element 
            symbol    NMTOKEN  #IMPLIED
-           name      ID       #REQUIRED
            z         NMTOKEN  #REQUIRED
            aweight   NMTOKEN  #REQUIRED
-           density   NMTOKEN  #IMPLIED>
+           density   NMTOKEN  #IMPLIED
+           %materialProperties;>
 
 <!ELEMENT  composite ( addmaterial )+>
 <!ATTLIST  composite
-           name     ID       #REQUIRED
-           density  NMTOKEN  #REQUIRED>
+           density  NMTOKEN  #REQUIRED
+           %materialProperties;>
 
 <!ELEMENT  addmaterial  ( fractionmass | natoms ) >
 <!ATTLIST  addmaterial
