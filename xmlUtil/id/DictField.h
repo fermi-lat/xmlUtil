@@ -1,11 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.6 2002/04/05 18:28:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.7 2003/03/15 01:08:00 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELD_H
 #define XMLUTIL_DICTFIELD_H
 
 #include <string>
 
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 
 #include "xmlUtil/id/DictObject.h"
 
@@ -18,7 +18,7 @@ namespace xmlUtil {
 
   class DictField : public DictObject {
   public: 
-    DictField(DOM_Element elt);
+    DictField(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* elt);
     ~DictField(){ if (m_constraints) delete m_constraints;};
 
     const std::string& getName() const {return m_name;}

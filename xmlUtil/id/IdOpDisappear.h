@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpDisappear.h,v 1.4 2002/06/04 22:43:59 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpDisappear.h,v 1.5 2004/01/21 06:49:31 jrb Exp $
 
 #ifndef XMLUTIL_IDOPDISAPPEAR_H
 #define XMLUTIL_IDOPDISAPPEAR_H
@@ -13,7 +13,7 @@ namespace xmlUtil {
      and let convert return 0 . */
   class IdOpDisappear : public IdOperation {
   public:
-    IdOpDisappear(DomElement) {}
+    IdOpDisappear(const XERCES_CPP_NAMESPACE_QUALIFIER DOMElement*) {}
     ~IdOpDisappear() {}
     NamedId * convert(const NamedId& ) {return new NamedId();}
     virtual std::string myOp() const {return std::string("DISAPPEAR ");}

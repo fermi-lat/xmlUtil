@@ -1,19 +1,19 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.8 2003/03/15 01:07:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.9 2004/01/21 06:46:34 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdConverter.h"
 #include "xmlUtil/id/IdDictMan.h"
 #include "xmlUtil/id/IdDict.h"
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 #include "xml/Dom.h"
 #include <algorithm>
 #include "xmlUtil/id/IdConverterLessThan.h"
 
 namespace xmlUtil {
-
+XERCES_CPP_NAMESPACE_USE
   IdDictMan * IdConverter::dictMan = 0;
 
-  IdConverter::IdConverter(DomElement elt) : m_consistent(UNKNOWN),
+  IdConverter::IdConverter(DOMElement* elt) : m_consistent(UNKNOWN),
   m_sorted(NO) {
     if (!dictMan) dictMan = IdDictMan::getPointer();
 
@@ -23,7 +23,7 @@ namespace xmlUtil {
     // on it, if necessary.
     // Assume that any constant evaluations and substitutions have
     // already been dealt with 
-    DomElement child = xml::Dom::getFirstChildElement(elt);
+    DOMElement* child = xml::Dom::getFirstChildElement(elt);
 
     if ( xml::Dom::getTagName(child) == std::string("constants") ) { // move on
       child = xml::Dom::getSiblingElement(child);
@@ -48,7 +48,7 @@ namespace xmlUtil {
     }
 
     // All remaining elements should be idConv
-    while (child != DomElement() ) {
+    while (child != 0 ) {
       IdConversion *conv = new IdConversion(child);
       m_convCol.push_back(conv);
       child = xml::Dom::getSiblingElement(child);

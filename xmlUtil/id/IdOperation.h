@@ -1,14 +1,14 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.7 2003/03/15 01:08:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.8 2004/01/21 06:49:31 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
 
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 #include "xmlUtil/id/NamedId.h"
 #include <iostream>
 #include <string>
 
-typedef DOM_Element DomElement;
+
 namespace xmlUtil {
 
 
@@ -56,7 +56,7 @@ namespace xmlUtil {
     // the Identifier, then invoke the above version of convert.
 
     //! Will be overridden by derived classes to actually do something
-    IdOperation(DomElement);
+    IdOperation(const XERCES_CPP_NAMESPACE_QUALIFIER DOMElement*);
 
     // Default constructor produces an operation which acts on any NamedId 
     // and does nothing to it.  

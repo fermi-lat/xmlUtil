@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.8 2003/03/15 01:08:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.9 2003/10/01 16:34:44 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 
 #include <vector>
 #include <string>
@@ -43,7 +43,7 @@ namespace xmlUtil {
     enum Constituents {nodeHierarchy = 1,
                        fieldManager = 2};
 
-    IdDict(DOM_Element elt);
+    IdDict(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* elt);
     ~IdDict();
 
     //! Verify that dictionary is valid

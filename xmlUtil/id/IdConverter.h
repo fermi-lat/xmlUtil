@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.8 2002/04/05 18:28:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.9 2003/03/15 01:08:00 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTER_H
 #define XMLUTIL_IDCONVERTER_H
 #include "xmlUtil/id/NamedId.h"
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 #include <string>
 #include <vector>
 #include <iostream>
@@ -24,7 +24,7 @@ namespace xmlUtil {
         in the sense that constants evaluation and substitution has
         been done.
     */
-    IdConverter(DOM_Element elt);
+    IdConverter(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* elt);
     ~IdConverter();
 
     std::ostream& displayConversions(std::ostream& s);
