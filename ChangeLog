@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 28 13:30:44 PDT 2004
+xmlUtil/src/arith_test
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xmlUtil/src/arith_test added to the repository
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Apr 20 09:21:50 PDT 2004
 xmlUtil/doc
 
@@ -1326,7 +1334,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.253 2004/04/20 16:21:15 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.254 2004/04/20 16:21:50 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
