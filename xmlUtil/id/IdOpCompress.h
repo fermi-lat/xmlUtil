@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpCompress.h,v 1.2 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpCompress.h,v 1.3 2001/09/25 21:43:06 jrb Exp $
 
 #ifndef XMLUTIL_IDOPCOMPRESS_H
 #define XMLUTIL_IDOPCOMPRESS_H
@@ -12,7 +12,7 @@ namespace xmlUtil {
   //! "from" and "to" fields themselves alone.
   class IdOpCompress : public IdOperation {
   public:
-    IdOpCompress(DOM_Element cmprss);
+    IdOpCompress(DomElement cmprss);
     ~IdOpCompress() {}
 
     virtual NamedId * convert(const NamedId& inputId);

@@ -1,9 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.4 2003/03/15 01:07:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.5 2003/06/19 00:03:01 jrb Exp $
 #ifndef XMLUTIL_ARITH_H 
 #define XMLUTIL_ARITH_H
 
+#include <string>
 #include <xercesc/dom/DOM_Element.hpp>
-#include <xercesc/dom/DOMString.hpp>
+// #include <xercesc/dom/DOMString.hpp>
 
 namespace xmlUtil {
   //! The Arith class handles the xml arithmetic elements, allowing
@@ -53,25 +54,28 @@ namespace xmlUtil {
     int     m_tag;      /*< element type (tagname) */
     double  m_number;   /*< value of element after evaluation */
     bool    m_evaluated;/*< flag to keep track of whether eval has been done*/
+    
+    /* keep some static strings so we don't have to build them over and over */
 
-    typedef DOMString * ptrDOMString;/*< keep some static strings so we don't
-                                        have to build them over and over */
-    static  ptrDOMString *typeNames;
-    static  ptrDOMString valString;   // a DOMString containing "value"
-    static  ptrDOMString refToString; // ..and so forth
-    static  ptrDOMString constString;
-    static  ptrDOMString referString;
-    static  ptrDOMString addString;
-    static  ptrDOMString minusString;
-    static  ptrDOMString uminusString;
-    static  ptrDOMString mulString;
-    static  ptrDOMString quoString;
-    static  ptrDOMString maxString;
-    static  ptrDOMString notesString;
-    static  ptrDOMString lengthString;
-    static  ptrDOMString cmString;
-    static  ptrDOMString mString;
-    static  ptrDOMString halfString;
+
+    typedef const char* ptrString;
+    static  ptrString *typeNames;
+    static  ptrString valString;   // a DOMString containing "value"
+    static  ptrString refToString; // ..and so forth
+    static  ptrString constString;
+    static  ptrString referString;
+    static  ptrString addString;
+    static  ptrString minusString;
+    static  ptrString uminusString;
+    static  ptrString mulString;
+    static  ptrString quoString;
+    static  ptrString maxString;
+    static  ptrString notesString;
+    static  ptrString lengthString;
+    static  ptrString cmString;
+    static  ptrString mString;
+    static  ptrString halfString;
+
   };
 
 }

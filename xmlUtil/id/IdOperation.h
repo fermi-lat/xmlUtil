@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.6 2002/04/05 18:28:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.7 2003/03/15 01:08:00 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
@@ -8,6 +8,7 @@
 #include <iostream>
 #include <string>
 
+typedef DOM_Element DomElement;
 namespace xmlUtil {
 
 
@@ -55,7 +56,7 @@ namespace xmlUtil {
     // the Identifier, then invoke the above version of convert.
 
     //! Will be overridden by derived classes to actually do something
-    IdOperation(DOM_Element);
+    IdOperation(DomElement);
 
     // Default constructor produces an operation which acts on any NamedId 
     // and does nothing to it.  
