@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.4 2001/09/20 19:44:53 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTER_H
 #define XMLUTIL_IDCONVERTER_H
@@ -12,6 +12,10 @@ namespace xmlUtil {
   class IdConversion;
   class IdDictMan;
 
+  //! An <b>IdConverter</b> is a collection of id conversions and associated
+  //! functions to 
+  //! (1) verify self-consistency of the converter
+  //! (2) apply the correct conversion to a supplied Identifier 
   class IdConverter {
   public:
     /*! Build IdConverter from its XML representation.
@@ -77,8 +81,6 @@ namespace xmlUtil {
 
 
     Conversions convCol;  /*< collection of conversion operations making up the                          IdConverter */
-
-    //! Define strict weak ordering so that we can sort (see IdConverter class)
 
     enum STATES {
       UNKNOWN = -1,
