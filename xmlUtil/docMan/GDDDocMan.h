@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.1 2001/11/07 21:30:28 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.2 2001/11/09 21:05:58 jrb Exp $
 #ifndef XMLUTIL_GDDDOCMAN_H
 #define XMLUTIL_GDDDOCMAN_H
 
@@ -16,7 +16,10 @@ namespace xmlUtil {
     static  GDDDocMan* getPointer();
 
     // Allow caller option of saving (or not) notes associated with constants 
-    virtual bool parse(const std::string& filename, bool saveNotes = true);
+    // docType should be gdd (should we even allow anything else?)
+    virtual bool parse(const std::string& filename, 
+                       bool saveNotes = true,
+                       const std::string& docType=std::string("gdd"));
 
     virtual ~GDDDocMan() {delete m_constsClient;}
 
