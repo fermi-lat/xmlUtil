@@ -1,16 +1,20 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.3 2001/05/31 22:56:39 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.4 2001/06/01 21:26:17 jrb Exp $
 
 #ifndef XMLUTIL_DICTCONSTRAINTS_H
 #define XMLUTIL_DICTCONSTRAINTS_H
 
 #include <vector>
 #include "dom/DOM_Element.hpp"
+#include "xmlUtil/id/DictVisitor.h"
+#include <set>
 
 namespace xmlUtil {
   //! Represent constraints on values for an id dictionary node
-  typedef std::vector<unsigned> DictValList;
+
+
   class DictConstraints {
   public: 
+
     //! Build constraints object from xml representation
     DictConstraints(DOM_Element elt);
     bool equals(const DictConstraints& other);
@@ -25,21 +29,24 @@ namespace xmlUtil {
     bool allowed(DictConstraints *other) const; 
     bool disjoint(const DictConstraints& other) const;      
     bool disjoint(DictConstraints* other) const;      
+
     unsigned getMin() const {return m_minVal;}
     unsigned getMax() const {return m_maxVal;}
+    //    bool     isList() const {return (m_valList != 0);}
 
-  private:
-    // Not sure we need these
-    friend class DictNode;
-    friend class IdDict;
-    friend class DictField;
+    //! Add our allowed values to specified set so we
+    //! can use set operations to look for overlap
+    void     insertValues(std::set<unsigned>& aSet) const;
 
     // DictNode needs to make copies of DictConstraints objects in 
     // some of its private constructors
     DictConstraints(const DictConstraints& toCopy);
     DictConstraints& operator=(const DictConstraints&);
 
-    // Utility used by above
+  private:
+    typedef std::vector<unsigned> DictValList;
+
+    //! Utility used by copy constructor, copy assignment operator
     void deepCopy(const DictConstraints& toCopy);
     
     enum eStyle {

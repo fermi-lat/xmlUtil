@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.3 2001/05/31 22:56:39 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 
+#include "xmlUtil/id/DictObject.h"
 #include "xmlUtil/id/NamedId.h"
 
 namespace xmlUtil {
@@ -28,9 +29,12 @@ namespace xmlUtil {
   class DictNode;
   class DictField;
   class DictFieldMan;
+  class DictVisitor;
 
-  class IdDict {
+  class IdDict : public DictObject {
   public:
+    enum Constituents {nodeHierarchy = 1,
+                       fieldManager = 2};
 
     IdDict(DOM_Element elt);
     ~IdDict();
@@ -61,7 +65,13 @@ namespace xmlUtil {
     int                getMajorVersion() const {return m_major;};
     int                getMinorVersion() const {return m_minor;};
     int                getPatchVersion() const {return m_patch;};
-    
+    DictNode&          getRoot() const {return *m_root;};
+    bool               accept(DictVisitor *vis);
+
+    bool               accept(DictVisitor *vis, unsigned constituentMask);
+    //! Extra accept function to allow caller to choose among
+    //! constituents of dictionary to visit.  May choose all,
+    //! just node hierarchy, or just field manager.
   protected:
     friend class IdConverter;
 
