@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header$ -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/test-dict.xml,v 1.1 2001/06/12 18:39:20 jrb Exp $ -->
 
 <!DOCTYPE gdd SYSTEM "gdd.dtd"
   [
@@ -13,10 +13,12 @@
     <!ENTITY ACDCountPrim   SYSTEM "flightACDCountPrim.xml">
 
     <!ENTITY idDict         SYSTEM "testIdDict.xml">
+
+    <!ENTITY idConvEnt      SYSTEM "testIdConv.xml">
   ]
 >
 
-<gdd CVSid="$Id$" DTDversion="2.0" >
+<gdd CVSid="$Id: test-dict.xml,v 1.1 2001/06/12 18:39:20 jrb Exp $" DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
     <primary>
@@ -166,6 +168,8 @@
   </constants>
 
   &idDict;
+  &idConvEnt;
+  
 
 </gdd>
 

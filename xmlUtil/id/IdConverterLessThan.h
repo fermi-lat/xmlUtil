@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverterLessThan.h,v 1.2 2001/09/20 20:16:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverterLessThan.h,v 1.3 2001/09/20 21:19:12 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTERLESSTHAN_H
 #define XMLUTIL_IDCONVERTERLESSTHAN_H
@@ -23,7 +23,7 @@ namespace xmlUtil {
     //! shorter path
     bool operator()(IdConversion* x, 
                     IdConversion* y) {
-      return ((x->path)->size() < ((y->path)->size() ) );
+      return ((x->m_path)->size() < ((y->m_path)->size() ) );
     }
   };
 }

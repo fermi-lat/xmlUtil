@@ -1,9 +1,10 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.6 2001/08/24 22:46:38 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.7 2001/09/20 19:44:53 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
 #include <vector>
 #include <string>
+#include <iostream>
 namespace xmlUtil {
 
   //! An \b Identifier is simply a finite list of non-neg. integers
@@ -13,8 +14,16 @@ namespace xmlUtil {
   //! id field names which may be extracted from a \b NamedId )
   typedef std::vector<std::string * > NameSeq;
 
+  class NamedId;
+
+  ostream& operator<<(ostream& s, const NameSeq& seq);
+  ostream& operator<<(ostream& s, const Identifier& seq);
+  ostream& operator<<(ostream& s, const NamedId& nId);
+
   class NamedId {
   public:
+    friend ostream& operator<<(ostream& s, const NamedId& nId);
+
     //! When length is known, best to allocate all at once at start
     NamedId(const int len = 0);
 
@@ -36,9 +45,10 @@ namespace xmlUtil {
 
     void addField(const IdField& newField);
 
+    unsigned int size() const {return m_fields->size();}
     //! Delete field on the end. 
     // Should it be returned rather than void?
-    void popField();
+    void popField(unsigned int n = 1);
 
     //! Return true if initial field names are compatible with \a subpath
     bool hasSubpath(const NameSeq& subpath) const;
@@ -75,6 +85,7 @@ namespace xmlUtil {
    
     Fields *m_fields;
   };
+
 }
 #endif
 

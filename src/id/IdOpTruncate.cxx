@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpTruncate.cxx,v 1.1 2001/08/24 22:46:37 jrb Exp $
 
 #include "xmlUtil/id/IdOpTruncate.h"
 #include "xml/Dom.h"
@@ -21,4 +21,5 @@ namespace xmlUtil {
     NamedId *newId = new NamedId(inputId, nToCopy);
     return newId;
   }
+
 }

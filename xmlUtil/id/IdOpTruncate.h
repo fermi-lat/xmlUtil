@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpTruncate.h,v 1.1 2001/08/09 22:28:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpTruncate.h,v 1.2 2001/08/24 22:46:38 jrb Exp $
 
 #ifndef XMLUTIL_IDOPTRUNCATE_H
 #define XMLUTIL_IDOPTRUNCATE_H
@@ -15,6 +15,7 @@ namespace xmlUtil {
     ~IdOpTruncate() {}
 
     virtual NamedId * convert(const NamedId& inputId);
+    virtual std::string myOp() const {return std::string("TRUNCATE");}
   private:
     std::string start;
     bool       beyond;

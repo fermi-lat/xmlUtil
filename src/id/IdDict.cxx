@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.6 2001/06/26 16:23:40 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.7 2001/09/20 19:44:53 jrb Exp $
 
 #include "dom/DOMString.hpp"
 #include "dom/DOM_NodeList.hpp"
@@ -14,6 +14,18 @@ namespace xmlUtil {
     // Check that element has the right tag name: idDict
     // Caller probably will have done this already
     assert(elt.getTagName().equals("idDict"));
+
+    // Store information from attributes
+    m_name = std::string(xml::Dom::getAttribute(elt, "name"));
+
+    std::string intVal = xml::Dom::getAttribute(elt, "major");
+    m_major = atoi(intVal.c_str());
+
+    intVal = xml::Dom::getAttribute(elt, "minor");
+    m_minor = atoi(intVal.c_str());
+
+    intVal = xml::Dom::getAttribute(elt, "patch");
+    m_patch = atoi(intVal.c_str());
 
     // Check number of children.  This is an upper bound
     // on number of fields we have to store

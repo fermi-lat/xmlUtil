@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.4 2001/09/20 19:44:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.5 2001/09/20 21:19:12 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTER_H
 #define XMLUTIL_IDCONVERTER_H
@@ -6,6 +6,7 @@
 #include "dom/DOM_Element.hpp"
 #include <string>
 #include <vector>
+#include <iostream>
 
 namespace xmlUtil {
   class IdDict;
@@ -25,6 +26,8 @@ namespace xmlUtil {
     */
     IdConverter(DOM_Element elt);
     ~IdConverter();
+
+    ostream& displayConversions(ostream& s);
 
     /*  Wait on implementing this one.
     // Return image of the input dictionary under the conversions
@@ -80,15 +83,15 @@ namespace xmlUtil {
     void sortConvs();
 
 
-    Conversions convCol;  /*< collection of conversion operations making up the                          IdConverter */
+    Conversions m_convCol;  /*< collection of conversion operations making up the                          IdConverter */
 
     enum STATES {
       UNKNOWN = -1,
       NO = 0,
       YES = 1};
 
-    STATES consistent; 
-    STATES sorted;      // (sort into order of increasing path)
+    STATES m_consistent; 
+    STATES m_sorted;      // (sort into order of increasing path)
 
   };  // end class IdConverter
 
