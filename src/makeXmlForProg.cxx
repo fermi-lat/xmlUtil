@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.6 2002/02/20 16:56:32 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.7 2002/04/05 18:25:18 jrb Exp $
 /*! \file Standalone program to transform source xml file into a
     preprocessed version suitable for most clients programs (such
     as Simulation and Reconstruction).     Clients needing to
@@ -24,10 +24,10 @@
 #include "xmlUtil/Constants.h"
 #include "xmlUtil/Arith.h"
 #include "xmlUtil/Substitute.h"
-#include <dom/DOM_Element.hpp>
-#include <dom/DOM_NodeList.hpp>
-#include <dom/DOM_NamedNodeMap.hpp>
-#include <dom/DOM_DocumentType.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_NodeList.hpp>
+#include <xercesc/dom/DOM_NamedNodeMap.hpp>
+#include <xercesc/dom/DOM_DocumentType.hpp>
 
 #include <string>
 #include <iostream>
@@ -38,7 +38,7 @@ void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
 
 const char chDoubleQ[2] = {0x22, 0x0};
 const std::string dquote(&chDoubleQ[0]);
-const std::string myId("$Id: makeXmlForProg.cxx,v 1.6 2002/02/20 16:56:32 jrb Exp $");
+const std::string myId("$Id: makeXmlForProg.cxx,v 1.7 2002/04/05 18:25:18 jrb Exp $");
 
 // Can't literally put in the string we want or CVS will mess it up.
 // Instead make a copy of this template, replacing the # with $

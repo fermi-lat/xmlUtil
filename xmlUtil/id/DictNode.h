@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.9 2002/01/29 21:40:39 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.10 2002/04/05 18:28:44 jrb Exp $
 #ifndef XMLUTIL_DICTNODE_H
 #define XMLUTIL_DICTNODE_H
 
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xmlUtil/id/DictObject.h"
 #include "xmlUtil/id/DictField.h"
 #include "xmlUtil/id/DictConstraints.h"

@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Substitute.h,v 1.2 2001/05/09 23:52:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Substitute.h,v 1.3 2002/04/05 18:28:25 jrb Exp $
 #ifndef XMLUTIL_SUBSTITUTE_H 
 #define XMLUTIL_SUBSTITUTE_H
 
-#include <dom/DOM_Document.hpp>
-#include <dom/DOMString.hpp>
-#include <dom/DOM_TreeWalker.hpp>
+#include <xercesc/dom/DOM_Document.hpp>
+#include <xercesc/dom/DOMString.hpp>
+#include <xercesc/dom/DOM_TreeWalker.hpp>
 #include <string>
 
 

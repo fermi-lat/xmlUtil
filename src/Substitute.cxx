@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Substitute.cxx,v 1.2 2001/03/30 19:46:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Substitute.cxx,v 1.3 2002/04/05 18:25:18 jrb Exp $
 
 #include <vector>
 #include <string>
 #include "xmlUtil/Substitute.h"
 #include "xml/Dom.h"
 #include "xmlUtil/Arith.h"
-#include <dom/DOM_Element.hpp>
-#include <dom/DOM_TreeWalker.hpp>
-#include <dom/DOM_NamedNodeMap.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_TreeWalker.hpp>
+#include <xercesc/dom/DOM_NamedNodeMap.hpp>
 #include <vector>
 
 namespace xmlUtil {

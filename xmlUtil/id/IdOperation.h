@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.5 2001/09/25 22:04:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.6 2002/04/05 18:28:44 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
 
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xmlUtil/id/NamedId.h"
 #include <iostream>
 #include <string>
