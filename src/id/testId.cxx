@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/testId.cxx,v 1.3 2001/09/25 21:43:04 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/testId.cxx,v 1.4 2002/01/03 21:05:38 jrb Exp $
 
 /*! \file Stand-alone test program for id dictionary code */
 
@@ -12,8 +12,8 @@
 #include "xmlUtil/id/IdConverter.h"
 #include "xmlUtil/id/IdConversion.h"  // maybe don't need this
 
-#include "dom/DOM_Element.hpp"
-#include "dom/DOM_DocumentType.hpp"
+#include <dom/DOM_Element.hpp>
+#include <dom/DOM_DocumentType.hpp>
 
 #include <iostream>
 // #include <fstream>

@@ -1,12 +1,12 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.5 2001/06/12 19:57:05 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.6 2001/06/26 16:05:24 jrb Exp $
 
 #include <string>
 #include <algorithm>
 #include "xml/Dom.h"
 #include "xmlUtil/id/DictConstraints.h"
-#include "dom/DOMString.hpp"
-#include "dom/DOM_Element.hpp"
-#include "dom/DOM_NodeList.hpp"
+#include <dom/DOMString.hpp>
+#include <dom/DOM_Element.hpp>
+#include <dom/DOM_NodeList.hpp>
 
 
 namespace xmlUtil {
