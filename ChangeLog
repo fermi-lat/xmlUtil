@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 14 17:07:50 PST 2003
+xmlUtil/xmlUtil
+
+Modified Files:
+	Arith.h Constants.h Source.h Substitute.h 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 14 17:07:38 PST 2003
 xmlUtil/src/id
 
@@ -702,7 +713,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.189 2003/03/15 01:06:52 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.190 2003/03/15 01:07:38 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
