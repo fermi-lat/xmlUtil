@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.6 2001/11/07 21:24:57 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.7 2001/11/09 21:04:28 jrb Exp $
 package xmlUtil
 
 use xml 
@@ -30,6 +30,7 @@ library xmlUtil ${xmlUtil_headers} -no_share \
      id/IdOpTruncate.cxx     \
      id/IdOperation.cxx       \
      id/NamedId.cxx          \
+     id/IdKey.cxx            \
      docMan/GDDDocMan.cxx    \
      ${xmlUtil_xmlfiles} 
 
