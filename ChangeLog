@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec 13 09:40:39 PST 2001
+xmlUtil/src/id
+
+Modified Files:
+	IdKey.cxx 
+Log Message:
+Fix for Visual C++ compiler
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Dec 12 17:07:44 PST 2001
 xmlUtil/xmlUtil/id
 
