@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xml/xml/Arith.h,v 1.5 2001/03/13 18:09:31 jrb Exp $
-#ifndef XMLArith_h 
-#define XMLArith_h
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $
+#ifndef XMLUTIL_ARITH_H 
+#define XMLUTIL_ARITH_H
 
 #include "dom/DOM_Element.hpp"
 #include "dom/DOMString.hpp"

@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xml/xml/Substitute.h,v 1.2 2001/02/23 23:28:08 jrb Exp $
-#ifndef XMLSubstitute_h 
-#define XMLSubstitute_h
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Substitute.h,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $
+#ifndef XMLUTIL_SUBSTITUTE_H 
+#define XMLUTIL_SUBSTITUTE_H
 
 #include "dom/DOM_Document.hpp"
 #include "dom/DOMString.hpp"
