@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan  3 11:23:00 PST 2005
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use xmlBase package rather than xml
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 16:40:24 PST 2004
 xmlUtil/doc
 
@@ -1456,7 +1466,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.266 2004/11/10 18:59:54 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.267 2004/11/11 00:40:24 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
