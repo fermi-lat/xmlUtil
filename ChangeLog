@@ -1,0 +1,60 @@
+------------------------------------------------------------
+User: jrb  Thu Mar 29 16:03:32 PST 2001
+xmlUtil - Imported sources
+
+Log Message:
+First import of xmlUtil package.  It consists of utilities for manipulating
+xml elements used by the Generic Geometry dtd, but not specific to that
+application, such as elements for doing arithmetic. 
+
+Status:
+
+Vendor Tag:	GLAST
+Release Tags:	v1
+		
+N xmlUtil/.cvsignore
+N xmlUtil/cmt/Makefile
+N xmlUtil/cmt/NMake
+N xmlUtil/cmt/requirements
+N xmlUtil/cmt/.cvsignore
+N xmlUtil/cmt/flight-doc.diff
+N xmlUtil/cmt/flight-prog.diff
+N xmlUtil/src/Substitute.cxx
+N xmlUtil/src/Arith.cxx
+N xmlUtil/src/Source.cxx
+N xmlUtil/src/eval.cxx
+N xmlUtil/src/Constants.cxx
+N xmlUtil/src/makeXmlForDoc.cxx
+N xmlUtil/src/makeXmlForProg.cxx
+N xmlUtil/xml/ACDCountPrim.xml
+N xmlUtil/xml/ACDDimPrim.xml
+N xmlUtil/xml/ACDMatPrim.xml
+N xmlUtil/xml/ACDPrim.xml
+N xmlUtil/xml/CALCountPrim.xml
+N xmlUtil/xml/CALDimPrim.xml
+N xmlUtil/xml/CALMatPrim.xml
+N xmlUtil/xml/CALPrim.xml
+N xmlUtil/xml/flight-doc.xml
+N xmlUtil/xml/flight-prog.xml
+N xmlUtil/xml/flight.xml
+N xmlUtil/xml/gdd.dtd
+N xmlUtil/xml/globalPrim.xml
+N xmlUtil/xml/test-arith.xml
+N xmlUtil/xml/constsDoc.xsl
+N xmlUtil/xml/primextract.xsl
+N xmlUtil/xml/TKRCountPrim.xml
+N xmlUtil/xml/TKRDimPrim.xml
+N xmlUtil/xml/TKRMatPrim.xml
+N xmlUtil/xml/TKRPrim.xml
+N xmlUtil/xml/globalMatPrim.xml
+N xmlUtil/xml/globalCountPrim.xml
+N xmlUtil/xml/globalDimPrim.xml
+N xmlUtil/xmlUtil/Arith.h
+N xmlUtil/xmlUtil/Substitute.h
+N xmlUtil/xmlUtil/mainpage.h
+N xmlUtil/xmlUtil/Constants.h
+N xmlUtil/xmlUtil/Source.h
+
+No conflicts created by this import
+
+    *
