@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.7 2001/09/20 20:16:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.8 2001/12/05 01:13:57 jrb Exp $
 #include "dom/DOM_Element.hpp"
 #include "dom/DOMString.hpp"
 #include "xml/Dom.h"
@@ -219,6 +219,14 @@ namespace xmlUtil {
     
     ConstNodeIterator pCurrentNode = start;
     std::set<unsigned> values;
+
+    if (!(*start)->m_myConstraints) { // There had better be some
+      //associated with the field name;  copy them
+      DictConstraints* fieldCon = (*start)->m_myConstraints = 
+        new DictConstraints(*((*start)->m_field->getConstraints()));
+      assert(fieldCon != 0);
+    }
+
     (*start)->m_myConstraints->insertValues(values);
 
     while (pCurrentNode != last) {
@@ -227,6 +235,14 @@ namespace xmlUtil {
       
       // Make a new set containing values for current node
       std::set<unsigned> curValues;
+
+      if (!(*pCurrentNode)->m_myConstraints) { // There had better be some
+      //associated with the field name;  copy them
+        DictConstraints*  fieldCon = (*pCurrentNode)->m_myConstraints = 
+        new DictConstraints(*((*pCurrentNode)->m_field->getConstraints()));
+        assert(fieldCon != 0);
+      }
+
       (*pCurrentNode)->m_myConstraints->insertValues(curValues);
 
       // See if it intersects accumulated values from previous nodes
