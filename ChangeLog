@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  3 13:05:38 PST 2002
+xmlUtil/src/id
+
+Modified Files:
+	IdKey.cxx testId.cxx testKey.cxx 
+Log Message:
+Made Identifier into a real class rather than just typedef; updated
+code referring to it.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  3 13:04:50 PST 2002
 xmlUtil/cmt
 
@@ -22,7 +33,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.125 2002/01/03 18:50:50 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.126 2002/01/03 21:04:50 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
