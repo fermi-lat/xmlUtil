@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 10:58:29 PST 2004
+xmlUtil/src/byId_test
+
+Added Files:
+	byId_test.cxx 
+Log Message:
+Upgrade to Xerces 2.6.0
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 10:58:16 PST 2004
 xmlUtil/src/arith_test
 
@@ -1373,7 +1383,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.258 2004/11/10 18:58:02 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.259 2004/11/10 18:58:16 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
