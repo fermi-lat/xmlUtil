@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.2 2001/04/23 23:26:02 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for documentation.  Typically
     will be transformed further, e.g. to html by an xslt transform.
@@ -37,8 +37,10 @@ char * stripDollar(char *toStrip);
 
 const char chDoubleQuote = 0x22;
 const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: makeXmlForDoc.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
-
+const std::string myId("$Id: makeXmlForDoc.cxx,v 1.2 2001/04/23 23:26:02 jrb Exp $");
+// Can't literally put in the string we want or CVS will mess it up.
+// Instead make a copy of this template, replacing the # with $
+const std::string idTemplate("#Id: not committed $");
 /*!
     Main program for the forDoc application.
     \param arg1 is the input xml file
@@ -110,6 +112,13 @@ int main(int argc, char* argv[]) {
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
   outProlog(doctype, *out);
 
+  // If have gdd element with CVSid attribute, null it out.  Don't have
+  // a real CVS id until the file has been committed
+  if (docElt.getAttribute("CVSid") != DOMString() ) {
+    std::string noId(idTemplate);
+    noId.replace(0, 1, "$");
+    docElt.setAttribute("CVSid", noId.c_str());
+  }
   // Finally output the elements
   // May want option to exclude comments here
   xml::Dom::prettyPrintElement(docElt, *out, "");
