@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.9 2002/09/13 23:33:59 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.10 2003/03/15 01:06:37 jrb Exp $
 
 #include <string>
 #include <xercesc/dom/DOMString.hpp>
@@ -109,7 +109,7 @@ namespace {
       if ((DOMString("GeV")).equals(elt.getAttribute("units")) ) {
         energy *= 1000;
       }
-      xml::Dom::addAttribute(prim, "value", energy);
+      xml::Dom::addAttribute(prim, std::string("value"), energy);
       elt.normalize();
       DOM_Node textChild = elt.getFirstChild();
       prim.appendChild(textChild);
