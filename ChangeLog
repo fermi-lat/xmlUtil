@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 22:47:55 PST 2004
+xmlUtil/src/local
+
+Added Files:
+	outUtils.cxx 
+Log Message:
+Used by test programs eval, makeXmlForDoc, makeXmlForProg
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 20 22:46:34 PST 2004
 xmlUtil/src/id
 
@@ -1091,7 +1101,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.229 2004/01/21 06:46:14 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.230 2004/01/21 06:46:34 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
