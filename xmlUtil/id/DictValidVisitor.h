@@ -1,4 +1,4 @@
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictValidVisitor.h,v 1.1 2001/06/12 18:34:01 jrb Exp $
 #ifndef XMLUTIL_DICTVALIDVISITOR_H
 #define XMLUTIL_DICTVALIDVISITOR_H
 
@@ -14,8 +14,8 @@ namespace xmlUtil {
     virtual bool visitDict(IdDict *dict);
     virtual bool visitNode(DictNode *node);
 
-    virtual bool visitField(DictField *field) {return true;}
-    virtual bool visitFieldMan(DictFieldMan *fieldMan) {return true;}
+    virtual bool visitField(DictField *) {return true;}
+    virtual bool visitFieldMan(DictFieldMan *) {return true;}
 
     bool wasValid() {return (m_state == eValid); }
     
