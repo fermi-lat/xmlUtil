@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 12 12:57:05 PDT 2001
+xmlUtil/src/id DictConstraints.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx
+
+Modified Files:
+	DictConstraints.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx 
+Log Message:
+Minor fixes so code will build properly on Windows
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun 12 11:39:20 PDT 2001
 xmlUtil/xml test-dict.xml testIdDict.xml flight.xml flightCALDimPrim.xml flightCALMatPrim.xml flightIdDict.xml gdd.dtd
 
