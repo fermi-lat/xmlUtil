@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for most clients (documentation-type
     clients will probably stick with the original file). 
@@ -20,9 +20,9 @@
 #include "xmlUtil/Substitute.h"
 #include "xmlUtil/Constants.h"
 #include "xmlUtil/Source.h"
-#include "dom/DOM_Element.hpp"
-#include "dom/DOM_NodeList.hpp"
-#include "dom/DOM_DocumentType.hpp"
+#include <dom/DOM_Element.hpp>
+#include <dom/DOM_NodeList.hpp>
+#include <dom/DOM_DocumentType.hpp>
 
 #include <string>
 #include <iostream>
@@ -35,7 +35,7 @@ char * stripDollar(char *toStrip);
 
 const char chDoubleQ = 0x22;
 const std::string dquote(&chDoubleQ);
-const std::string myId("$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
+const std::string myId("$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
 
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
@@ -219,7 +219,7 @@ void  addSourceElt(DOM_Document doc) {
 
 /*! Input is a null-terminated character string.  Output is
  * another such with leading and trailing '$', if any, stripped.
- * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $" into
+ * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $" into
  * something which will no longer be substituted for.
  */
 

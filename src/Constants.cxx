@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.2 2001/03/30 19:46:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.3 2001/11/07 21:28:36 jrb Exp $
 
 #include <string>
-#include "dom/DOMString.hpp"
-#include "dom/DOM_Node.hpp"
-#include "dom/DOM_NodeList.hpp"
-#include "dom/DOM_TreeWalker.hpp"
+#include <dom/DOMString.hpp>
+#include <dom/DOM_Node.hpp>
+#include <dom/DOM_NodeList.hpp>
+#include <dom/DOM_TreeWalker.hpp>
 #include "xmlUtil/Constants.h"
 #include "xmlUtil/Arith.h"
 #include "xml/Dom.h"
