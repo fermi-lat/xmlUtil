@@ -1,5 +1,5 @@
 
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.3 2004/01/09 00:56:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.4 2004/02/25 23:35:20 jrb Exp $
 #ifndef XMLUTIL_GDDDOCMAN_H
 #define XMLUTIL_GDDDOCMAN_H
 
@@ -45,14 +45,14 @@ namespace xmlUtil {
 
       virtual ~ConstsClient() {}
 
-      void handleChild(DOM_Node elt); 
+      void handleChild(XERCES_CPP_NAMESPACE_QUALIFIER DOMNode* node); 
       bool m_saveNotes;
       const std::string& getCVSid() const {return CVSid;}
       const std::string& getDTDversion() const {return DTDversion;}
     private:
       std::string name;
       GDDDocMan* m_owner;
-      DOM_Document m_doc;
+      DOMDocument* m_doc;
       Substitute* m_sub;
       std::string CVSid;
       std::string DTDversion;

@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.11 2003/03/15 01:08:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.12 2003/10/01 16:34:44 jrb Exp $
 #ifndef XMLUTIL_DICTNODE_H
 #define XMLUTIL_DICTNODE_H
 
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 #include "xmlUtil/id/DictObject.h"
 #include "xmlUtil/id/DictField.h"
 #include "xmlUtil/id/DictConstraints.h"
@@ -25,7 +25,8 @@ namespace xmlUtil {
   public:
     //! Construct a node from its XML representation (probably
     //! recursively construct children as well)
-    DictNode(DOM_Element elt, DictNode* parent, DictFieldMan *fieldMan); 
+    DictNode(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* elt, 
+             DictNode* parent, DictFieldMan *fieldMan); 
     /* IN PROGRESS */
     ~DictNode();  // similarly, delete all children recursively /* TO DO */
     const DictField& getField() const {return *m_field;};

@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.6 2002/04/05 18:28:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.7 2003/03/15 01:08:00 jrb Exp $
 
 #ifndef XMLUTIL_DICTCONSTRAINTS_H
 #define XMLUTIL_DICTCONSTRAINTS_H
 
 #include <vector>
-#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOMElement.hpp>
 #include "xmlUtil/id/DictVisitor.h"
 #include <set>
 
@@ -16,7 +16,7 @@ namespace xmlUtil {
   public: 
 
     //! Build constraints object from xml representation
-    DictConstraints(DOM_Element elt);
+    DictConstraints(XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* elt);
     bool equals(const DictConstraints& other);
     ~DictConstraints(){if (m_valList) delete m_valList;}
   public:    
