@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.6 2001/09/25 22:04:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.7 2003/10/01 16:34:44 jrb Exp $
 
 #include "xmlUtil/id/NamedId.h"
 
@@ -94,10 +94,11 @@ namespace xmlUtil {
     s << "(" << (*it)->name << "=" << (*it)->value;
     ++it;
     while (it != nId.m_fields->end()) {
-      s << ", " << std::endl << (*it)->name << "=" << (*it)->value;
+      s << ", " << (*it)->name << "=" << (*it)->value;
+      //      s << ", " << std::endl << (*it)->name << "=" << (*it)->value;
       ++it;
     }
-    s << ")" << std::endl;
+    s << ")" ;   // << std::endl;
     return s;
   }
 
