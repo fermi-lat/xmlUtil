@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdKey.h,v 1.1 2001/12/08 00:15:59 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdKey.h,v 1.2 2001/12/13 01:07:44 jrb Exp $
 #ifndef XMLUTIL_IDKEY_H
 #define XMLUTIL_IDKEY_H
 
@@ -6,7 +6,7 @@
 #include <deque>
 #include <string>
 #include <iterator>
-
+#include "xmlUtil/id/Identifier.h"
 
 namespace xmlUtil {
 
@@ -14,8 +14,8 @@ namespace xmlUtil {
   ///  be used as a key for a map.
   class IdKey {
   public:
-    /// Construct an IdKey from  a vector
-    IdKey(const std::vector<unsigned int> id);
+    /// Construct an IdKey from  an Identifier
+    IdKey(const Identifier id);
 
     /// Construct an IdKey from  a deque
     IdKey(const std::deque<unsigned int> id);
