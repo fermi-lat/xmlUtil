@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Oct 26 16:01:49 PDT 2001
+xmlUtil/xml gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Add back in ATLAS elements used to define materials
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 24 17:57:46 PDT 2001
 xmlUtil/xml gdd.dtd
 
