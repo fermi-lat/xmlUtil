@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul  3 15:40:24 PDT 2001
+xmlUtil/src makeXmlForDoc.cxx makeXmlForProg.cxx
+
+Modified Files:
+	makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+Mod to xml preprocessor programs so that output XML is marked as
+not having been committed to CVS
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul  3 14:39:37 PDT 2001
 xmlUtil/xml flight-doc.xml flight-prog.xml
 
