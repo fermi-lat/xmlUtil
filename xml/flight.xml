@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.7 2001/06/12 18:39:20 jrb Exp $        -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.8 2001/07/03 20:56:28 jrb Exp $        -->
 <!-- 1 Feb 2001   Default length unit is now mm.  Change constants
                    accordingly.                             (jrb) 
     22 Feb 2001   Add CVS macros, CVSid attribute for gdd     
@@ -34,7 +34,7 @@
     <!ENTITY idDict         SYSTEM "flightIdDict.xml">
   ]
 >
-<gdd CVSid="$Id: flight.xml,v 1.7 2001/06/12 18:39:20 jrb Exp $" 
+<gdd CVSid="$Id: flight.xml,v 1.8 2001/07/03 20:56:28 jrb Exp $" 
      DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
@@ -541,37 +541,19 @@ grid, etc. (may be superseded by info from Eric)</notes>
 	<const name="towersTotalX">
           <notes>Meant to be X width of the array of towers, but doesn't 
 (yet) include grid</notes>
-          <add>
-            <mul>
-              <refer refTo="xNum" />
-              <refer refTo="modWidth" />
-            </mul>
-            <mul>
-              <refer refTo="xNumM1" />
-              <add>
-                <refer refTo="wallThickness" />
-                <refer refTo="wallGap" />
-              </add>
-            </mul>
-          </add>
+          <mul>
+            <refer refTo="xNum" />
+            <refer refTo="towerPitch" />
+          </mul>
         </const>
 
 	<const name="towersTotalY">
           <notes>Meant to be X width of the array of towers, but doesn't 
 (yet) include grid</notes>
-          <add>
-            <mul>
-              <refer refTo="yNum" />
-              <refer refTo="modWidth" />
-            </mul>
-            <mul>
-              <refer refTo="xNumM1" />
-              <add>
-                <refer refTo="wallThickness" />
-                <refer refTo="wallGap" />
-              </add>
-            </mul>
-          </add>
+          <mul>
+            <refer refTo="yNum" />
+            <refer refTo="towerPitch" />
+          </mul>
         </const>
 
 <!-- Compute total Z by adding up
