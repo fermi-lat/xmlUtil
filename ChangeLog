@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 24 16:06:00 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightDerivedConstants.xml flightTKRDimPrim.xml 
+Log Message:
+flightTKRDimPrim.xml            Fix text for TKRElectGap
+flightDerivedConstants.xml      Add constant for guard ring
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 24 15:30:32 PST 2002
 xmlUtil/xml
 
@@ -127,7 +138,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.135 2002/01/15 22:11:53 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.136 2002/01/24 23:30:32 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
