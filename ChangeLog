@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 22:46:34 PST 2004
+xmlUtil/src/id
+
+Modified Files:
+	DictConstraints.cxx DictFieldMan.cxx DictNode.cxx 
+	IdConversion.cxx IdConverter.cxx IdDict.cxx IdOpCompress.cxx 
+	IdOpTruncate.cxx IdOperation.cxx 
+Log Message:
+Change practically everything to a greater or lesser degree to minimize
+native Xerces calls; use xml::Dom methods instead wherever possible
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 20 22:46:13 PST 2004
 xmlUtil/src/docMan
 
@@ -1078,7 +1091,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.228 2004/01/21 06:45:49 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.229 2004/01/21 06:46:14 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
