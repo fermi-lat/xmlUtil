@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.13 2001/12/06 21:51:21 jrb Exp $        -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.14 2001/12/07 01:34:57 jrb Exp $        -->
 <!-- 1 Feb 2001   Default length unit is now mm.  Change constants
                    accordingly.                             (jrb) 
     22 Feb 2001   Add CVS macros, CVSid attribute for gdd     
@@ -41,7 +41,7 @@
     <!ENTITY Materials         SYSTEM "flightMaterials.xml">
   ]
 >
-<gdd CVSid="$Id: flight.xml,v 1.13 2001/12/06 21:51:21 jrb Exp $" 
+<gdd CVSid="$Id: flight.xml,v 1.14 2001/12/07 01:34:57 jrb Exp $" 
      DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
@@ -108,7 +108,9 @@
          XREF="NADBlanketThick" YREF="NADBlanketSideY" 
          ZREF="NADBlanketSideZ" materialREF="blanketMat" />
       
-
+<!-- define cylinder for spacecraft -->
+    <tubs name="spacecraft" ROutREF="NADSpacecraftR" ZREF="NADSpacecraftZ"
+          materialREF="spacecraftMat" />
 <!-- next need to put together oneCAL and oneTKR with necessary
      structural stuff to make a tower.  Front plane of grid
      defines Z = 0 (Steve Ritz memo) -->
@@ -440,6 +442,12 @@
         <idField name="fLATObjects" valueREF="eLATBlanket" />
         <idField name="fBorderCmp" valueREF="eBottom" />
       </posXYZ>
+
+      <posXYZ volume="spacecraft"
+              ZREF="spacecraft_dz">
+        <idField name="fLATObjects" valueREF="eLATSpacecraft" />
+      </posXYZ>
+
 
     </composition>
   </section>
