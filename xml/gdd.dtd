@@ -324,9 +324,11 @@
 -->
 
 <!-- new element types "choice" and "case" to enclose alternative
-     volume definitions.
+     volume definitions.  Default volume is used if client
+     has not identified itself with any of the modes of 
+     the <case> children
 
-          <choice name = "SiLayer" >
+          <choice name = "SiLayer" default="SiBox">
              <case mode="propagate" volume="SiBox" />
              <case mode="digi" volume="SiComp" />
           </choice>
@@ -526,9 +528,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.13 2001/10/29 23:11:42 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.14 2001/11/11 17:30:42 riccardo Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.13 2001/10/29 23:11:42 jrb Exp $ for the
+     CVS macro $Id: gdd.dtd,v 1.14 2001/11/11 17:30:42 riccardo Exp $ for the
      pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
@@ -683,7 +685,8 @@
            envelope   IDREF   #REQUIRED>
 
 <!ELEMENT  choice (case)+ >
-<!ATTLIST  choice name ID #REQUIRED>
+<!ATTLIST  choice name ID #REQUIRED
+                  default IDREF #REQUIRED >
 
 <!ELEMENT  case EMPTY >
 <!ATTLIST  case mode NMTOKENS #IMPLIED 
