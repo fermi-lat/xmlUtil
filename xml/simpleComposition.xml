@@ -1,12 +1,12 @@
 <?xml version="1.0"  ?>
 
-<!-- $Header$ -->
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/simpleComposition.xml,v 1.3 2002/01/03 18:50:50 jrb Exp $ -->
 <!--  Simple example file using gdd.dtd, suitable as input to
     detModel test program test.exe.
        All volumes are boxes or compositions
   -->
 
-<!DOCTYPE gdd SYSTEM "gdd.dtd" >
+<!DOCTYPE gdd SYSTEM "$(XMLGEODBSROOT)/xml/flight/gdd.dtd" >
 
 <gdd CVSid="$Id not yet archived, test version $" DTDversion="2.0"
      substituted="false" >
