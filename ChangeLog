@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 00:27:58 PST 2004
+xmlUtil/src/local
+
+Log Message:
+Directory /nfs/slac/g/glast/ground/cvs/xmlUtil/src/local added to the repository
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  8 16:59:39 PST 2004
 xmlUtil/doc
 
@@ -1036,7 +1044,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.224 2004/01/09 00:57:21 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.225 2004/01/09 00:59:39 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
