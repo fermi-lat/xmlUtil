@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.11 2001/10/17 23:45:48 jrb Exp $        -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.12 2001/11/11 17:31:38 riccardo Exp $        -->
 <!-- 1 Feb 2001   Default length unit is now mm.  Change constants
                    accordingly.                             (jrb) 
     22 Feb 2001   Add CVS macros, CVSid attribute for gdd     
@@ -41,7 +41,7 @@
     <!ENTITY Materials         SYSTEM "flightMaterials.xml">
   ]
 >
-<gdd CVSid="$Id: flight.xml,v 1.11 2001/10/17 23:45:48 jrb Exp $" 
+<gdd CVSid="$Id: flight.xml,v 1.12 2001/11/11 17:31:38 riccardo Exp $" 
      DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
@@ -355,7 +355,7 @@
         <idField name="fACDFace" valueREF="eACDXPosFace" />
       </posXYZ>
       <posXYZ volume="TileXSide" 
-              XREF="ACDSideDovetail_d"
+              XREF="ACDSideDovetail_dn"
               YREF="tileXSide_dyN"
               ZREF="tileSide_dz" >
         <idField name="fLATObjects" valueREF="eLATACD" />
@@ -363,7 +363,7 @@
       </posXYZ>
       <posXYZ volume="TileYSide" 
               XREF="tileYSide_dx"
-              YREF="ACDSideDovetail_d"
+              YREF="ACDSideDovetail_dn"
               ZREF="tileSide_dz" >
         <idField name="fLATObjects" valueREF="eLATACD" />
         <idField name="fACDFace" valueREF="eACDYPosFace" />
@@ -380,12 +380,12 @@
               YREF="tapeXSide_dy"
               ZREF="tapeSide_dz" />
       <posXYZ volume="sideTapeRowX"
-              XREF="ACDSideDovetail_d"
+              XREF="ACDSideDovetail_dn"
               YREF="tapeXSide_dyN"
               ZREF="tapeSide_dz" />
       <posXYZ volume="sideTapeRowY"
               XREF="tapeYSide_dx"
-              YREF="ACDSideDovetail_d"
+              YREF="ACDSideDovetail_dn"
               ZREF="tapeSide_dz" />
       <posXYZ volume="sideTapeRowY"
               XREF="tapeYSide_dxN"
