@@ -1,6 +1,6 @@
 package xmlUtil
 
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.32 2003/12/17 00:23:26 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.33 2004/01/09 00:57:21 jrb Exp $
 
 version v2r11p2
 
@@ -44,11 +44,11 @@ library xmlUtil ${xmlUtil_headers}  \
      ${xmlUtil_xmlfiles} 
 
 
-application eval eval.cxx 
+application eval eval.cxx local/outUtils.cxx
 
-application forProg makeXmlForProg.cxx 
+application forProg makeXmlForProg.cxx local/outUtils.cxx
 
-application forDoc     makeXmlForDoc.cxx 
+application forDoc     makeXmlForDoc.cxx local/outUtils.cxx
 application testId     id/testId.cxx
 application testDocMan docMan/*.cxx
 application testKey    id/testKey.cxx id/IdKey.cxx
