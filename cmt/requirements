@@ -1,6 +1,6 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.25 2003/06/19 00:05:36 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.26 2003/06/28 23:47:45 jrb Exp $
 package xmlUtil
-version v2r10
+version v2r10p0
 
 author Joanne Bogart <jrb@slac.stanford.edu>
 
