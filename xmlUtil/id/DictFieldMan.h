@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.3 2001/06/12 18:34:01 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELDMAN_H
 #define XMLUTIL_DICTFIELDMAN_H
@@ -26,7 +26,7 @@ namespace xmlUtil {
       return strcmp(s1, s2) == 0;
     }
   };
-  typedef hash_map<const char *, DictField*, hash<const char *>, eqstr> 
+  typedef std::hash_map<const char *, DictField*, std::hash<const char *>, eqstr> 
   Registry;
 #else
   struct ltstr {
@@ -35,7 +35,7 @@ namespace xmlUtil {
       return strcmp(s1, s2) < 0;
     }
   };
-  typedef map<const char *, DictField*, ltstr> Registry;
+  typedef std::map<const char *, DictField*, ltstr> Registry;
 #endif
 
   class DictFieldMan : public DictObject {

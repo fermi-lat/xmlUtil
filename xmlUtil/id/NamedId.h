@@ -1,4 +1,4 @@
-//$Header$
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
@@ -45,7 +45,7 @@ namespace xmlUtil {
       unsigned value;
     }  IdField;
 
-    typedef vector <IdField* > Fields;
+    typedef std::vector <IdField* > Fields;
     
     Fields *m_fields;
   };

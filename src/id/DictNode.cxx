@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.2 2001/06/01 21:25:48 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.3 2001/06/12 18:35:42 jrb Exp $
 #include "dom/DOM_Element.hpp"
 #include "dom/DOMString.hpp"
 #include "xml/Dom.h"
@@ -102,7 +102,7 @@ namespace xmlUtil {
     
     // Otherwise sort nodes by minValue of parent constraint
     POrder parOrder;
-    sort(m_children.begin(), m_children.end(), parOrder);
+    std::sort(m_children.begin(), m_children.end(), parOrder);
     
     // Check that parent constraints are disjoint or identical
     for (it = m_children.begin(); (it + 1) != m_children.end(); ++it) {
