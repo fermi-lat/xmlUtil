@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.4 2001/06/01 21:26:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.5 2001/06/12 18:34:01 jrb Exp $
 
 #ifndef XMLUTIL_DICTCONSTRAINTS_H
 #define XMLUTIL_DICTCONSTRAINTS_H
 
 #include <vector>
-#include "dom/DOM_Element.hpp"
+#include <dom/DOM_Element.hpp>
 #include "xmlUtil/id/DictVisitor.h"
 #include <set>
 

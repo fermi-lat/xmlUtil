@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.5 2001/06/12 19:57:06 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.6 2001/08/09 22:28:56 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
-#include "dom/DOM_Element.hpp"
+#include <dom/DOM_Element.hpp>
 
 #include <vector>
 #include <string>

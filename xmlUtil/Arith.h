@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.2 2001/05/09 23:52:42 jrb Exp $
 #ifndef XMLUTIL_ARITH_H 
 #define XMLUTIL_ARITH_H
 
-#include "dom/DOM_Element.hpp"
-#include "dom/DOMString.hpp"
+#include <dom/DOM_Element.hpp>
+#include <dom/DOMString.hpp>
 
 namespace xmlUtil {
   //! The Arith class handles the xml arithmetic elements, allowing
