@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Apr 20 09:17:23 PDT 2004
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use v6r* of GlastPolicy so as not to break LATEST
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 25 15:43:56 PST 2004
 xmlUtil/doc
 
@@ -1298,7 +1308,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.250 2004/02/25 23:42:40 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.251 2004/02/25 23:43:56 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
