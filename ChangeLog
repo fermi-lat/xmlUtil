@@ -1,4 +1,27 @@
 ------------------------------------------------------------
+User: jrb  Tue Apr  3 09:24:13 PDT 2001
+xmlUtil/xml flightACDCountPrim.xml flightACDDimPrim.xml flightACDMatPrim.xml flightCALCountPrim.xml flightCALDimPrim.xml flightCALMatPrim.xml flightGlobalCountPrim.xml flightGlobalDimPrim.xml flightGlobalMatPrim.xml flightIdDict.xml flightTKRCountPrim.xml flightTKRDimPrim.xml flightTKRMatPrim.xml flight.xml gdd.dtd ACDCountPrim.xml ACDDimPrim.xml ACDMatPrim.xml ACDPrim.xml CALCountPrim.xml CALDimPrim.xml CALMatPrim.xml CALPrim.xml TKRCountPrim.xml TKRDimPrim.xml TKRMatPrim.xml TKRPrim.xml globalPrim.xml
+
+Modified Files:
+	flight.xml gdd.dtd 
+Added Files:
+	flightACDCountPrim.xml flightACDDimPrim.xml 
+	flightACDMatPrim.xml flightCALCountPrim.xml 
+	flightCALDimPrim.xml flightCALMatPrim.xml 
+	flightGlobalCountPrim.xml flightGlobalDimPrim.xml 
+	flightGlobalMatPrim.xml flightIdDict.xml 
+	flightTKRCountPrim.xml flightTKRDimPrim.xml 
+	flightTKRMatPrim.xml 
+Removed Files:
+	ACDCountPrim.xml ACDDimPrim.xml ACDMatPrim.xml ACDPrim.xml 
+	CALCountPrim.xml CALDimPrim.xml CALMatPrim.xml CALPrim.xml 
+	TKRCountPrim.xml TKRDimPrim.xml TKRMatPrim.xml TKRPrim.xml 
+	globalPrim.xml 
+Log Message:
+Divide flight.xml into several physical files for increased maintainability
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 30 11:46:22 PST 2001
 xmlUtil/xml flight-doc.xml flight.xml gdd.dtd
 
