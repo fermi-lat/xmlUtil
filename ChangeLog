@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 11 15:45:48 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightACDAcd.xml flightACDCountPrim.xml flightACDDimPrim.xml 
+	flightDerivedConstants.xml 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jan 11 09:38:45 PST 2002
 xmlUtil/xml
 
@@ -97,7 +107,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.132 2002/01/04 20:27:52 burnett Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.133 2002/01/11 17:38:46 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
