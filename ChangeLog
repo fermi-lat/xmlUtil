@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul  3 14:39:37 PDT 2001
+xmlUtil/xml flight-doc.xml flight-prog.xml
+
+Modified Files:
+	flight-doc.xml flight-prog.xml 
+Log Message:
+Derived from most recent (and CVS-committed) sources
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul  3 14:34:15 PDT 2001
 xmlUtil/xml flight.xml flightGlobalDimPrim.xml
 
