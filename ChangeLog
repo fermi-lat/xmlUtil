@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  8 16:55:28 PST 2004
+xmlUtil/src/docMan
+
+Modified Files:
+	GDDDocMan.cxx test_docMan.cxx 
+Log Message:
+Make use of docType argument when calling xml::XmlParser::parse
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec 16 16:24:03 PST 2003
 xmlUtil/doc
 
@@ -988,7 +998,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.219 2003/12/17 00:23:26 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.220 2003/12/17 00:24:03 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
