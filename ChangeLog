@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec  7 16:15:43 PST 2001
+xmlUtil/src/id
+
+Added Files:
+	IdKey.cxx 
+Log Message:
+Add new class IdKey.  Objects are small, sortable representations
+of volume identifiers, hence suitable for use as keys for a map
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec  7 16:14:21 PST 2001
 xmlUtil/cmt
 
