@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.3 2001/06/12 19:57:06 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
@@ -16,36 +16,37 @@ namespace xmlUtil {
   class NamedId {
   public:
 
-    //! Default constructor creates empty NamedId
-    // Perhaps should allocate a vector of modest size to start??
-    NamedId() {}
 
     //! When length is known, best to allocate all at once at start
-    NamedId(const int len);
+    NamedId(const int len = 0);
 
     //! Copy constructor (should also have assignment operator)
     NamedId(const NamedId& toCopy);
 
-    ~NamedId() {}
+    ~NamedId();
 
     //! Build a NamedId incrementally
     void addField(const std::string name, const unsigned value);
 
-    //! Retrieve just the value of each filed
-    Identifier *extractIdentifier() const;
+    // Retrieve just the value of each field
+    // Identifier *extractIdentifier() const;
 
-    //! Retrieve the sequence of names
+    // Retrieve the sequence of names
     // So far this is just here for symmetry.  Can't think of a
     // good reason why anyone would want to do it.
-    NameSeq *extractNameSeq() const;
+    // NameSeq *extractNameSeq() const;
 
   private:
+    friend class DictNode;
+
     typedef struct s_IdField {
       std::string name;
       unsigned value;
     }  IdField;
 
     typedef std::vector <IdField* > Fields;
+
+    typedef Fields::iterator  FieldIt;
     
     Fields *m_fields;
   };
