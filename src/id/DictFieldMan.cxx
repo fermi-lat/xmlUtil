@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictFieldMan.cxx,v 1.6 2003/03/15 01:07:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictFieldMan.cxx,v 1.7 2003/10/01 16:34:44 jrb Exp $
 
 #include "xmlUtil/id/DictFieldMan.h"
 #include "xmlUtil/id/DictField.h"
@@ -43,7 +43,6 @@ namespace xmlUtil {
     }
     else return 0;
       
-      // *(reg->find(name));
   }
 
   bool DictFieldMan::accept(DictVisitor *vis) {

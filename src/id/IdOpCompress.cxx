@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpCompress.cxx,v 1.1 2001/08/24 22:46:37 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpCompress.cxx,v 1.2 2001/09/25 21:43:04 jrb Exp $
 
 #include "xmlUtil/id/IdOpCompress.h"
 #include "xml/Dom.h"
 
 namespace xmlUtil {
-  IdOpCompress::IdOpCompress(DOM_Element cmprss) {
+  IdOpCompress::IdOpCompress(DomElement cmprss) {
     from = xml::Dom::getAttribute(cmprss, "from");
     to = xml::Dom::getAttribute(cmprss, "to");
   }
