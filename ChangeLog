@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov  9 13:04:47 PST 2001
+xmlUtil/src/docMan
+
+Modified Files:
+	GDDDocMan.cxx test_docMan.cxx 
+Removed Files:
+	DocMan.cxx 
+Log Message:
+Moved generic part of xml document manager to xml package
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov  9 13:04:28 PST 2001
 xmlUtil/cmt
 
