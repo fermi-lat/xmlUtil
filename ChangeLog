@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 20 12:44:53 PDT 2001
+xmlUtil/src/id DictNode.cxx IdConversion.cxx IdConverter.cxx IdDict.cxx NamedId.cxx
+
+Modified Files:
+	DictNode.cxx IdConversion.cxx IdConverter.cxx IdDict.cxx 
+	NamedId.cxx 
+Log Message:
+First stab at full set of utilities for managing identifiers, including
+conversion from one set of identifiers to another.  Compiles (on Linux)
+but is untested.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Aug 24 15:46:38 PDT 2001
 xmlUtil/xmlUtil/id IdDictMan.h DictField.h DictVisitor.h IdConversion.h IdConverter.h IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdOperation.h NamedId.h
 
