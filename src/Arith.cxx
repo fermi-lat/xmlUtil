@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.2 2002/04/05 18:25:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.3 2002/07/23 20:01:20 jrb Exp $
 
 #include <string>
 #include "xmlUtil/Arith.h"
@@ -214,7 +214,7 @@ namespace xmlUtil {
       long int intValue = m_number;
       double   intified = intValue;
       if (intified != m_number) {
-        double fixup = 0.49;
+        double fixup = 0.5;
         if (m_number < 0.0) fixup = -fixup;
         long int  intValue = (m_number + fixup);  
         m_number = intValue;

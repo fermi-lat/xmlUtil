@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.4 2002/04/05 18:25:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.5 2002/07/23 20:01:20 jrb Exp $
 
 #include <string>
 #include <dom/DOMString.hpp>
@@ -44,8 +44,13 @@ namespace {
       int origValueInt = 
         atoi(xml::Dom::transToChar(elt.getAttribute(valueString)));
       double   intified = origValueInt;
-      if (intified != origValueDbl) { // put back what atoi gave us
-        xml::Dom::addAttribute(elt, valueString, origValueInt);
+      if (intified != origValueDbl) { 
+        // put back properly rounded int
+        double fixup = 0.5;
+        if (origValueDbl < 0) fixup = -fixup;
+        origValueDbl += fixup;
+        int newValue = origValueDbl;
+        xml::Dom::addAttribute(elt, valueString, newValue);
       }
     }
 
