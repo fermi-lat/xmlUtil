@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Sep 13 14:46:05 PDT 2002
+xmlUtil/src
+
+Modified Files:
+	Constants.cxx 
+Log Message:
+Support for new xml element <primEnergy>, like a <prim> but
+respecting energy units
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep 13 14:44:57 PDT 2002
 xmlUtil/cmt
 
@@ -472,7 +483,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.166 2002/07/23 20:53:57 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.167 2002/09/13 21:44:57 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
