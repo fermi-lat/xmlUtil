@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  7 13:30:05 PST 2001
+xmlUtil/xmlUtil
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Include something about XML Document Manager
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:29:14 PST 2001
 xmlUtil/src/docMan
 
