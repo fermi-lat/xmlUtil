@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Jan 11 09:38:45 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightCALOneCal.xml flightDerivedConstants.xml 
+	flightIdDict.xml 
+Log Message:
+Build CAL frame out of separate pieces rather than as pseudo-subtraction
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Jan  4 12:27:52 PST 2002
 xmlUtil/src/id
 
@@ -86,7 +97,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.131 2002/01/03 21:09:27 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.132 2002/01/04 20:27:52 burnett Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
