@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.6 2004/01/21 06:49:10 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/XmlUtilException.h,v 1.1 2004/01/28 01:08:00 jrb Exp $
 #ifndef XMLUTIL_XMLUTILEXCEPTION_H 
 #define XMLUTIL_XMLUTILEXCEPTION_H
 #include <string>
@@ -13,7 +13,7 @@ namespace xmlUtil {
       m_name=std::string("XmlUtilException");
     }
     
-    virtual ~XmlUtilException() {}
+    virtual ~XmlUtilException() throw() {}
     virtual std::string getMsg() {return m_msg;}
     virtual const char * what() {return m_msg.c_str();}
   private:

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.13 2003/10/07 13:07:57 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.14 2004/01/21 06:46:34 jrb Exp $
 
 //#include <xercesc/dom/DOMString.hpp>
 //#include <xercesc/dom/DOM_NodeList.hpp>
@@ -35,7 +35,7 @@ namespace xmlUtil {
     // Check number of field children.
     std::vector<DomElement> children;
     xml::Dom::getChildrenByTagName(elt, "field", children);
-    int nField = children.size();
+    unsigned int nField = children.size();
     m_fieldMan = new DictFieldMan(nField);
                 
     //    DomElement fieldElt = xml::Dom::getFirstChildElement(elt);
