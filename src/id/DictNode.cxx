@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.12 2003/10/01 16:34:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.13 2004/01/21 06:46:34 jrb Exp $
 #include <xercesc/dom/DOM_Element.hpp>
 #include <xercesc/dom/DOMString.hpp>
 #include "xml/Dom.h"
@@ -239,8 +239,6 @@ namespace xmlUtil {
   bool DictNode::valuesDisjoint(ConstNodeIterator start, 
                                 ConstNodeIterator last) {
     if (*start == *last) return true;
-    //    if (start == last) return true;
-    //    if (start + 1 == last) return true;
     
     ConstNodeIterator pCurrentNode = start;
     std::set<unsigned> values;
