@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec 10 15:11:25 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightACDAcd.xml flightCALOneCal.xml flightGlobalCountPrim.xml 
+	flightTKROneTkr.xml gdd.dtd 
+Log Message:
+Add new attribute, detectorType (and detectorTypeREF) to gdd.dtd.
+Its value is an enumerated type whose values denote different
+kinds of GLAST detectors (TKR Si, CAL crystal, etc.) or (default) 
+"none".
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec 10 12:28:02 PST 2001
 xmlUtil/xml
 
