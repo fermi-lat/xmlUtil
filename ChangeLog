@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  3 13:09:12 PST 2002
+xmlUtil/src/id
+
+Added Files:
+	Identifier.cxx 
+Log Message:
+Add genuine Identifier class with append(..) functionality
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  3 13:07:27 PST 2002
 xmlUtil/xmlUtil/id
 
@@ -56,7 +66,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.128 2002/01/03 21:06:32 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.129 2002/01/03 21:07:27 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
