@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/docMan/GDDDocMan.cxx,v 1.4 2002/04/05 18:26:28 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/docMan/GDDDocMan.cxx,v 1.5 2003/03/15 01:06:52 jrb Exp $
 #include "xmlUtil/docMan/GDDDocMan.h"
 #include <xercesc/dom/DOM_Element.hpp>
 #include "xmlUtil/Constants.h"
@@ -13,11 +13,12 @@ namespace xmlUtil {
     return m_me;
   }
 
-  bool GDDDocMan::parse(const std::string& filename, bool saveNotes) {
+  bool GDDDocMan::parse(const std::string& filename, bool saveNotes,
+                        const std::string& docType) {
     using namespace xml;
 
     m_constsClient->m_saveNotes = saveNotes;
-    return DocMan::parse(filename);
+    return DocMan::parse(filename, docType);
   }
 
   GDDDocMan::GDDDocMan() {
