@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 12 11:35:43 PDT 2001
+xmlUtil/src/id DictValidVisitor.cxx testId.cxx DictConstraints.cxx DictField.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx
+
+Modified Files:
+	DictConstraints.cxx DictField.cxx DictFieldMan.cxx 
+	DictNode.cxx IdDict.cxx 
+Added Files:
+	DictValidVisitor.cxx testId.cxx 
+Log Message:
+First version of id dictionary.  So far reads in from xml and validates.
+Also add new test program for id dictionary classes.
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun 12 11:34:02 PDT 2001
 xmlUtil/xmlUtil/id DictObject.h DictValidVisitor.h DictVisitor.h DictConstraints.h DictField.h DictFieldMan.h DictNode.h IdDict.h
 
