@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.3 2001/06/01 21:26:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.4 2001/06/12 18:34:01 jrb Exp $
 #ifndef XMLUTIL_DICTNODE_H
 #define XMLUTIL_DICTNODE_H
 
@@ -6,6 +6,7 @@
 #include "xmlUtil/id/DictObject.h"
 #include "xmlUtil/id/DictField.h"
 #include "xmlUtil/id/DictConstraints.h"
+#include "xmlUtil/id/NamedId.h"
 
 #include <vector>
 #include <algorithm>
@@ -104,6 +105,16 @@ namespace xmlUtil {
     */
     bool  allowedChild(const DictNode* const thisChild, unsigned childValue,
                        unsigned myValue) const;
+
+    //! Given an identifier, see if it is "allowed" by this node and
+    //! a sequence of its descendents.
+    bool allowIdentifier(const Identifier& id);
+    bool allowIdentifier(Identifier::iterator idIt, 
+                         Identifier::const_iterator end);
+
+    bool allowNamedId(const NamedId& nId);
+    bool allowNamedId(NamedId::FieldIt nIdIt,
+                      NamedId::FieldIt end);
     bool  addChild(DictNode* child);
 
 
@@ -111,6 +122,7 @@ namespace xmlUtil {
     //! value constraints give pairwise-disjoint sets
     bool  valuesDisjoint(ConstNodeIterator start, 
                          ConstNodeIterator last); 
+
 
     //! Copy constructor copies all children, grandchildren, etc.
     DictNode(const DictNode& toCopy);

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.4 2001/06/12 18:35:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.5 2001/06/12 19:57:05 jrb Exp $
 
 #include "dom/DOMString.hpp"
 #include "dom/DOM_NodeList.hpp"
@@ -61,11 +61,6 @@ namespace xmlUtil {
     return status;
   }
 
-  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
-
-     A bunch of functions whose dummy implementations need to be
-     replaced with something real.
-  */
 
   bool IdDict::isValid()  {
     DictValidVisitor visitor;
@@ -75,12 +70,18 @@ namespace xmlUtil {
   }
 
   bool IdDict::idOk(const Identifier& id) const {
-    return true;
+    return m_root->allowIdentifier(id);
   }
 
   bool IdDict::idOk(const NamedId& id) const {
-    return true;
+    return m_root->allowNamedId(id);
   }
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+     A bunch of functions whose dummy implementations need to be
+     replaced with something real.
+  */
 
   bool IdDict::nameSeqOk(const NameSeq& seq) const {
     return true;
