@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 27 16:32:31 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Get rid of the last of the deadwood left over from AGDD.
+Fix up initial comments to accurately reflect what's left
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 21 12:39:29 PST 2001
 xmlUtil/xml
 
