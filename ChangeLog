@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 22:49:10 PST 2004
+xmlUtil/xmlUtil
+
+Modified Files:
+	Arith.h 
+Log Message:
+Lessen use of native xerces names
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 20 22:47:55 PST 2004
 xmlUtil/src/local
 
@@ -1101,7 +1111,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.230 2004/01/21 06:46:34 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.231 2004/01/21 06:47:55 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
