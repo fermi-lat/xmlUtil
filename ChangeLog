@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr  5 10:25:18 PST 2002
+xmlUtil/src
+
+Modified Files:
+	Arith.cxx Constants.cxx Source.cxx Substitute.cxx eval.cxx 
+	makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+1. Bug fixes to makeXmlForDoc.cxx, makeXmlForProg.cxx
+2. Change includes of Xerces stuff to <..> form to keep CMT
+   happy when using locally-built Xerces
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Apr  5 10:24:06 PST 2002
 xmlUtil
 
@@ -276,7 +289,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.149 2002/04/05 05:15:43 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.150 2002/04/05 18:24:07 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
