@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul 23 13:01:20 PDT 2002
+xmlUtil/src
+
+Modified Files:
+	Arith.cxx Constants.cxx Source.cxx eval.cxx 
+Log Message:
+Source.cxx:  handle exceptional case (fix bug introduced when 
+             xml::transToChar interface changed
+Arith.cxx, Constants.cxx:  Make sure that constants called int in xml file
+             really are integers
+eval.cxx:    Mods to test changes to Arith and Constants above
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun  4 15:43:59 PDT 2002
 xmlUtil/xmlUtil/id
 
@@ -389,7 +403,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.158 2002/06/04 22:43:20 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.159 2002/06/04 22:44:00 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
