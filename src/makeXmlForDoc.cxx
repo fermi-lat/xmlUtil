@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.4 2001/11/05 22:19:04 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.5 2002/04/05 18:25:18 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for documentation.  Typically
     will be transformed further, e.g. to html by an xslt transform.
@@ -21,9 +21,9 @@
 #include "xmlUtil/Source.h"
 #include "xmlUtil/Arith.h"
 #include "xmlUtil/Constants.h"
-#include <dom/DOM_Element.hpp>
-#include <dom/DOM_NodeList.hpp>
-#include <dom/DOM_DocumentType.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_NodeList.hpp>
+#include <xercesc/dom/DOM_DocumentType.hpp>
 
 #include <string>
 #include <iostream>
@@ -37,7 +37,7 @@ char * stripDollar(char *toStrip);
 
 const char chDoubleQ[2] = {0x22, 0x0};
 const std::string dquote(&chDoubleQ[0]);
-const std::string myId("$Id: makeXmlForDoc.cxx,v 1.4 2001/11/05 22:19:04 jrb Exp $");
+const std::string myId("$Id: makeXmlForDoc.cxx,v 1.5 2002/04/05 18:25:18 jrb Exp $");
 // Can't literally put in the string we want or CVS will mess it up.
 // Instead make a copy of this template, replacing the # with $
 const std::string idTemplate("#Id: not committed $");

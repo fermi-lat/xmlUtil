@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.3 2002/07/23 20:01:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.4 2002/07/23 20:39:09 jrb Exp $
 
 #include <string>
 #include "xmlUtil/Arith.h"
 #include "xml/Dom.h"
-#include <dom/DOM_Document.hpp>
+#include <xercesc/dom/DOM_Document.hpp>
 
 namespace xmlUtil {
 

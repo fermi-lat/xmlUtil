@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Source.cxx,v 1.2 2002/04/05 18:25:18 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Source.cxx,v 1.3 2002/07/23 20:01:20 jrb Exp $
 
 #include "xmlUtil/Source.h"
-#include <dom/DOMString.hpp>
-#include <dom/DOM_Text.hpp>
+#include <xercesc/dom/DOMString.hpp>
+#include <xercesc/dom/DOM_Text.hpp>
 #include "xml/Dom.h"
 
 

@@ -1,7 +1,7 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.9 2001/12/05 01:13:57 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.10 2002/04/05 18:26:44 jrb Exp $
 
-#include <dom/DOMString.hpp>
-#include <dom/DOM_NodeList.hpp>
+#include <xercesc/dom/DOMString.hpp>
+#include <xercesc/dom/DOM_NodeList.hpp>
 #include "xml/Dom.h"
 #include "xmlUtil/id/IdDict.h"
 #include "xmlUtil/id/DictFieldMan.h"

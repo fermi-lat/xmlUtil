@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/docMan/GDDDocMan.cxx,v 1.3 2001/11/14 00:29:03 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/docMan/GDDDocMan.cxx,v 1.4 2002/04/05 18:26:28 jrb Exp $
 #include "xmlUtil/docMan/GDDDocMan.h"
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xmlUtil/Constants.h"
 
 namespace xmlUtil {

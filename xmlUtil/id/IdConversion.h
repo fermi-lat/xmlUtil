@@ -1,9 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.8 2001/09/25 22:04:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.9 2002/04/05 18:28:44 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERSION_H
 #define XMLUTIL_IDCONVERSION_H
 
-#include <dom/DOM_Element.hpp>
+#include <xercesc/dom/DOM_Element.hpp>
 #include "xmlUtil/id/NamedId.h"
 #include <functional>
 #include <iostream>
