@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Fri Dec  7 07:40:52 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightMaterials.xml 
+Log Message:
+Added thermal blanket, continue the update to reproduce Gismo PEGS file; still some materials are not properly handled
+    *
+------------------------------------------------------------
 User: jrb  Thu Dec  6 17:34:57 PST 2001
 xmlUtil/xml
 
