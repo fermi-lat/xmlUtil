@@ -1,11 +1,11 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.18 2002/10/29 17:38:10 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/xmlUtil/cmt/requirements,v 1.20 2002/11/29 19:41:52 burnett Exp $
 package xmlUtil
-version v2r8p6
+version v2r9
 
 use facilities v2r*
 use xml        v4r*
-use XMLEXT     v2r*
-use GlastPolicy  v4r*
+
+use GlastPolicy  v5*
 use xmlGeoDbs   v1r*
 
 include_dirs "${XMLUTILROOT}"
