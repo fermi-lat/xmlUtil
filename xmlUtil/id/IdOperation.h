@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.1 2001/05/09 23:52:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.2 2001/08/09 22:28:56 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
@@ -39,16 +39,21 @@ namespace xmlUtil {
 
     //! Return a pointer to the new id, if any;
     //! behavior of base class is just to copy
-    virtual *NamedId convert(const NamedId& inputId) 
-    {return new NamedId(inputId);}
-
+    virtual NamedId * convert(const NamedId& inputId);
+    // Might also want something to convert a simple identifier (i.e.,
+    // just a list of integers without accompanying field names).
+    // However converters work in terms of fields names, so one needs
+    // an Id Dictionary w.r.t which one can generate a NamedId out of
+    // the Identifier, then invoke the above version of convert.
 
     //! Will be overridden by derived classes to actually do something
-    IdOperation(const DOM_Element) {}; 
+    IdOperation(DOM_Element);
 
     // Default constructor produces an operation which acts on any NamedId 
     // and does nothing to it.  
     // Not yet clear whether this can be made private
-    IdOperation() {};
+    IdOperation() {}
   };
 }
+#endif
+

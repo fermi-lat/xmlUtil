@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.3 2001/05/31 22:56:39 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.4 2001/06/12 18:34:01 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELD_H
 #define XMLUTIL_DICTFIELD_H
@@ -24,7 +24,7 @@ namespace xmlUtil {
     const std::string& getName() const {return m_name;}
 
     //! Does the specified value satisfy the constraints, if any?
-    bool allowed(const unsigned value);
+    bool allowed(unsigned value) const;
 
     bool accept(DictVisitor* vis) {return vis->visitField(this);}
     DictConstraints* getConstraints() const {return m_constraints;}
