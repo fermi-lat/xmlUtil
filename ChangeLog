@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 28 10:07:53 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightDerivedConstants.xml 
+Log Message:
+Make explicit that topTapesPerRow is a dimensionless "count"
+
+    *
+------------------------------------------------------------
 User: riccardo  Wed Nov 28 09:27:08 PST 2001
 xmlUtil/xml
 
