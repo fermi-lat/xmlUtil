@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdKey.cxx,v 1.2 2001/12/08 00:41:32 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdKey.cxx,v 1.3 2001/12/13 01:07:12 jrb Exp $
 
 #include "xmlUtil/id/IdKey.h"
 #include <cassert>
@@ -14,7 +14,7 @@ namespace xmlUtil {
   }
 
   IdKey::IdKey(const std::deque<unsigned int> id) {
-    fillFrom<std::deque<unsigned int> >(id);
+    fillFrom(id);
   }
 
   // Compress each field to a byte.  Use the range 1-255 because
