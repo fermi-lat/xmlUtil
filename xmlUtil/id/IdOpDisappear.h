@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpDisappear.h,v 1.2 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpDisappear.h,v 1.3 2001/09/25 21:43:06 jrb Exp $
 
 #ifndef XMLUTIL_IDOPDISAPPEAR_H
 #define XMLUTIL_IDOPDISAPPEAR_H
@@ -15,7 +15,7 @@ namespace xmlUtil {
   public:
     IdOpDisappear(DOM_Element) {}
     ~IdOpDisappear() {}
-    NamedId * convert(const NamedId& inputId) {return new NamedId();}
+    NamedId * convert(const NamedId& ) {return new NamedId();}
     virtual std::string myOp() const {return std::string("DISAPPEAR ");}
   };
 }    
