@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.1 2001/05/09 23:52:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
 
 #ifndef XMLUTIL_DICTCONSTRAINTS_H
 #define XMLUTIL_DICTCONSTRAINTS_H
@@ -16,12 +16,14 @@ namespace xmlUtil {
     ~DictConstraints(){if (m_valList) delete m_valList;}
   public:    
     //! Does the specified value satisfy the constraints?
-    bool allowed(const unsigned value);
+    bool allowed(const unsigned value) const;
 
     //! Are the constraints of the argument a refinement (i.e.,
     //! define a subset of possible values)?
-    bool allowed (const DictConstraints& other);  /* TO DO */
-    bool allowed (DictConstraints *other);        /* TO DO */
+    bool allowed(const DictConstraints& other) const; 
+    bool allowed(DictConstraints *other) const; 
+    bool disjoint(const DictConstraints& other) const;      
+    bool disjoint(DictConstraints* other) const;      
     unsigned getMin() const {return m_minVal;}
     unsigned getMax() const {return m_maxVal;}
 
@@ -48,7 +50,9 @@ namespace xmlUtil {
     eStyle    m_style;    
 
     DictValList *m_valList;
-    unsigned         m_minVal, m_maxVal;
+    unsigned    m_minVal; //! Will be initialized correctly even for list
+    unsigned    m_maxVal; //! Will be initialized correctly even for list
+
     //! Default constructor, not normally invoked
     DictConstraints() : m_style(ESTYLE_uninit), m_valList(0) {};
 
@@ -60,9 +64,5 @@ namespace xmlUtil {
     
   };       // end DictConstraints class
 }          // end xmlUtil namespace
-
-
-
-
 
 #endif

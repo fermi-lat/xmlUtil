@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.1 2001/05/09 23:52:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELD_H
 #define XMLUTIL_DICTFIELD_H
@@ -41,14 +41,5 @@ namespace xmlUtil {
     
   };       // end DictField class
 }          // end xmlUtil namespace
-
-
-
-
-
-
-
-
-
 
 #endif
