@@ -1,10 +1,12 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.2 2001/08/09 22:28:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
 
 #include "dom/DOM_Element.hpp"
 #include "xmlUtil/id/NamedId.h"
+#include <iostream>
+#include <string>
 
 namespace xmlUtil {
 
@@ -20,12 +22,18 @@ namespace xmlUtil {
          - truncate    (eliminate trailing id fields from specified place)
          - compress    (eliminate id fields between specified endpoints)
   */
+  class IdOperation;
+  ostream& operator<<(ostream& s, const IdOperation& op);
+
+
   class IdOperation {
   public:
 
     virtual ~IdOperation() {};
     friend class IdConversion;  //! Must be a friend to invoke convert
 
+    virtual std::string myOp() const 
+    {return std::string("IDENTITY (default) ");}
     // Perhaps need to throw exception if inputId isn't compatible
     // with requested operation??
 
