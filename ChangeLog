@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr  5 10:27:43 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	simpleComposition.xml 
+Log Message:
+Use environment variable to access dtd (for testing purposes)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Apr  5 10:26:44 PST 2002
 xmlUtil/src/id
 
@@ -312,7 +322,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.152 2002/04/05 18:26:29 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.153 2002/04/05 18:26:45 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
