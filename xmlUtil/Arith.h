@@ -1,12 +1,21 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.5 2003/06/19 00:03:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.6 2004/01/21 06:49:10 jrb Exp $
 #ifndef XMLUTIL_ARITH_H 
 #define XMLUTIL_ARITH_H
 
 #include <string>
 #include <xercesc/dom/DOM_Element.hpp>
-// #include <xercesc/dom/DOMString.hpp>
+#include "xmlUtil/XmlUtilException.h"
 
 namespace xmlUtil {
+      
+  class BadTag : public XmlUtilException {
+  public:
+    BadTag(std::string reason = "") : XmlUtilException() {
+      m_name = std::string("BadTag");
+      makeMsg(reason);
+    }
+  };
+
   //! The Arith class handles the xml arithmetic elements, allowing
   //! derived constants to be computed and their values put into
   //! the DOM representation of the XML file.
