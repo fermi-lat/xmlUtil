@@ -1,6 +1,7 @@
-// $Header:   $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdKey.cxx,v 1.1 2001/12/08 00:15:43 jrb Exp $
 
 #include "xmlUtil/id/IdKey.h"
+#include <assert.h>
 
 namespace {
   static const unsigned int maxVal = 254;
