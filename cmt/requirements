@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.7 2001/11/09 21:04:28 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.8 2001/12/08 00:14:21 jrb Exp $
 package xmlUtil
 
 use xml 
@@ -42,7 +42,7 @@ application forProg makeXmlForProg.cxx Arith.cxx Substitute.cxx \
 
 application forDoc makeXmlForDoc.cxx Arith.cxx  Constants.cxx Source.cxx
 
-application testId id/*.cxx
+application testId id/testId.cxx
 application testDocMan docMan/*.cxx
-
+application testKey id/testKey.cxx id/IdKey.cxx
 
