@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Apr  5 10:26:44 PST 2002
+xmlUtil/src/id
+
+Modified Files:
+	DictConstraints.cxx DictNode.cxx IdConversion.cxx 
+	IdConverter.cxx IdDict.cxx testId.cxx 
+Log Message:
+Change includes of Xerces stuff to <..> form to keep CMT
+happy when using locally-built Xerces
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Apr  5 10:26:28 PST 2002
 xmlUtil/src/docMan
 
@@ -300,7 +312,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.151 2002/04/05 18:25:19 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.152 2002/04/05 18:26:29 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
