@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Dec  7 16:41:32 PST 2001
+xmlUtil/src/id
+
+Modified Files:
+	IdKey.cxx 
+Log Message:
+Add #include needed for compilation on Windows.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Dec  7 16:15:59 PST 2001
 xmlUtil/xmlUtil/id
 
