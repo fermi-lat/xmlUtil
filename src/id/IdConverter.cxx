@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.3 2001/09/20 20:16:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConverter.cxx,v 1.4 2001/09/25 21:43:04 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdConverter.h"
@@ -126,7 +126,7 @@ namespace xmlUtil {
     return converted;
   }
 
-  ostream& IdConverter::displayConversions(ostream& s) {
+  std::ostream& IdConverter::displayConversions(std::ostream& s) {
     Conversions::const_iterator it = m_convCol.begin();
 
     while (it != m_convCol.end() ) {

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOperation.h,v 1.4 2001/09/25 21:43:06 jrb Exp $
 
 #ifndef XMLUTIL_IDOPERATION_H
 #define XMLUTIL_IDOPERATION_H
@@ -23,7 +23,7 @@ namespace xmlUtil {
          - compress    (eliminate id fields between specified endpoints)
   */
   class IdOperation;
-  ostream& operator<<(ostream& s, const IdOperation& op);
+  std::ostream& operator<<(std::ostream& s, const IdOperation& op);
 
 
   class IdOperation {
