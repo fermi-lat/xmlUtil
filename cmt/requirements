@@ -1,6 +1,6 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/xmlUtil/cmt/requirements,v 1.20 2002/11/29 19:41:52 burnett Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.20 2003/01/10 03:04:30 als Exp $
 package xmlUtil
-version v2r9
+version v2r9p1
 
 use facilities v2r*
 use xml        v4r*
