@@ -1,4 +1,4 @@
-<!-- $Header$ -->
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flightIdDict.xml,v 1.14 2002/01/03 18:50:50 jrb Exp $ -->
   <idDict major="1" minor="0" patch="0" name="GDD_IDENTIFIER_DICTIONARY">
 
     <field name="fLATObjects" >
@@ -153,11 +153,14 @@
               </dictNode> 
             </dictNode>
 
-            <!-- CAL non-detector  -->
+            <!-- CAL non-detector.  Could add additional parent
+                 constraint on fBorderCmp field.  It can only
+                 occur for frame pieces  -->
             <dictNode fieldName="fCALStructural" >
               <pValues>
                 <vEnumVal valueREF="eTowerCAL" />
               </pValues>
+              <dictNode fieldName="fBorderCmp" />
             </dictNode>
 
             <!-- TKR  -->
