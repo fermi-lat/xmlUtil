@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  3 10:50:50 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightACDCountPrim.xml flightACDDimPrim.xml 
+	flightACDMatPrim.xml flightCALCountPrim.xml 
+	flightCALDimPrim.xml flightCALMatPrim.xml 
+	flightGlobalCountPrim.xml flightGlobalDimPrim.xml 
+	flightGlobalMatPrim.xml flightIdDict.xml flightMaterials.xml 
+	flightNADDimPrim.xml flightTKRCountPrim.xml 
+	flightTKRDimPrim.xml flightTKRMatPrim.xml 
+	simpleComposition.xml simpleStack.xml 
+Log Message:
+Add $Header$ to keep track of versions internally
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Dec 19 12:45:48 PST 2001
 xmlUtil/xml
 
