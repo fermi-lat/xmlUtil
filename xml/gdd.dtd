@@ -526,9 +526,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.11 2001/10/25 00:57:46 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.12 2001/10/26 23:01:49 jrb Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.11 2001/10/25 00:57:46 jrb Exp $ for the
+     CVS macro $Id: gdd.dtd,v 1.12 2001/10/26 23:01:49 jrb Exp $ for the
      pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
@@ -544,7 +544,7 @@
            version      CDATA   #REQUIRED
            date         CDATA   #REQUIRED
            author       CDATA   #REQUIRED
-           %DTD_constraint;>
+           %DTDconstraint;>
 
 
 <!ELEMENT  element  EMPTY>
