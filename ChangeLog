@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec 11 10:19:02 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightCALMatPrim.xml 
+Log Message:
+Get rid of unused reference to "rubber60A1"
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec 10 15:11:25 PST 2001
 xmlUtil/xml
 
