@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu May 17 14:15:34 PDT 2001
+xmlUtil/src/id DictConstraints.cxx DictField.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx
+
+Added Files:
+	DictConstraints.cxx DictField.cxx DictFieldMan.cxx 
+	DictNode.cxx IdDict.cxx 
+Log Message:
+Part of id dictionary implementation (missing query functions in IdDict
+class + everything that has specifically to do with converting identifiers)
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 17 14:09:17 PDT 2001
 xmlUtil/xmlUtil/id DictConstraints.h DictField.h DictFieldMan.h DictNode.h IdDict.h NamedId.h
 
