@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Apr 18 16:08:49 PDT 2001
+xmlUtil/xml gdd.dtd flightIdDict.xml flight-prog.xml
+
+Modified Files:
+	gdd.dtd flightIdDict.xml flight-prog.xml 
+Log Message:
+Minor bug fixes
+
+    *
+------------------------------------------------------------
 TAG activity
 User: jrb  Fri Apr 13 11:08:21 2001
 Tag name: v1r1
