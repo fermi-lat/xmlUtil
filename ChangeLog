@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 12 11:37:37 PDT 2001
+xmlUtil/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+test program
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun 12 11:35:43 PDT 2001
 xmlUtil/src/id DictValidVisitor.cxx testId.cxx DictConstraints.cxx DictField.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx
 
