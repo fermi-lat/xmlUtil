@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.1 2001/05/17 21:15:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.2 2001/05/31 22:55:46 jrb Exp $
 
 #include <string>
 #include <algorithm>
@@ -125,6 +125,17 @@ namespace xmlUtil {
       deepCopy(d);
     }
     return *this;
+  }
+
+  bool DictConstraints::equals(const DictConstraints& other) {
+    if ((m_style != other.m_style) ||
+        (m_minVal != other.m_minVal) ||
+        (m_maxVal != other.m_maxVal) ) return false;
+
+    if (m_style == ESTYLE_list) {
+      return (*m_valList == *(other.m_valList));
+    }
+    else return true;
   }
 
   bool DictConstraints::allowed(const unsigned value) const {

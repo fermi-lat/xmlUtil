@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.1 2001/05/17 21:15:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.2 2001/05/31 22:55:46 jrb Exp $
 
 #include "dom/DOMString.hpp"
 #include "dom/DOM_NodeList.hpp"
@@ -40,11 +40,41 @@ namespace xmlUtil {
     delete m_root;
     delete m_fieldMan;
   }
-  
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+     A bunch of functions whose dummy implementations need to be
+     replaced with something real.
+  */
+
+  bool IdDict::isValid() const {
+    return true;
+  }
+
+  bool IdDict::idOk(const Identifier& id) const {
+    return true;
+  }
+
+  bool IdDict::idOk(const NamedId& id) const {
+    return true;
+  }
+
+  bool IdDict::nameSeqOk(const NameSeq& seq) const {
+    return true;
+  }
+
+  // No easy way to fake this one except to make it always fail
+  NamedId *  IdDict::getNamedId(const Identifier& id) const {
+    return 0;
+  }
+
+  /* $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ */
+
   bool IdDict::addChild(DictNode* parent, DictNode* newNode) {
     /* Started to write something to add field if not already
        registered, but whoever has created newNode should
        already have done this */
     return parent->addChild(newNode);
   }
+
 }
