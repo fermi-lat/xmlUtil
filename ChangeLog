@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Fri Dec  7 10:11:08 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightMaterials.xml 
+Log Message:
+Some materials update, added uses of fractionMass
+    *
+------------------------------------------------------------
 User: burnett  Fri Dec  7 09:26:27 PST 2001
 xmlUtil/xml
 
