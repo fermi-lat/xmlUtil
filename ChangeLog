@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 20 13:16:07 PDT 2001
+xmlUtil/src/id DictNode.cxx IdConversion.cxx IdConverter.cxx
+
+Modified Files:
+	DictNode.cxx IdConversion.cxx IdConverter.cxx 
+Log Message:
+Fixes for Windows compile
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 20 12:44:53 PDT 2001
 xmlUtil/xmlUtil/id IdConverterLessThan.h DictNode.h IdConversion.h IdConverter.h NamedId.h
 
