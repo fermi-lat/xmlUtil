@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 20 14:19:12 PDT 2001
+xmlUtil/xmlUtil mainpage.h
+
+Modified Files:
+	mainpage.h 
+Log Message:
+Clean up doxygen documentation here and there
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 20 13:16:08 PDT 2001
 xmlUtil/xmlUtil/id DictNode.h IdConversion.h IdConverterLessThan.h
 
