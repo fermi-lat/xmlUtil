@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 10 10:59:13 PST 2004
+xmlUtil/src/local
+
+Modified Files:
+	outUtils.cxx 
+Log Message:
+Upgrade to Xerces 2.6.0
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov 10 10:58:58 PST 2004
 xmlUtil/src/id
 
@@ -1405,7 +1415,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.261 2004/11/10 18:58:43 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.262 2004/11/10 18:58:58 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
