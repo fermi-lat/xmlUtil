@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Nov 15 16:15:54 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightTKROneTkr.xml gdd.dtd 
+Log Message:
+1. Add new required "default" attribute to <choice> in gdd.dtd 
+2. Bring our one use of <choice> (in flightTKROneTkr.xml) 
+   in line with new design
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 13 16:29:04 PST 2001
 xmlUtil/src/docMan
 
