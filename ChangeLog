@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Tue Sep 25 15:04:56 PDT 2001
+xmlUtil/xmlUtil/id IdConversion.h IdConverter.h IdOperation.h NamedId.h
+
+Modified Files:
+	IdConversion.h IdConverter.h IdOperation.h NamedId.h 
+Log Message:
+Preface ostream with std:: for Windows.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Sep 25 15:04:56 PDT 2001
 xmlUtil/src/id IdConversion.cxx IdConverter.cxx IdOperation.cxx NamedId.cxx
 
 Modified Files:
