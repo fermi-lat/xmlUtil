@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 14 15:15:58 PDT 2002
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v2r8p4
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 14 14:40:22 PDT 2002
 xmlUtil/src/id
 
@@ -531,7 +540,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.172 2002/09/14 00:00:13 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.173 2002/10/14 21:40:22 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
