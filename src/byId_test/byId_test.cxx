@@ -1,10 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.6 2004/01/21 06:45:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/byId_test/byId_test.cxx,v 1.1 2004/11/10 18:58:29 jrb Exp $
 /*! \file Standalone program to test Arith class
 
  */
 
-#include "xml/XmlParser.h"
-#include "xml/Dom.h"
+#include "xmlBase/XmlParser.h"
+#include "xmlBase/Dom.h"
 #include "xmlUtil/Arith.h"
 #include "xmlUtil/Substitute.h"
 #include "xmlUtil/Constants.h"
@@ -41,7 +41,7 @@ int main(int argc, char* argv[]) {
     exit(0);
   }
 
-  xml::XmlParser* parser = new xml::XmlParser();
+  xmlBase::XmlParser* parser = new xmlBase::XmlParser();
   DOMDocument* doc = parser->parse(argv[1], "gdd");
 
   if (doc == 0) {

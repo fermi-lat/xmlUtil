@@ -1,10 +1,10 @@
 
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.4 2004/02/25 23:35:20 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/docMan/GDDDocMan.h,v 1.5 2004/11/10 18:59:41 jrb Exp $
 #ifndef XMLUTIL_GDDDOCMAN_H
 #define XMLUTIL_GDDDOCMAN_H
 
-#include "xml/docMan/DocMan.h"
-#include "xml/docMan/DocClient.h"
+#include "xmlBase/docMan/DocMan.h"
+#include "xmlBase/docMan/DocClient.h"
 #include "xmlUtil/Substitute.h"
 
 namespace xmlUtil {
@@ -12,7 +12,7 @@ namespace xmlUtil {
   //! it signs up an object it owns as a handler for <constants> so it 
   //! can do evaluation and substitution before any other clients see 
   //! the DOM
-  class GDDDocMan : public xml::DocMan {
+  class GDDDocMan : public xmlBase::DocMan {
   public:
     static  GDDDocMan* getPointer();
 
@@ -30,7 +30,7 @@ namespace xmlUtil {
     GDDDocMan::GDDDocMan();            // TO BE WRITTEN
     
     //! Nested class to do constansts handling; inherits from DocClient
-    class ConstsClient : public xml::DocClient {
+    class ConstsClient : public xmlBase::DocClient {
     public:
       virtual const std::string& getName() {
         return name;

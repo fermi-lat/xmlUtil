@@ -1,7 +1,6 @@
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictValidVisitor.cxx,v 1.1 2001/06/12 18:35:42 jrb Exp $
 
 #include "xmlUtil/id/DictValidVisitor.h"
-// #include "xmlUtil/IdDict.h"
 #include "xmlUtil/id/DictNode.h"
 
 namespace xmlUtil {

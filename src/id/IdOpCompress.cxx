@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpCompress.cxx,v 1.3 2004/01/21 06:46:34 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpCompress.cxx,v 1.4 2004/11/10 18:58:58 jrb Exp $
 
 #include "xmlUtil/id/IdOpCompress.h"
-#include "xml/Dom.h"
+#include "xmlBase/Dom.h"
 
 namespace xmlUtil {
   IdOpCompress::IdOpCompress(const XERCES_CPP_NAMESPACE_QUALIFIER DOMElement* cmprss)
   {
-    from = xml::Dom::getAttribute(cmprss, "from");
-    to = xml::Dom::getAttribute(cmprss, "to");
+    from = xmlBase::Dom::getAttribute(cmprss, "from");
+    to = xmlBase::Dom::getAttribute(cmprss, "to");
   }
 
   NamedId *IdOpCompress::convert(const NamedId& inputId) {
