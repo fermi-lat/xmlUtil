@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: jrb  Mon Apr 23 16:26:02 PDT 2001
+xmlUtil/xml flight-doc.xml flight-prog.xml flight.xml flightIdDict.xml gdd.dtd
+
+Modified Files:
+	flight-doc.xml flight-prog.xml flight.xml flightIdDict.xml 
+	gdd.dtd 
+Log Message:
+1. Modify strategy for defining id dictionary.  Now has explicit
+   tree representation.
+2. Exclude idDict from output of forProg.exe (documentation file
+   derived from complete detector description xml file)
+
+    *
+------------------------------------------------------------
+User: jrb  Mon Apr 23 16:26:02 PDT 2001
 xmlUtil/src makeXmlForDoc.cxx
 
 Modified Files:
