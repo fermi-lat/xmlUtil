@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun  4 15:43:19 PDT 2002
+xmlUtil/src/id
+
+Modified Files:
+	testKey.cxx 
+Log Message:
+Eliminate a harmless compiler warning
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Apr 22 15:27:41 PDT 2002
 xmlUtil/xml
 
@@ -369,7 +379,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.156 2002/04/05 18:28:46 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.157 2002/04/22 22:27:42 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
