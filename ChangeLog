@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov 21 12:39:29 PST 2001
+xmlUtil/xml
+
+Added Files:
+	.cvsignore 
+Removed Files:
+	flight-doc.xml flight-prog.xml 
+Log Message:
+flight-doc.xml and flight-prog.xml are derived files (from flight.xml)
+which don't belong in CVS.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Nov 15 16:15:54 PST 2001
 xmlUtil/xml
 
