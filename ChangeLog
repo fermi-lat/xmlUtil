@@ -1,4 +1,28 @@
 ------------------------------------------------------------
+User: jrb  Mon Apr 22 15:27:41 PDT 2002
+xmlUtil/xml
+
+Removed Files:
+	constsDoc.xsl flight.xml flightACDAcd.xml 
+	flightACDCountPrim.xml flightACDDimPrim.xml 
+	flightACDMatPrim.xml flightACDResponse.xml 
+	flightCALCountPrim.xml flightCALDimPrim.xml 
+	flightCALMatPrim.xml flightCALOneCal.xml flightCALResponse.xml 
+	flightDerivedConstants.xml flightGlobalCountPrim.xml 
+	flightGlobalDimPrim.xml flightGlobalMatPrim.xml 
+	flightIdDict.xml flightMaterials.xml flightNADDimPrim.xml 
+	flightNADGeo.xml flightPrimaryConstants.xml 
+	flightTKRCountPrim.xml flightTKRDimPrim.xml 
+	flightTKRMatPrim.xml flightTKROneTkr.xml flightTKRResponse.xml 
+	flightTrigger.xml gdd.dtd simpleComposition.xml 
+	simpleStack.xml test-arith.xml test-dict.xml testIdConv.xml 
+	testIdDict.xml 
+Log Message:
+The only valid versions if gdd.dtd and the geometry .xml files have been 
+moved to xmlGeoDbs package
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Apr  5 10:28:46 PST 2002
 xmlUtil/xmlUtil/id
 
@@ -345,7 +369,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.155 2002/04/05 18:28:27 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.156 2002/04/05 18:28:46 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
