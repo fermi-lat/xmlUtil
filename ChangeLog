@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 14 17:08:00 PST 2003
+xmlUtil/xmlUtil/id
+
+Modified Files:
+	DictConstraints.h DictField.h DictNode.h IdConversion.h 
+	IdConverter.h IdDict.h IdOperation.h 
+Log Message:
+Change #include of Xerces files to follow new convention: start path
+with xercesc/
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 14 17:07:50 PST 2003
 xmlUtil/xmlUtil
 
@@ -713,7 +725,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.190 2003/03/15 01:07:38 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.191 2003/03/15 01:07:50 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
