@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Source.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Source.cxx,v 1.2 2002/04/05 18:25:18 jrb Exp $
 
 #include "xmlUtil/Source.h"
 #include <dom/DOMString.hpp>
@@ -47,14 +47,17 @@ namespace xmlUtil {
 
     // Document element should have a CVSid attribute
     DOMString idAtt = docElt.getAttribute("CVSid");
-    const char * raw   = xml::Dom::transToChar(idAtt);
-    unsigned   len = strlen(raw);
     char * strippedRaw;
     char * myRaw = 0;
-    if (len) {
-      myRaw = new char[len+1];
-      strcpy(myRaw, raw);
-      strippedRaw = stripDollar(myRaw);
+
+    if (idAtt != DOMString() ){
+      const char * raw   = xml::Dom::transToChar(idAtt);
+      unsigned   len = strlen(raw);
+      if (len) {
+        myRaw = new char[len+1];
+        strcpy(myRaw, raw);
+        strippedRaw = stripDollar(myRaw);
+      }
     }
     else strippedRaw = unknownId;
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.3 2001/11/07 21:28:36 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.4 2002/04/05 18:25:18 jrb Exp $
 
 #include <string>
 #include <dom/DOMString.hpp>
@@ -29,6 +29,26 @@ namespace {
     if (!(elt.getNodeName()).equals(DOMString("prim"))) return ret;
     
     ret += 1;
+    DOMString valueString = DOMString("value");
+
+    // Check for int.  If we've got one, round it.
+        // Check if we're supposed to be an int.  If so, coerce
+    // m_number to be nearby int in case of round-off error 
+    if (DOMString("int").equals(elt.getAttribute("type"))) {
+      // If we're not already a perfect int, attempt to fix
+      // so that we round the right way.
+      // Otherwise, leave well enough alone
+
+      double   origValueDbl =
+        atof(xml::Dom::transToChar(elt.getAttribute(valueString)));
+      int origValueInt = 
+        atoi(xml::Dom::transToChar(elt.getAttribute(valueString)));
+      double   intified = origValueInt;
+      if (intified != origValueDbl) { // put back what atoi gave us
+        xml::Dom::addAttribute(elt, valueString, origValueInt);
+      }
+    }
+
     // Found a prim, but we don't have to convert since it's not a length
     if (!(elt.getAttribute(DOMString("uType"))).equals("length")) return ret;
     
@@ -39,7 +59,6 @@ namespace {
     if (units.equals(DOMString("mm"))) return ret;
     
     double scale, value;
-    DOMString valueString = DOMString("value");
     if (units.equals(DOMString("cm"))) {
       ret += 10000;
       scale = 10;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.3 2002/04/05 18:25:18 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for most clients (documentation-type
     clients will probably stick with the original file). 
@@ -35,7 +35,7 @@ char * stripDollar(char *toStrip);
 
 const char chDoubleQ = 0x22;
 const std::string dquote(&chDoubleQ);
-const std::string myId("$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $");
+const std::string myId("$Id: eval.cxx,v 1.3 2002/04/05 18:25:18 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -91,20 +91,32 @@ int main(int argc, char* argv[]) {
               << std::endl;
   }
 
-  // Get rid of the whole <derived> part of <constants>.  No longer needed.
-  DOM_Element derived = xml::Dom::findFirstChildByName(docElt, "constants");
-  if (derived != DOM_Element() ) {
-    derived = xml::Dom::findFirstChildByName(derived, "derived");
+  // In case there were no sections to substitute, do eval here
+  constants->evalConstants();
 
-    if (derived != DOM_Element()) {
-      xml::Dom::prune(derived);
-      (derived.getParentNode()).removeChild(derived);
+  // Get rid of the whole <derived> part of <constants>.  No longer needed.
+  /*
+  DOM_Element derived;
+  if (docElt.getTagName().equals(DOMString("constants"))) {
+    derived = xml::Dom::findFirstChildByName(docElt, "derived");
+  }
+  else {  
+    derived = xml::Dom::findFirstChildByName(docElt, "constants");
+    if (derived != DOM_Element() ) {
+      derived = xml::Dom::findFirstChildByName(derived, "derived");
     }
   }
 
+
+  if (derived != DOM_Element()) {
+    xml::Dom::prune(derived);
+    (derived.getParentNode()).removeChild(derived);
+  }
+  */
+
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.3 2002/04/05 18:25:18 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
@@ -219,7 +231,7 @@ void  addSourceElt(DOM_Document doc) {
 
 /*! Input is a null-terminated character string.  Output is
  * another such with leading and trailing '$', if any, stripped.
- * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.2 2001/11/05 22:19:04 jrb Exp $" into
+ * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.3 2002/04/05 18:25:18 jrb Exp $" into
  * something which will no longer be substituted for.
  */
 
