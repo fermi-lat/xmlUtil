@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed May  9 16:52:42 PDT 2001
+xmlUtil/xmlUtil Arith.h Substitute.h mainpage.h
+
+Modified Files:
+	Arith.h Substitute.h mainpage.h 
+Log Message:
+1.  New (untested) header files for Identifier Dictionary classes and
+    some Identifier Converter classes
+2.  Corresponding updates to mainpage.h
+
+    *
+------------------------------------------------------------
 User: jrb  Wed May  9 16:12:16 PDT 2001
 xmlUtil/xmlUtil/id - New directory
 
