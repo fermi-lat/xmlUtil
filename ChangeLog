@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov  9 13:05:34 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flight-doc.xml 
+Log Message:
+Reran document extractor to pick up new TKR information
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov  9 13:04:47 PST 2001
 xmlUtil/src/docMan
 
