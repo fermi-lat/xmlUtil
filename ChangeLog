@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 24 15:30:32 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightTKRCountPrim.xml 
+Log Message:
+Value for nFeChips should be 6, not 7
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 15 14:11:52 PST 2002
 xmlUtil/xml
 
@@ -117,7 +127,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.134 2002/01/11 23:45:49 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.135 2002/01/15 22:11:53 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
