@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jun 18 17:02:35 PDT 2003
+xmlUtil/xml
+
+Modified Files:
+	test-arith.xml 
+Log Message:
+Add a couple of the new <half> elements to file for testing
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jun 18 17:01:40 PDT 2003
 xmlUtil/src
 
@@ -781,7 +791,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.197 2003/04/17 21:27:09 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.198 2003/06/19 00:01:40 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
