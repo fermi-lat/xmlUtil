@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Jun 13 16:55:33 PDT 2001
+xmlUtil/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Query functions for id dictionary, enhanced test program (doesn't
+all work yet)
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun 12 12:57:06 PDT 2001
 xmlUtil/xmlUtil/id DictFieldMan.h IdDict.h NamedId.h
 
