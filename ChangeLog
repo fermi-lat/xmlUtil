@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 12 17:06:26 PST 2001
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Add in  IdKey class and little test program to go with it
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec 11 11:16:40 PST 2001
 xmlUtil/xml
 
