@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.11 2003/12/17 00:22:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.12 2004/01/21 06:45:49 jrb Exp $
 
 #include <string>
 #include <xercesc/dom/DOMString.hpp>
@@ -246,10 +246,15 @@ namespace xmlUtil {
       curConst = Dom::findFirstChildByName(curCat, "const" );
       
       while (curConst != DomElement()) {
-        Arith curArith(curConst);
-        double evalValue = curArith.evaluate();
-        curArith.saveValue();
-        
+        try {
+          Arith curArith(curConst);
+          double evalValue = curArith.evaluate();
+          curArith.saveValue();
+        }
+        catch (XmlUtilException ex) {
+          std::cerr << ex.getMsg();
+          throw(ex);
+        }
         curConst = xml::Dom::getSiblingElement(curConst);
       }
     }
