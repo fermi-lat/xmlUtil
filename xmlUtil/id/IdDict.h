@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.3 2001/05/31 22:56:39 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.4 2001/06/12 18:34:01 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
@@ -40,7 +40,7 @@ namespace xmlUtil {
     ~IdDict();
 
     //! Verify that dictionary is valid
-    bool isValid() const;
+    bool isValid();
 
     //! Verify that supplied identifier is valid w.r.t. the idDict.
     bool idOk(const Identifier& id) const;
