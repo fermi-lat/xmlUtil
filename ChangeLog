@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Thu Apr  5 17:33:37 PDT 2001
+xmlUtil/xml flight-doc.xml globalCountPrim.xml globalDimPrim.xml globalMatPrim.xml
+
+Modified Files:
+	flight-doc.xml 
+Removed Files:
+	globalCountPrim.xml globalDimPrim.xml globalMatPrim.xml 
+Log Message:
+Have been replaced by flightGlobalCountPrim, etc.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr  5 16:36:42 PDT 2001
 xmlUtil/xml constsDoc.xsl flight-doc.xml flight.xml flightACDCountPrim.xml flightCALCountPrim.xml flightGlobalCountPrim.xml flightIdDict.xml flightTKRCountPrim.xml
 
