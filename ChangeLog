@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Thu Dec  6 13:51:26 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flight.xml flightACDDimPrim.xml flightDerivedConstants.xml 
+	flightGlobalDimPrim.xml 
+Log Message:
+Work on ACD model to eliminate all overlaps and make it somewhat
+more comprehensible and maintainable.  Most of the latest information
+has not yet been incorporated, however.
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec  4 17:46:13 PST 2001
 xmlUtil/xml
 
