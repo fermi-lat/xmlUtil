@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.7 2001/09/20 20:16:08 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictNode.h,v 1.8 2001/12/05 01:15:14 jrb Exp $
 #ifndef XMLUTIL_DICTNODE_H
 #define XMLUTIL_DICTNODE_H
 
@@ -155,12 +155,14 @@ namespace xmlUtil {
     DictNode& operator=(const DictNode&); 
     void deepCopy(const DictNode& toCopy);
 
-    DictNode() {};                    /*< don't allow uninitialized node */
-    Nodes            m_children;      /*< collection of child nodes */
-    const DictField* m_field;         /*< id field for this node */
-    const DictNode*  m_parent;        /*< parent dictnode */
-    DictConstraints* m_parConstraints;/*< Constraints on values of parent */
-    DictConstraints* m_myConstraints; /*< Constraints on values for this node*/
+    /** don't allow uninitialized node */
+    DictNode() {};   
+
+    Nodes            m_children;      /**< collection of child nodes */
+    const DictField* m_field;         /**< id field for this node */
+    const DictNode*  m_parent;        /**< parent dictnode */
+    DictConstraints* m_parConstraints;/**< Constraints on values of parent */
+    DictConstraints* m_myConstraints; /**< Constraints on values for this node*/
     static std::ostream* m_err;
 
   };       // end DictNode class definition
