@@ -246,12 +246,14 @@
          a shift : distance between the coordinate origin of the stack and the
                    coordinate origin of the first stacked volume, or between
                    the coordinate origin of the previously stacked volume and the
-                   coordinate origin of the first stacked volume.
+                   coordinate origin of the first [jrb: current??]
+                   stacked volume.
 
          a gap   : distance between the coordinate origin of the stack and the
                    lowest dimension of the first stacked volume, or between the
                    highest dimension of the previously stacked volume and the
-                   lowest dimension of the first stacked volume.
+                   lowest dimension of the first [jrb: current??]
+                   stacked volume.
 
 
      Coordinate system: The coordinate system of the stack can be
@@ -481,9 +483,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.8 2001/09/25 21:43:05 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.9 2001/10/17 23:45:49 jrb Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.8 2001/09/25 21:43:05 jrb Exp $ for the pre-processing program, also without the
+     CVS macro $Id: gdd.dtd,v 1.9 2001/10/17 23:45:49 jrb Exp $ for the pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
      check-ins to CVS will not cause substitutions).
