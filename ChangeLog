@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 24 15:46:38 PDT 2001
+xmlUtil/xmlUtil/id IdDictMan.h DictField.h DictVisitor.h IdConversion.h IdConverter.h IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdOperation.h NamedId.h
+
+Modified Files:
+	DictField.h DictVisitor.h IdConversion.h IdConverter.h 
+	IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdOperation.h 
+	NamedId.h 
+Added Files:
+	IdDictMan.h 
+Log Message:
+Most of identifier conversion code is written.  Still missing
+some methods and a comprehensive test program
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Aug 24 15:46:37 PDT 2001
 xmlUtil/src/id IdConverter.cxx IdDictMan.cxx IdOpCompress.cxx IdOpTruncate.cxx IdOperation.cxx DictField.cxx IdConversion.cxx NamedId.cxx
 
