@@ -1,12 +1,12 @@
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Source.h,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $
 // Author: J. Bogart
 
 #ifndef XMLUTIL_SOURCE_H
 #define XMLUTIL_SOURCE_H
 
 #include <string>
-#include "dom/DOM_Element.hpp"
-#include "dom/DOM_Document.hpp"
+#include <dom/DOM_Element.hpp>
+#include <dom/DOM_Document.hpp>
 
 namespace xmlUtil {
   /*! This class provides an interface to the <source> element of

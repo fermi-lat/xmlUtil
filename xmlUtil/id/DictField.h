@@ -1,11 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.4 2001/06/12 18:34:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictField.h,v 1.5 2001/08/24 22:46:38 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELD_H
 #define XMLUTIL_DICTFIELD_H
 
 #include <string>
 
-#include "dom/DOM_Element.hpp"
+#include <dom/DOM_Element.hpp>
 
 #include "xmlUtil/id/DictObject.h"
 
