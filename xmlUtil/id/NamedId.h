@@ -1,14 +1,16 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.8 2001/09/25 21:43:06 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.9 2001/09/25 22:04:56 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
 #include <vector>
 #include <string>
 #include <iostream>
+#include "xmlUtil/id/Identifier.h"
+
 namespace xmlUtil {
 
   //! An \b Identifier is simply a finite list of non-neg. integers
-  typedef std::vector<unsigned> Identifier;
+  //  typedef std::vector<unsigned> Identifier;
 
   //! Another convenience typedef for a list of strings (the
   //! id field names which may be extracted from a \b NamedId )
