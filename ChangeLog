@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 29 16:43:24 PST 2001
+xmlUtil/xml flight-doc.xml flight-prog.xml flightDerivedConstants.xml flightTKRDimPrim.xml flightTKRMatPrim.xml flightTKROneTkr.xml
+
+Modified Files:
+	flight-doc.xml flight-prog.xml flightDerivedConstants.xml 
+	flightTKRDimPrim.xml flightTKRMatPrim.xml flightTKROneTkr.xml 
+Log Message:
+Maybe something like real tracker geometry (still need closeout pieces 
+about core)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 29 15:11:42 PST 2001
 xmlUtil/xml gdd.dtd
 
