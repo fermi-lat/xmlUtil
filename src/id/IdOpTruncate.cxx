@@ -1,11 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpTruncate.cxx,v 1.1 2001/08/24 22:46:37 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdOpTruncate.cxx,v 1.2 2001/09/25 21:43:04 jrb Exp $
 
 #include "xmlUtil/id/IdOpTruncate.h"
 #include "xml/Dom.h"
 
 namespace xmlUtil {
 
-  IdOpTruncate::IdOpTruncate(DOM_Element trunc) {
+  IdOpTruncate::IdOpTruncate(DomElement trunc) {
     // Get values of attributes "start" and "beyond", save
     start = xml::Dom::getAttribute(trunc, "start");
     std::string beyondVal = xml::Dom::getAttribute(trunc, "beyond");
