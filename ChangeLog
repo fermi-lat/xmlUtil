@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct  2 01:06:27 PDT 2003
+xmlUtil/src/id
+
+Modified Files:
+	testId.cxx 
+Log Message:
+Test new IdDict method returning field-name string
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct  1 09:34:44 PDT 2003
 xmlUtil/xmlUtil/id
 
@@ -903,7 +913,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.210 2003/10/01 16:34:44 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.211 2003/10/01 16:34:44 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
