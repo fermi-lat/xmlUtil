@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 30 11:46:22 PST 2001
+xmlUtil/xml flight-doc.xml flight.xml gdd.dtd
+
+Modified Files:
+	flight-doc.xml flight.xml gdd.dtd 
+Log Message:
+1. Revised Substitute::execute to work for id dictionary
+as well as geometry definitions
+2. Misc Minor bug fixes 
+3. Add machinery to code and xml to keep track of when constants
+   evaluation, substitution have been done.
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Mar 30 11:46:21 PST 2001
 xmlUtil/src Constants.cxx Substitute.cxx makeXmlForProg.cxx
 
