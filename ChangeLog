@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul  3 14:34:15 PDT 2001
+xmlUtil/xml flight.xml flightGlobalDimPrim.xml
+
+Modified Files:
+	flight.xml flightGlobalDimPrim.xml 
+Log Message:
+Get rid of obsolete "modWidth"; use "towerPitch instead
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul  3 13:56:28 PDT 2001
 xmlUtil/xml flight.xml flightCALCountPrim.xml flightCALDimPrim.xml flightCALMatPrim.xml flightCALOneCal.xml flightIdDict.xml
 
