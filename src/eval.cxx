@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.6 2004/01/21 06:45:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.7 2004/11/10 18:58:02 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for most clients (documentation-type
     clients will probably stick with the original file). 
@@ -14,8 +14,8 @@
         output
  */
 
-#include "xml/XmlParser.h"
-#include "xml/Dom.h"
+#include "xmlBase/XmlParser.h"
+#include "xmlBase/Dom.h"
 #include "xmlUtil/Arith.h"
 #include "xmlUtil/Substitute.h"
 #include "xmlUtil/Constants.h"
@@ -32,7 +32,7 @@ std::ostream *openOut(char * outfile);
 void outProlog(const XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType* doctype, 
                std::ostream& out);
 
-const std::string myId("$Id: eval.cxx,v 1.6 2004/01/21 06:45:49 jrb Exp $");
+const std::string myId("$Id: eval.cxx,v 1.7 2004/11/10 18:58:02 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -54,7 +54,7 @@ int main(int argc, char* argv[]) {
     exit(0);
   }
 
-  xml::XmlParser* parser = new xml::XmlParser();
+  xmlBase::XmlParser* parser = new xmlBase::XmlParser();
   DOMDocument* doc = parser->parse(argv[1], "gdd");
 
   if (doc == 0) {
@@ -79,7 +79,7 @@ int main(int argc, char* argv[]) {
   // value of referenced element.
 
   std::vector<DOMElement*> sections;
-  xml::Dom::getChildrenByTagName(docElt, "section", sections);
+  xmlBase::Dom::getChildrenByTagName(docElt, "section", sections);
   int nSec = sections.size();
   int iSec;
 
@@ -99,7 +99,7 @@ int main(int argc, char* argv[]) {
 
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.6 2004/01/21 06:45:49 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.7 2004/11/10 18:58:02 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
@@ -107,7 +107,7 @@ int main(int argc, char* argv[]) {
 
   // Finally output the elements
   // May want option to exclude comments here
-  xml::Dom::prettyPrintElement(docElt, *out, "");
+  xmlBase::Dom::prettyPrintElement(docElt, *out, "");
 
   delete parser;
   return(0);
