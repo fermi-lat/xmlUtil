@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 29 13:45:09 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightACDResponse.xml flightCALResponse.xml 
+	flightTKRResponse.xml flightTrigger.xml 
+Log Message:
+Write CVS macros correctly
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 29 13:40:40 PST 2002
 xmlUtil/xmlUtil/id
 
@@ -164,7 +175,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.138 2002/01/29 21:40:20 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.139 2002/01/29 21:40:40 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
