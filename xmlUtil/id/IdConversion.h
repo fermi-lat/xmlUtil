@@ -1,10 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.2 2001/08/09 22:28:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERSION_H
 #define XMLUTIL_IDCONVERSION_H
 
 #include "dom/DOM_Element.hpp"
 #include "xmlUtil/id/NamedId.h"
+#include <functional>
 
 namespace xmlUtil {
   class IdOperation;
@@ -29,12 +30,17 @@ namespace xmlUtil {
     ~IdConversion();
 
     //! Check that start of inputId fieldnames match path
-    bool inDomain(NamedId& inputId);
+    bool inDomain(const NamedId& inputId);
 
     //! Convert the identifier if in domain; else return null.
-    NamedId * convert(NamedId& inputId);
+    NamedId * convert(const NamedId& inputId);
     // {return new NamedId(*inputId);};
 
+
+    //! Return true if our path is subpath of \a other
+    bool subpathOf(const IdConversion& other) const;
+
+    friend class IdConverterLessThan;
   private:
 
     // Returns true if inputId satisfies condition
@@ -42,7 +48,7 @@ namespace xmlUtil {
 
     //! Doesn't check that input is in domain.  Typically invoked
     //! from \b convert.
-    NamedId * internalConvert(NamedId& inputId);
+    NamedId * internalConvert(const NamedId& inputId);
 
     //! Form path component from corresponding piece of xml
     void makePath(const DOM_Element& pathElt);

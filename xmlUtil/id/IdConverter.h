@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.2 2001/08/09 22:28:56 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTER_H
 #define XMLUTIL_IDCONVERTER_H
@@ -51,6 +51,14 @@ namespace xmlUtil {
         another conversion.  */
     bool isConsistent();
 
+    // Better idea would be to make this a real class rather than
+    // a typedef to hide implementation.
+    // Might choose a different container for the conversions, for
+    // example a tree, ordered by input path on which a conversion
+    // operates
+    typedef std::vector<IdConversion*>  Conversions; 
+    typedef Conversions::iterator       ConversionIt;
+
   private:
     // Should inputDict be optional or required?
     std::string *inputDictName;
@@ -67,13 +75,10 @@ namespace xmlUtil {
       path when checking for consistency. */
     void sortConvs();
 
-    // Might choose a different container for the conversions, for
-    // example a tree, ordered by input path on which a conversion
-    // operates
-    typedef std::vector<IdConversion*>  Conversions; 
-    typedef Conversions::iterator       conversionIt;
 
     Conversions convCol;  /*< collection of conversion operations making up the                          IdConverter */
+
+    //! Define strict weak ordering so that we can sort (see IdConverter class)
 
     enum STATES {
       UNKNOWN = -1,
