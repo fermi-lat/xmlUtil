@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 14 14:40:22 PDT 2002
+xmlUtil/src/id
+
+Modified Files:
+	DictConstraints.cxx 
+Log Message:
+Get rid of unnecessary cast
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Sep 13 17:00:13 PDT 2002
 xmlUtil/doc
 
@@ -521,7 +531,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.171 2002/09/13 23:58:42 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.172 2002/09/14 00:00:13 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
