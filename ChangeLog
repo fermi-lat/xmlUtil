@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 17 16:45:49 PDT 2001
+xmlUtil/xml flightDerivedConstants.xml flightPrimaryConstants.xml flight-doc.xml flight-prog.xml flight.xml flightCALDimPrim.xml flightCALMatPrim.xml flightCALOneCal.xml flightGlobalCountPrim.xml flightGlobalDimPrim.xml flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml gdd.dtd
+
+Modified Files:
+	flight-doc.xml flight-prog.xml flight.xml flightCALDimPrim.xml 
+	flightCALMatPrim.xml flightCALOneCal.xml 
+	flightGlobalCountPrim.xml flightGlobalDimPrim.xml 
+	flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml 
+	gdd.dtd 
+Added Files:
+	flightDerivedConstants.xml flightPrimaryConstants.xml 
+Log Message:
+1. Add more NAD (e.g., CAL frame).  
+2. Make envelope attribute for composition required since detModel 
+   expects it. 
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Sep 25 15:28:36 PDT 2001
 xmlUtil/cmt .cvsignore Makefile NMake
 
