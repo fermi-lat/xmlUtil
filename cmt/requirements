@@ -1,4 +1,4 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.24 2003/04/17 21:26:46 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.25 2003/06/19 00:05:36 jrb Exp $
 package xmlUtil
 version v2r10
 
@@ -12,9 +12,8 @@ use xmlGeoDbs   v1r*
 
 include_dirs "${XMLUTILROOT}"
 
-path_append LD_LIBRARY_PATH "${xmlUtilDir}"
+##path_append LD_LIBRARY_PATH "${xmlUtilDir}"
 
-apply_pattern package_linkopts
 apply_pattern package_headers
 apply_pattern package_xmlfiles
 
@@ -40,6 +39,10 @@ library xmlUtil ${xmlUtil_headers}  \
      id/IdKey.cxx            \
      docMan/GDDDocMan.cxx    \
      ${xmlUtil_xmlfiles} 
+
+apply_pattern package_linkopts
+apply_pattern package_stamps
+apply_pattern ld_library_path
 
 private
 apply_pattern package_shlibflags
