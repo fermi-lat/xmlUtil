@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 18 13:38:52 PDT 2001
+xmlUtil/xml simpleComposition.xml simpleStack.xml
+
+Added Files:
+	simpleComposition.xml simpleStack.xml 
+Log Message:
+Add simple geometry files suitable for use with detModel package
+test program test.exe
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 17 16:45:49 PDT 2001
 xmlUtil/xml flightDerivedConstants.xml flightPrimaryConstants.xml flight-doc.xml flight-prog.xml flight.xml flightCALDimPrim.xml flightCALMatPrim.xml flightCALOneCal.xml flightGlobalCountPrim.xml flightGlobalDimPrim.xml flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml gdd.dtd
 
