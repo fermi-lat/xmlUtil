@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Feb 21 14:44:39 PST 2003
+xmlUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag after warning patch
+    *
+------------------------------------------------------------
+User: burnett  Fri Feb 21 14:44:39 PST 2003
 xmlUtil/cmt
 
 Modified Files:
@@ -647,7 +656,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.184 2003/02/21 22:42:50 burnett Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.185 2003/02/21 22:44:39 burnett Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
