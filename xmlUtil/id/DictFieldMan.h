@@ -1,31 +1,51 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.1 2001/05/09 23:52:43 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELDMAN_H
 #define XMLUTIL_DICTFIELDMAN_H
 
 #include <string>
-
-// g++ has hash_map; Visual Studio doesn't
 #ifdef __GNUG__
-#  include <hash_map>
-#  define Registry hash_map<const char *, DictField*>
-// otherwise might not have hash_map available, so use map, which
-// is overkill for our situation since we don't need sorting
-#else        
-#  include <Map>
-#  define Registry  map<const char *, DictField*>
+#include <hash_map>
+#else
+#include <map>
 #endif
+
+#include "xmlUtil/id/DictObject.h"
 
 namespace xmlUtil {
   //! Keep track of the collection of fields which may be referenced
   //! in a particular IdDict
   class DictField;
+  class DictVisitor;
 
-  class DictFieldMan {
+
+#ifdef __GNUG__
+  struct eqstr {
+    bool operator()(const char* s1, const char* s2) const
+    {
+      return strcmp(s1, s2) == 0;
+    }
+  };
+  typedef hash_map<const char *, DictField*, hash<const char *>, eqstr> 
+  Registry;
+#else
+  struct ltstr {
+    bool operator()(const char* s1, const char* s2) const
+    {
+      return strcmp(s1, s2) < 0;
+    }
+  };
+  typedef map<const char *, DictField*, ltstr> Registry;
+#endif
+
+  class DictFieldMan : public DictObject {
   public:
+
     DictFieldMan(int size = 0);
     ~DictFieldMan();
 
+
+    bool accept(DictVisitor* vis);
     void signup(DictField *field);
     const DictField * const find(const std::string& name) const;
 
@@ -33,7 +53,7 @@ namespace xmlUtil {
     // Mechanism for keeping track of the fields is a 
     // pair-associative container with key = name and 
     // value = pointer to the DictField object
-    Registry *reg;
+    Registry *m_reg;
 
   };
 }
