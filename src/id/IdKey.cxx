@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdKey.cxx,v 1.3 2001/12/13 01:07:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdKey.cxx,v 1.4 2001/12/13 17:40:39 jrb Exp $
 
 #include "xmlUtil/id/IdKey.h"
 #include <cassert>
@@ -9,7 +9,7 @@ namespace {
 }
 
 namespace xmlUtil {
-  IdKey::IdKey(const std::vector<unsigned int> id) {
+  IdKey::IdKey(const Identifier id) {
     fillFrom(id);
   }
 
