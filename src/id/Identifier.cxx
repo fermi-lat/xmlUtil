@@ -1,5 +1,7 @@
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/Identifier.cxx,v 1.1 2002/01/03 21:09:12 jrb Exp $
 #include "xmlUtil/id/Identifier.h"
+
+#include <iterator>
 
 namespace xmlUtil {
 
