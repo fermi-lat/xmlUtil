@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 29 13:40:20 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flight.xml flightDerivedConstants.xml 
+	flightPrimaryConstants.xml 
+Added Files:
+	flightACDResponse.xml flightCALResponse.xml 
+	flightTKRResponse.xml flightTrigger.xml 
+Log Message:
+1. Add new primary constants for non-geometric parameters which are
+   in instrument.xml
+2. Change name of category NADDerived --> derNAD to be uniform with others
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 24 16:06:00 PST 2002
 xmlUtil/xml
 
@@ -138,7 +154,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.136 2002/01/24 23:30:32 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.137 2002/01/25 00:06:01 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
