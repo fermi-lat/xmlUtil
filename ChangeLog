@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun  4 15:43:59 PDT 2002
+xmlUtil/xmlUtil/id
+
+Modified Files:
+	DictValidVisitor.h IdOpDisappear.h 
+Log Message:
+Eliminate a harmless compiler warnings ("unused parameter", known to be unused)
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jun  4 15:43:19 PDT 2002
 xmlUtil/src/id
 
@@ -379,7 +389,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.157 2002/04/22 22:27:42 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.158 2002/06/04 22:43:20 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
