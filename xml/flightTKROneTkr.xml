@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flightTKROneTkr.xml,v 1.8 2001/12/05 01:14:31 jrb Exp $ -->
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flightTKROneTkr.xml,v 1.9 2001/12/10 23:11:24 jrb Exp $ -->
 <!-- Definition of one tower's worth of tracker for flight instrument -->
 
 <!-- Tracker stuff.  The tracker consists of trays.  Alternate trays
@@ -221,7 +221,7 @@
 <!--    ***   -->  
      
     <box name="SiLayerBox"
-         sensitive="true"  detectorTypeREF="eDTypeTKRSi"
+         sensitive="posHit"  detectorTypeREF="eDTypeTKRSi"
 	 XREF="TKRTrayWidth" 
 	 YREF="TKRTrayWidth"
 	 ZREF="SiThick" materialREF="TKRDetMat" />
@@ -274,7 +274,7 @@
      use the shorter dimension for both.
 -->
     <box name="SiWaferActive"
-         sensitive="true"  detectorTypeREF="eDTypeTKRSi"
+         sensitive="posHit"  detectorTypeREF="eDTypeTKRSi"
 	 XREF="SiWaferActiveSide"
 	 YREF="SiWaferActiveSide"
 	 ZREF="SiThick"
