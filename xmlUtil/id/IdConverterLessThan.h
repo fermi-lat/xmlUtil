@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverterLessThan.h,v 1.1 2001/09/20 19:44:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverterLessThan.h,v 1.2 2001/09/20 20:16:08 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTERLESSTHAN_H
 #define XMLUTIL_IDCONVERTERLESSTHAN_H
@@ -19,6 +19,8 @@ namespace xmlUtil {
     IdConverter::ConversionIt, bool> 
   {
   public:
+    //! One conversion is "less than" another iff it has a
+    //! shorter path
     bool operator()(IdConversion* x, 
                     IdConversion* y) {
       return ((x->path)->size() < ((y->path)->size() ) );

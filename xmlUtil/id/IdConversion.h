@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.4 2001/09/20 19:44:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.5 2001/09/20 20:16:08 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERSION_H
 #define XMLUTIL_IDCONVERSION_H
@@ -10,7 +10,7 @@
 namespace xmlUtil {
   class IdOperation;
 
-  //! An /b IdConversion object (corresponding to an idConv element
+  //! An \b IdConversion object (corresponding to an idConv element
   //! as defined in gdd.dtd) "has" 
   //!    a path  (list of id field names)
   //!    a condition
