@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 22:45:49 PST 2004
+xmlUtil/src
+
+Modified Files:
+	Arith.cxx Constants.cxx Source.cxx Substitute.cxx eval.cxx 
+	makeXmlForDoc.cxx makeXmlForProg.cxx 
+Log Message:
+Change practically everything to a greater or lesser degree to minimize
+native Xerces calls; use xml::Dom methods instead wherever possible
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 20 22:44:42 PST 2004
 xmlUtil/cmt
 
@@ -1055,7 +1067,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.226 2004/01/20 08:27:59 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.227 2004/01/21 06:44:42 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
