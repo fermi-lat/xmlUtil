@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: jrb  Tue Jun 26 09:23:41 PDT 2001
+xmlUtil/xmlUtil/id DictNode.h NamedId.h
+
+Modified Files:
+	DictNode.h NamedId.h 
+Log Message:
+Possibly working version of id dictionary (but not id conversion)
+classes and test program
+
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Jun 26 09:23:41 PDT 2001
 xmlUtil/xml flightACDAcd.xml flightCALOneCal.xml flightTKROneTkr.xml flightIdDict.xml testIdDict.xml
 
 Modified Files:
