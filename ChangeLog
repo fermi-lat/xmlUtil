@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: jrb  Thu Aug  9 15:28:56 PDT 2001
+xmlUtil/xml gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Changes for Identifier conversion (still in progress)
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Aug  9 15:28:56 PDT 2001
 xmlUtil/src/id IdConversion.cxx NamedId.cxx
 
 Modified Files:
