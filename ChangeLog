@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 25 14:43:05 PDT 2001
+xmlUtil/src/id IdConversion.cxx IdConverter.cxx IdDict.cxx IdOpCompress.cxx IdOpTruncate.cxx IdOperation.cxx NamedId.cxx testId.cxx
+
+Modified Files:
+	IdConversion.cxx IdConverter.cxx IdDict.cxx IdOpCompress.cxx 
+	IdOpTruncate.cxx IdOperation.cxx NamedId.cxx testId.cxx 
+Log Message:
+First attempt at complete identifier support, including conversions.
+Error handling still inadequate.  
+More comprehensive testing would be nice.
+Identifier conversions xml data for flight instrument TBD.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 20 14:19:12 PDT 2001
 xmlUtil/xmlUtil/id IdConversion.h IdConverter.h IdConverterLessThan.h
 
