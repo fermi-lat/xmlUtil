@@ -195,7 +195,8 @@
   The 'volume' is a generic name for a geometric object. Effective
   volume are organized as a hierarchy of types.
 
-        1) solid volume (have a "material" and may be "sensitive"))
+        1) solid volume (have a "material" , may be "sensitive",
+           has a "detectorType"
            |-> box
            |-> tubs
            |-> trd
@@ -546,9 +547,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.15 2001/11/16 00:15:53 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.16 2001/11/28 00:32:31 jrb Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.15 2001/11/16 00:15:53 jrb Exp $ for the
+     CVS macro $Id: gdd.dtd,v 1.16 2001/11/28 00:32:31 jrb Exp $ for the
      pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
@@ -638,7 +639,9 @@
 <!ENTITY % solidProperties '%volumeProperties;
                              materialREF  IDREF            #IMPLIED
                              material     NMTOKEN          "Vacuum"
-                             sensitive   ( true | false ) "false"'>
+                             sensitive   ( true | false ) "false"
+                             detectorType NMTOKEN         "0"
+                             detectorTypeREF IDREF        #IMPLIED '>
 
 <!ELEMENT  box    (seg?) >
 <!ATTLIST  box
