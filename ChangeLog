@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jul 12 14:25:23 PDT 2001
+xmlUtil/xml flight.xml
+
+Modified Files:
+	flight.xml 
+Log Message:
+Correct computation of CsI cell wall offsets 
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul  3 15:40:24 PDT 2001
 xmlUtil/src makeXmlForDoc.cxx makeXmlForProg.cxx
 
