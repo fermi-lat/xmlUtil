@@ -1,4 +1,4 @@
-<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flightCALOneCal.xml,v 1.3 2001/10/17 23:45:48 jrb Exp $ -->
+<!-- $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flightCALOneCal.xml,v 1.4 2001/11/13 23:51:06 jrb Exp $ -->
 <!-- Definition of one tower's worth of calorimeter, to be included
      in flight.xml as external entity  -->
 
@@ -98,22 +98,22 @@
       <!-- top cell wall -->
       <posXYZ volume="cellHorWall"
               ZREF="cellHorWall_dz" >
-        <idField name="fCALCellCmp" valueREF="eCellWall" />
+        <idField name="fCALCellCmp" valueREF="eCellTop" />
       </posXYZ>
       <!-- bottom cell wall -->
       <posXYZ volume="cellHorWall"
               ZREF="cellHorWall_dzn" >
-        <idField name="fCALCellCmp" valueREF="eCellWall" />
+        <idField name="fCALCellCmp" valueREF="eCellBot" />
       </posXYZ>
       <!-- pos side cell wall -->
       <posXYZ volume="cellVertWall"
               YREF="cellVertWall_dy" >
-        <idField name="fCALCellCmp" valueREF="eCellWall" />
+        <idField name="fCALCellCmp" valueREF="eCellRight" />
       </posXYZ>
       <!-- neg side cell wall -->
       <posXYZ volume="cellVertWall"
               YREF="cellVertWall_dyn" >
-        <idField name="fCALCellCmp" valueREF="eCellWall" />
+        <idField name="fCALCellCmp" valueREF="eCellLeft" />
       </posXYZ>
 
 
