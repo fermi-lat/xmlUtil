@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.7 2002/09/13 21:46:05 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.8 2002/09/13 22:54:12 jrb Exp $
 
 #include <string>
 #include <dom/DOMString.hpp>
@@ -110,6 +110,10 @@ namespace {
         energy *= 1000;
       }
       xml::Dom::addAttribute(prim, "value", energy);
+      elt.normalize();
+      DOM_Node textChild = elt.getFirstChild();
+      prim.appendChild(textChild);
+      //      elt.removeChild(textChild);
       DOM_Node parent = elt.getParentNode();
       DOM_Node oldChild =  parent.replaceChild(prim, elt);
     }
