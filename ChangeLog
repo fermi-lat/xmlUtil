@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct  7 06:07:57 PDT 2003
+xmlUtil/src/id
+
+Modified Files:
+	IdDict.cxx 
+Log Message:
+Modify getNameSeqString to handle empty id gracefully
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct  2 02:06:52 PDT 2003
 xmlUtil/doc
 
@@ -932,7 +942,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.213 2003/10/02 08:40:41 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.214 2003/10/02 09:06:52 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
