@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.4 2001/11/05 22:19:04 jrb Exp $
 /*! \file Standalone program to transform source xml file into a
     preprocessed version suitable for most clients programs (such
     as Simulation and Reconstruction).     Clients needing to
@@ -15,7 +15,7 @@
       - delete any <derCategory> without the "save" attribute set
         to true and all its children.  For any <derCategory> which
         is to be saved, delete all element content from each
-        <const> (except for notes??).
+        <const> (except for notes?).
  */
 
 #include "xml/XmlParser.h"
@@ -38,7 +38,7 @@ void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
 
 const char chDoubleQ = 0x22;
 const std::string dquote(&chDoubleQ);
-const std::string myId("$Id: makeXmlForProg.cxx,v 1.3 2001/07/03 22:40:24 jrb Exp $");
+const std::string myId("$Id: makeXmlForProg.cxx,v 1.4 2001/11/05 22:19:04 jrb Exp $");
 
 // Can't literally put in the string we want or CVS will mess it up.
 // Instead make a copy of this template, replacing the # with $
