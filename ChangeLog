@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 13 16:29:04 PST 2001
+xmlUtil/src/docMan
+
+Modified Files:
+	GDDDocMan.cxx 
+Log Message:
+Changes to get error-free Visual Studio compile
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Nov 13 15:51:06 PST 2001
 xmlUtil/xml
 
