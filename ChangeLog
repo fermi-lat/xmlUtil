@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:21:22 PST 2002
+xmlUtil/xml
+
+Modified Files:
+	flightACDAcd.xml flightCALOneCal.xml flightTKROneTkr.xml 
+	gdd.dtd 
+Log Message:
+sensitive attribute in gdd.dtd is no more a boolean, but is a 3-valued attribute: false, posHit or
+intHit
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Feb 20 08:56:32 PST 2002
 xmlUtil/src
 
@@ -235,7 +247,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.145 2002/02/20 16:56:32 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.146 2002/02/20 16:56:32 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
