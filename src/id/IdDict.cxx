@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.7 2001/09/20 19:44:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.8 2001/09/25 21:43:04 jrb Exp $
 
 #include "dom/DOMString.hpp"
 #include "dom/DOM_NodeList.hpp"
@@ -106,5 +106,6 @@ namespace xmlUtil {
        already have done this */
     return parent->addChild(newNode);
   }
+
 
 }
