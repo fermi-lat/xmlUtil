@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  7 13:28:36 PST 2001
+xmlUtil/src
+
+Modified Files:
+	Constants.cxx makeXmlForProg.cxx 
+Log Message:
+Handle null cases properly
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:24:57 PST 2001
 xmlUtil/cmt
 
