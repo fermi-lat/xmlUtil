@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Nov 13 15:51:06 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightCALOneCal.xml 
+Log Message:
+1. Stack top frame, top plate in the right order
+2. Clean up commented-out stuff
+
+    *
+------------------------------------------------------------
 User: riccardo  Sun Nov 11 09:31:38 PST 2001
 xmlUtil/xml
 
