@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.7 2004/01/21 06:45:49 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.8 2004/01/22 22:06:26 jrb Exp $
 
 // #include <string>
 #include "xmlUtil/Arith.h"
@@ -69,6 +69,11 @@ namespace xmlUtil {
         notFound = false;
       }
       i++;
+    }
+    if (notFound) {
+      std::string msg = std::string("From Arith::Arith unrecognized tag ") +
+        tagNameStr;
+      throw BadTag(msg);
     }
   }
 
@@ -162,7 +167,9 @@ namespace xmlUtil {
         break;
       }
       default: {
-        return 0;
+        std::string msg = 
+          std::string("From Arith::evaluate  Unknown element type");
+        throw BadTag(msg);
       }
       }
       m_evaluated = true;
