@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xml/src/makeXmlForDoc.cxx,v 1.3 2001/03/27 00:18:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForDoc.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for documentation.  Typically
     will be transformed further, e.g. to html by an xslt transform.
@@ -37,7 +37,7 @@ char * stripDollar(char *toStrip);
 
 const char chDoubleQuote = 0x22;
 const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: makeXmlForDoc.cxx,v 1.3 2001/03/27 00:18:15 jrb Exp $");
+const std::string myId("$Id: makeXmlForDoc.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
 
 /*!
     Main program for the forDoc application.
@@ -76,6 +76,18 @@ int main(int argc, char* argv[]) {
   xmlUtil::Constants *constants = new xmlUtil::Constants(doc);
   constants->evalConstants();
   constants->pruneConstants(true);  
+
+  // Delete any id dictionaries
+  DOM_NodeList dicts = docElt.getElementsByTagName(DOMString("idDict"));
+  DOM_Node dictNode = dicts.item(0);
+
+  while (dictNode != DOM_Node() ) {
+    DOM_Node toCome = dictNode.getNextSibling();
+    DOM_Element& dictElt = static_cast<DOM_Element &> (dictNode);
+    xml::Dom::prune(dictElt);
+    (dictElt.getParentNode()).removeChild(dictElt);
+    dictNode = toCome;
+  }
 
   // Delete all sections
   DOM_NodeList sections = docElt.getElementsByTagName(DOMString("section"));
