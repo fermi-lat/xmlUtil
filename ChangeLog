@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec  4 17:46:13 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightIdDict.xml 
+Log Message:
+Omit no-longer-necessary redundant description of allowed values for
+fCALStructural field
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec  4 17:45:22 PST 2001
 xmlUtil/src/id
 
