@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.8 2001/07/03 20:56:28 jrb Exp $        -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.9 2001/07/03 21:34:14 jrb Exp $        -->
 <!-- 1 Feb 2001   Default length unit is now mm.  Change constants
                    accordingly.                             (jrb) 
     22 Feb 2001   Add CVS macros, CVSid attribute for gdd     
@@ -34,7 +34,7 @@
     <!ENTITY idDict         SYSTEM "flightIdDict.xml">
   ]
 >
-<gdd CVSid="$Id: flight.xml,v 1.8 2001/07/03 20:56:28 jrb Exp $" 
+<gdd CVSid="$Id: flight.xml,v 1.9 2001/07/03 21:34:14 jrb Exp $" 
      DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
@@ -158,7 +158,7 @@ crystal and its diodes</notes>
         <const name="cellHorWall_dz">
           <notes>Z position rel. to cell of upper horiz. wall</notes>
           <mul>
-            <const value="2.0" />
+            <const value="0.5" />
             <minus>
               <refer refTo="cellVertPitch" />
               <refer refTo="cellHorWallHalfThick" />
@@ -177,7 +177,7 @@ crystal and its diodes</notes>
           <notes>Y displacement rel. to cell of vertical cell wall
 (here Y means perp. to height and length directions)</notes>
           <mul>
-            <const value="2.0" />
+            <const value="0.5" />
             <minus>
               <refer refTo="cellHorPitch" />
               <refer refTo="cellVertWallHalfThick" />
