@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu May 31 15:55:46 PDT 2001
+xmlUtil/src/id DictConstraints.cxx DictFieldMan.cxx IdDict.cxx
+
+Modified Files:
+	DictConstraints.cxx DictFieldMan.cxx IdDict.cxx 
+Log Message:
+Progress with id dictionary classes; not yet done with DictNode, IdDict
+
+    *
+------------------------------------------------------------
 User: jrb  Thu May 17 14:15:34 PDT 2001
 xmlUtil/src/id DictConstraints.cxx DictField.cxx DictFieldMan.cxx DictNode.cxx IdDict.cxx
 
