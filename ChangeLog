@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Tue Jun 12 11:34:02 PDT 2001
+xmlUtil/xmlUtil/id DictObject.h DictValidVisitor.h DictVisitor.h DictConstraints.h DictField.h DictFieldMan.h DictNode.h IdDict.h
+
+Modified Files:
+	DictConstraints.h DictField.h DictFieldMan.h DictNode.h 
+	IdDict.h 
+Added Files:
+	DictObject.h DictValidVisitor.h DictVisitor.h 
+Log Message:
+First version of id dictionary -- reads from xml and validates
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Jun  1 14:26:17 PDT 2001
 xmlUtil/xmlUtil/id DictConstraints.h DictNode.h
 
