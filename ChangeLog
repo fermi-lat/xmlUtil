@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Feb 25 15:35:06 PST 2004
+xmlUtil/src/docMan
+
+Modified Files:
+	GDDDocMan.cxx 
+Log Message:
+Give GDDDocMan clients ability to fetch CVSid and DTDversion (inadvertantly
+omitted from interface before)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Feb  2 16:44:24 PST 2004
 xmlUtil/doc
 
@@ -1258,7 +1269,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.246 2004/02/03 00:43:38 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.247 2004/02/03 00:44:24 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
