@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.7 2001/09/20 19:44:53 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.8 2001/09/25 21:43:06 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
@@ -16,13 +16,13 @@ namespace xmlUtil {
 
   class NamedId;
 
-  ostream& operator<<(ostream& s, const NameSeq& seq);
-  ostream& operator<<(ostream& s, const Identifier& seq);
-  ostream& operator<<(ostream& s, const NamedId& nId);
+  std::ostream& operator<<(std::ostream& s, const NameSeq& seq);
+  std::ostream& operator<<(std::ostream& s, const Identifier& seq);
+  std::ostream& operator<<(std::ostream& s, const NamedId& nId);
 
   class NamedId {
   public:
-    friend ostream& operator<<(ostream& s, const NamedId& nId);
+    friend std::ostream& operator<<(std::ostream& s, const NamedId& nId);
 
     //! When length is known, best to allocate all at once at start
     NamedId(const int len = 0);

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.4 2001/09/20 20:16:07 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdConversion.cxx,v 1.5 2001/09/25 21:43:04 jrb Exp $
 
 #include "xmlUtil/id/IdConversion.h"
 #include "xmlUtil/id/IdOperation.h"
@@ -98,7 +98,7 @@ namespace xmlUtil {
     return true;
   }
 
-  ostream& operator<<(ostream& s, const IdConversion& convers) {
+  std::ostream& operator<<(std::ostream& s, const IdConversion& convers) {
     s << (*(convers.m_op)) << std::endl << " Path: " << (*(convers.m_path)) << 
       " Condition: hasField " << (*(convers.m_condition));
     return s;

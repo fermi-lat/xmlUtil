@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.5 2001/09/20 21:19:12 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConverter.h,v 1.6 2001/09/25 21:43:06 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERTER_H
 #define XMLUTIL_IDCONVERTER_H
@@ -27,7 +27,7 @@ namespace xmlUtil {
     IdConverter(DOM_Element elt);
     ~IdConverter();
 
-    ostream& displayConversions(ostream& s);
+    std::ostream& displayConversions(std::ostream& s);
 
     /*  Wait on implementing this one.
     // Return image of the input dictionary under the conversions

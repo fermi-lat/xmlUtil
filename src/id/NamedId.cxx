@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.4 2001/09/20 19:44:53 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.5 2001/09/25 21:43:04 jrb Exp $
 
 #include "xmlUtil/id/NamedId.h"
 
@@ -85,7 +85,7 @@ namespace xmlUtil {
   }
 
   //! Output to an ostream.  
-  ostream& operator<<(ostream& s, const NamedId& nId) {
+  std::ostream& operator<<(std::ostream& s, const NamedId& nId) {
     if (nId.size() == 0) {
       s << "()" << std::endl;
       return s;
@@ -101,7 +101,7 @@ namespace xmlUtil {
     return s;
   }
 
-  ostream& operator<<(ostream& s, const NameSeq& seq) {
+  std::ostream& operator<<(std::ostream& s, const NameSeq& seq) {
     if (seq.size() == 0) {
       s << "()" << std::endl;
       return s;
@@ -117,7 +117,7 @@ namespace xmlUtil {
     return s;
   }
 
-  ostream& operator<<(ostream& s, const Identifier& id) {
+  std::ostream& operator<<(std::ostream& s, const Identifier& id) {
     if (id.size() == 0) {
       s << "()" << std::endl;
       return s;
