@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 20 22:44:42 PST 2004
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Separate out utilities common to several diagnostics programs; changes
+dependencies for building these diagnostics
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 20 00:27:58 PST 2004
 xmlUtil/src/local
 
@@ -1044,7 +1055,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.225 2004/01/09 00:59:39 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.226 2004/01/20 08:27:59 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
