@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Sat Jun 28 16:47:45 PDT 2003
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Use ld_library_path pattern
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Jun 18 17:06:28 PDT 2003
 xmlUtil/doc
 
@@ -819,7 +829,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.201 2003/06/19 00:05:36 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.202 2003/06/19 00:06:28 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
