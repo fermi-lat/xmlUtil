@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.4 2001/06/12 18:34:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.5 2001/06/12 19:57:06 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
@@ -25,6 +25,13 @@ namespace xmlUtil {
             take on
           MAY referemce yet another DictConstraints object which
             restricts the values its parent node field may take on
+  */
+
+  /* Some day should redo this using Builder architecture.
+     Define abstract (or nearly abstract) IdDictBuilder class, then
+     concrete derived XMLbuilder.  That way the dictionary class and
+     classes making up elements of the dictionary wouldn't have to know
+     about the XML representation at all.
   */
   class DictNode;
   class DictField;
