@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Jun 18 17:01:40 PDT 2003
+xmlUtil/src
+
+Modified Files:
+	Arith.cxx 
+Log Message:
+Add support for new unary operator, <half>
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Apr 17 14:27:09 PDT 2003
 xmlUtil/doc
 
@@ -771,7 +781,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.196 2003/04/17 21:26:46 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.197 2003/04/17 21:27:09 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
