@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.4 2001/06/12 18:35:42 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictConstraints.cxx,v 1.5 2001/06/12 19:57:05 jrb Exp $
 
 #include <string>
 #include <algorithm>
@@ -180,7 +180,7 @@ namespace xmlUtil {
       }
     } 
     else {  // other is interval-type constraint
-      for (unsigned iy = other.m_minVal; iy < other.m_maxVal; iy++) {
+      for (unsigned iy = other.m_minVal; iy <= other.m_maxVal; iy++) {
         if (!allowed(iy)) return false;
       }
     }
