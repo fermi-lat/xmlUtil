@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct 30 09:59:42 PST 2001
+xmlUtil/xml flight-prog.xml flightDerivedConstants.xml flightTKRDimPrim.xml flightTKROneTkr.xml
+
+Modified Files:
+	flight-prog.xml flightDerivedConstants.xml 
+	flightTKRDimPrim.xml flightTKROneTkr.xml 
+Log Message:
+Closeout volumes now described in flight.xml +  included files
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Oct 29 16:43:24 PST 2001
 xmlUtil/xml flight-doc.xml flight-prog.xml flightDerivedConstants.xml flightTKRDimPrim.xml flightTKRMatPrim.xml flightTKROneTkr.xml
 
