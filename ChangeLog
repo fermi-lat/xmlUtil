@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  7 13:24:57 PST 2001
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added files for XML Document Manager and test program
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:19:14 PST 2001
 xmlUtil/xmlUtil/docMan
 
