@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.6 2002/07/23 20:39:10 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.7 2002/09/13 21:46:05 jrb Exp $
 
 #include <string>
 #include <dom/DOMString.hpp>
@@ -103,7 +103,7 @@ namespace {
       DOM_Element  prim = doc.createElement("prim");
       prim.setAttribute("name", elt.getAttribute("name"));
       prim.setAttribute("type", "double");
-      prim.setAttribute("utype", "energy");
+      prim.setAttribute("uType", "energy");
       prim.setAttribute("unitEnergy", "MeV");
       double energy = atof(xml::Dom::transToChar(elt.getAttribute("value")));
       if ((DOMString("GeV")).equals(elt.getAttribute("units")) ) {
