@@ -1,6 +1,6 @@
 <?xml version="1.0"  ?>
 
-<!--  $Header: /nfs/slac/g/glast/ground/cvs/xml/xmldata/flight.xml,v 1.5 2001/03/20 23:51:22 jrb Exp $        -->
+<!--  $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xml/flight.xml,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $        -->
 <!-- 1 Feb 2001   Default length unit is now mm.  Change constants
                    accordingly.                             (jrb) 
     22 Feb 2001   Add CVS macros, CVSid attribute for gdd     
@@ -29,7 +29,7 @@
     <!ENTITY ACDDimPrim     SYSTEM "ACDDimPrim.xml">
   ]
 >
-<gdd CVSid="$Id: flight.xml,v 1.5 2001/03/20 23:51:22 jrb Exp $" 
+<gdd CVSid="$Id: flight.xml,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $" 
      DTDversion="2.0" >
   <constants>
     <version major="0" minor="0" />
@@ -331,6 +331,7 @@
         </const>
 
         <const name="CALMaxLayer" uType="count" >
+          <notes>upper limit on Cal layer idfield value</notes>
           <minus>
             <refer refTo="CALnLayer" />
             <const value="1" uType="count" />
@@ -338,6 +339,7 @@
         </const>
 
         <const name="nLadderM1" uType="count" >
+          <notes>Upper limit on ladder idField values</notes>
           <minus>
             <refer refTo="nWaferAcross" />
             <const value="1" uType="count" />
@@ -345,6 +347,7 @@
         </const>
 
         <const name="maxLog" uType="count" >
+          <notes>Upper limit on CsI log idField values</notes>
           <minus>
             <refer refTo="nLogPerLayer" />
             <const value="1" uType="count" />
@@ -352,6 +355,7 @@
         </const>
 
         <const name="maxTray" uType="count" >
+          <notes>Upper limit on tray idField values</notes>
           <minus>
             <refer refTo="numTrays" />
             <const value="1" uType="count" />
@@ -359,6 +363,7 @@
         </const>
 
         <const name="maxTrayM1" uType="count" >
+          <notes>max tray number of tray with bottom Si wafers</notes>
           <minus>
             <refer refTo="numTrays" />
             <const value="2" uType="count" />
@@ -366,6 +371,7 @@
         </const>
 
         <const name="maxWaferStripNum" uType="count" >
+          <notes>Upper limit on strip number within a wafer</notes>
           <minus>
             <refer refTo="stripPerWafer" />
             <const value="1" uType="count" />

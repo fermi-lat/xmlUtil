@@ -465,9 +465,9 @@
 <!-- Pre-processing programs should add a <source> element to the output. 
      Normally, inputId should be the value of the  CVSid attribute of
      the <gdd> element of the input file (which, in turn, should be
-     the evaluation of the CVS macro $Id: gdd.dtd,v 1.4 2001/03/23 19:59:30 jrb Exp $ for that file) but without
+     the evaluation of the CVS macro $Id: gdd.dtd,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $ for that file) but without
      the surrounding "$" and creatorId should be the translation of the 
-     CVS macro $Id: gdd.dtd,v 1.4 2001/03/23 19:59:30 jrb Exp $ for the pre-processing program, also without the
+     CVS macro $Id: gdd.dtd,v 1.1.1.1 2001/03/30 00:03:32 jrb Exp $ for the pre-processing program, also without the
      "$", but other information could be used instead for less formal 
      circumstances. (Note surrounding "$" should be omitted so that further
      check-ins to CVS will not cause substitutions).
@@ -918,10 +918,10 @@
  -->
 <!ELEMENT vConstraints (fValREF* | fVal*) >
 <!ATTLIST vConstraints  mustbe      NMTOKEN #IMPLIED
-                        mustbeREF   IDREF   #IMPLIED
                         min       NMTOKEN "0"
-                        minREF    IDREF   #IMPLIED
                         max       NMTOKEN #IMPLIED
+                        mustbeREF   IDREF   #IMPLIED
+                        minREF    IDREF   #IMPLIED
                         maxREF    IDREF   #IMPLIED >
 
 <!ELEMENT fVal EMPTY >

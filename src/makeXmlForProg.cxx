@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xml/src/makeXmlForProg.cxx,v 1.4 2001/03/27 00:18:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/makeXmlForProg.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for most clients programs (such
     as Simulation and Reconstruction).     Clients needing to
@@ -41,7 +41,7 @@ void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
 
 const char chDoubleQuote = 0x22;
 const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: makeXmlForProg.cxx,v 1.4 2001/03/27 00:18:15 jrb Exp $");
+const std::string myId("$Id: makeXmlForProg.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -90,6 +90,12 @@ int main(int argc, char* argv[]) {
   int iSec;
 
   xmlUtil::Substitute* sub = new xmlUtil::Substitute(doc);
+
+  DOM_Node dict = (docElt.getElementsByTagName(DOMString("idDict"))).item(0);
+  DOM_Element& dictElt = static_cast<DOM_Element &> (dict);
+  int nDictSub = sub->execute(dictElt);
+    std::cout << "#elements substituted for id dictionary:  " << nDictSub
+              << std::endl;
 
   for (iSec = 0; iSec < nSec; iSec++) {
     int nSub;

@@ -1,4 +1,4 @@
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
 
 #include <string>
 #include "dom/DOMString.hpp"
@@ -156,7 +156,7 @@ namespace xmlUtil {
 
     while (curConst != DOM_Element()) {
       Arith curArith(curConst);
-      //      double evalValue = curArith.evaluate();
+      double evalValue = curArith.evaluate();
       curArith.saveValue();
       
       curConst = xml::Dom::getSiblingElement(curConst);
