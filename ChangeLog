@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: jrb  Fri Aug 24 15:46:37 PDT 2001
+xmlUtil/src/id IdConverter.cxx IdDictMan.cxx IdOpCompress.cxx IdOpTruncate.cxx IdOperation.cxx DictField.cxx IdConversion.cxx NamedId.cxx
+
+Modified Files:
+	DictField.cxx IdConversion.cxx NamedId.cxx 
+Added Files:
+	IdConverter.cxx IdDictMan.cxx IdOpCompress.cxx 
+	IdOpTruncate.cxx IdOperation.cxx 
+Log Message:
+Most of identifier conversion code is written.  Still missing
+some methods and a comprehensive test program
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Aug 24 15:46:37 PDT 2001
 xmlUtil/cmt requirements
 
 Modified Files:
