@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Wed Dec 12 17:07:12 PST 2001
+xmlUtil/src/id
+
+Modified Files:
+	IdKey.cxx 
+Added Files:
+	testKey.cxx 
+Log Message:
+Add in  IdKey class and little test program to go with it
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Dec 12 17:06:26 PST 2001
 xmlUtil/cmt
 
