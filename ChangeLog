@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jul 23 13:02:04 PDT 2002
+xmlUtil/xml
+
+Added Files:
+	test-arith.xml 
+Log Message:
+Input to exercise test program eval.exe
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jul 23 13:01:20 PDT 2002
 xmlUtil/src
 
@@ -403,7 +413,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.159 2002/06/04 22:44:00 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.160 2002/07/23 20:01:21 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
