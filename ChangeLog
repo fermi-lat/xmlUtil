@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Oct 29 15:11:42 PST 2001
+xmlUtil/xml gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Fix typo introduced in materials definition
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct 26 16:01:49 PDT 2001
 xmlUtil/xml gdd.dtd
 
