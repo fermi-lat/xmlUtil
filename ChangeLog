@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec 11 11:16:40 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightMaterials.xml 
+Log Message:
+Fix unclosed comment
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec 11 11:14:51 PST 2001
 xmlUtil/xml
 
