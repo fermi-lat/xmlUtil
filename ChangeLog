@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  8 16:55:57 PST 2004
+xmlUtil/src/id
+
+Modified Files:
+	NamedId.cxx 
+Log Message:
+Change output formatting of named ids, used by detCheck diagnostic dumpIds
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  8 16:55:28 PST 2004
 xmlUtil/src/docMan
 
@@ -998,7 +1008,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.220 2003/12/17 00:24:03 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.221 2004/01/09 00:55:28 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
