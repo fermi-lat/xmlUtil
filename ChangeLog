@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 24 17:03:18 PDT 2001
+xmlUtil/xml flight-doc.xml flight-prog.xml flightDerivedConstants.xml flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml gdd.dtd
+
+Modified Files:
+	flight-doc.xml flight-prog.xml flightDerivedConstants.xml 
+	flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml 
+	gdd.dtd 
+Log Message:
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Oct 19 13:05:32 PDT 2001
 xmlUtil/xml flightNADDimPrim.xml
 
