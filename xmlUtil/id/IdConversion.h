@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.3 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdConversion.h,v 1.4 2001/09/20 19:44:53 jrb Exp $
 
 #ifndef XMLUTIL_IDCONVERSION_H
 #define XMLUTIL_IDCONVERSION_H
@@ -44,7 +44,7 @@ namespace xmlUtil {
   private:
 
     // Returns true if inputId satisfies condition
-    bool satisfies(NamedId& inputId);
+    bool satisfies(const NamedId& inputId);
 
     //! Doesn't check that input is in domain.  Typically invoked
     //! from \b convert.
