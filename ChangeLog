@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov  9 13:04:28 PST 2001
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Moved generic part of xml document manager to xml package
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:30:28 PST 2001
 xmlUtil/xmlUtil/docMan
 
