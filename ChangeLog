@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Aug 24 15:46:37 PDT 2001
+xmlUtil/cmt requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Most of identifier conversion code is written.  Still missing
+some methods and a comprehensive test program
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  9 15:28:56 PDT 2001
 xmlUtil/xmlUtil/id IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdConversion.h IdConverter.h IdDict.h IdOperation.h NamedId.h IdOpFactory.h
 
