@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Oct 18 17:05:08 PDT 2001
+xmlUtil/xml simpleComposition.xml simpleStack.xml
+
+Modified Files:
+	simpleComposition.xml simpleStack.xml 
+Log Message:
+value of substituted attribute should be false
+    *
+------------------------------------------------------------
 User: jrb  Thu Oct 18 13:38:52 PDT 2001
 xmlUtil/xml simpleComposition.xml simpleStack.xml
 
