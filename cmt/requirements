@@ -1,6 +1,6 @@
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.14 2002/07/23 20:52:53 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.15 2002/09/13 21:44:56 jrb Exp $
 package xmlUtil
-version v2r8p2
+version v2r8p3
 
 use facilities v2r*
 use xml        v4r*
