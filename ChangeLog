@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  3 13:07:27 PST 2002
+xmlUtil/xmlUtil/id
+
+Modified Files:
+	IdKey.h NamedId.h 
+Log Message:
+Adjust other include files for bona fide Identifier class
+code referring to it.
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  3 13:06:32 PST 2002
 xmlUtil/xml
 
@@ -45,7 +56,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.127 2002/01/03 21:05:38 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.128 2002/01/03 21:06:32 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
