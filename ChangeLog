@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Feb 21 14:42:50 PST 2003
+xmlUtil/src/id
+
+Modified Files:
+	IdConverter.cxx 
+Log Message:
+fix warnings
+    *
+------------------------------------------------------------
 User: als  Thu Jan  9 19:04:30 PST 2003
 xmlUtil/cmt
 
@@ -629,7 +638,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.182 2002/10/30 18:35:01 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.183 2003/01/10 03:04:30 als Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
