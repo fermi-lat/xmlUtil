@@ -1,6 +1,6 @@
 package xmlUtil
 
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.38 2004/02/03 00:43:38 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/cmt/requirements,v 1.42 2004/11/10 18:57:46 jrb Exp $
 
 version v3r0
 
@@ -9,7 +9,7 @@ author Joanne Bogart <jrb@slac.stanford.edu>
 use GlastPolicy  v*
 
 use facilities   v2r*
-use xml          v5r*
+use xmlBase          v5r*
 use xmlGeoDbs    v1r*
 
 apply_pattern shared_library
