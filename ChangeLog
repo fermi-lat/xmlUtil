@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: jrb  Thu Sep 20 12:44:53 PDT 2001
+xmlUtil/xmlUtil/id IdConverterLessThan.h DictNode.h IdConversion.h IdConverter.h NamedId.h
+
+Modified Files:
+	DictNode.h IdConversion.h IdConverter.h NamedId.h 
+Added Files:
+	IdConverterLessThan.h 
+Log Message:
+First stab at full set of utilities for managing identifiers, including
+conversion from one set of identifiers to another.  Compiles (on Linux)
+but is untested.
+
+    *
+------------------------------------------------------------
+User: jrb  Thu Sep 20 12:44:53 PDT 2001
 xmlUtil/src/id DictNode.cxx IdConversion.cxx IdConverter.cxx IdDict.cxx NamedId.cxx
 
 Modified Files:
