@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 27 17:06:43 PST 2004
+xmlUtil/src/id
+
+Modified Files:
+	DictNode.cxx 
+Log Message:
+Clean up unnecessary commented-out stuff
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 27 17:06:17 PST 2004
 xmlUtil/src
 
@@ -1178,7 +1188,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.238 2004/01/22 22:08:06 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.239 2004/01/28 01:06:17 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
