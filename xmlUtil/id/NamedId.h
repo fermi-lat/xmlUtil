@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.4 2001/06/26 16:23:41 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.5 2001/08/09 22:28:56 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
@@ -15,23 +15,33 @@ namespace xmlUtil {
 
   class NamedId {
   public:
-
-
     //! When length is known, best to allocate all at once at start
     NamedId(const int len = 0);
 
     //! Copy constructor (should also have assignment operator)
     NamedId(const NamedId& toCopy);
 
+    //! Just copy first n fields to a new NamedId
+    NamedId(const NamedId& toCopy, unsigned int n);
+
     ~NamedId();
 
+    struct IdField {
+      std::string name;
+      unsigned value;
+    };
+
     //! Build a NamedId incrementally
-    void addField(const std::string name, const unsigned value);
+    void addField(std::string name, unsigned value);
+
+    void addField(const IdField& newField);
 
     //! Return true if initial field names are compatible with \a path
-    bool hasPath(const NamedSeq& path);
+    bool hasPath(const NameSeq& path) const;
 
-    bool hasField(const std::string name);
+    //! Return index of first occurrence of specified field, or -1
+    //! if no occurrences.
+    int hasField(std::string name) const;
 
     // Retrieve just the value of each field
     // Identifier *extractIdentifier() const;
@@ -40,20 +50,35 @@ namespace xmlUtil {
     // So far this is just here for symmetry.  Can't think of a
     // good reason why anyone would want to do it.
     // NameSeq *extractNameSeq() const;
+    /* Return subsequence from field with name \b name1 to field with
+      name \b name2, inclusive.  If these fields don't exist or don't
+      occur in the proper order, return null.
+    */
+    // NamedId *extract(const std::string& name1, const std::string& name2);
 
-  private:
+    /* Return a subsequence from field with name \b name1 until the
+      end of the NamedId.  If \b name1 doesn't occur return null. */
+    // NamedId *extract(const std::string& name1);
+
+    // Append fields in order from \a toAppend 
+    //void append(const NamedId& toAppend);
+
+
     friend class DictNode;
+    friend class IdOperation;
+    friend class IdOpCompress;
 
-    typedef struct s_IdField {
-      std::string name;
-      unsigned value;
-    }  IdField;
+  protected:
 
     typedef std::vector <IdField* > Fields;
 
     typedef Fields::iterator  FieldIt;
+    //    typedef std::vector<IdField *>::iterator  FieldIt;
     
+    //    Fields *m_fields;
     Fields *m_fields;
+
+    //    void addField(const IdField& newField);
   };
 }
 #endif
