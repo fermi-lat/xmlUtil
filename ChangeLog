@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: jrb  Tue Sep 25 14:43:06 PDT 2001
+xmlUtil/xmlUtil/id IdConversion.h IdConverter.h IdConverterLessThan.h IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdOperation.h NamedId.h
+
+Modified Files:
+	IdConversion.h IdConverter.h IdConverterLessThan.h 
+	IdOpCompress.h IdOpDisappear.h IdOpTruncate.h IdOperation.h 
+	NamedId.h 
+Log Message:
+First attempt at complete identifier support, including conversions.
+Error handling still inadequate.  
+More comprehensive testing would be nice.
+Identifier conversions xml data for flight instrument TBD.
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Sep 25 14:43:05 PDT 2001
 xmlUtil/xml testIdConv.xml gdd.dtd test-dict.xml testIdDict.xml
 
