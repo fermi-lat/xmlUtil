@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  3 09:01:47 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightDerivedConstants.xml flightTKRDimPrim.xml 
+	flightTKRMatPrim.xml flightTKROneTkr.xml 
+Log Message:
+Use standard combinations of inactive materials  for tracker
+
+    *
+------------------------------------------------------------
 User: riccardo  Fri Nov 30 01:00:10 PST 2001
 xmlUtil/xml
 
