@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan  3 13:04:50 PST 2002
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Made Identifier into a real class rather than just typedef
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan  3 10:50:50 PST 2002
 xmlUtil/xml
 
@@ -12,7 +22,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header$ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.125 2002/01/03 18:50:50 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
