@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.11 2003/03/15 01:07:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/IdDict.cxx,v 1.12 2003/10/01 16:34:44 jrb Exp $
 
 #include <xercesc/dom/DOMString.hpp>
 #include <xercesc/dom/DOM_NodeList.hpp>
@@ -107,6 +107,10 @@ namespace xmlUtil {
   }
 
   std::string IdDict::getNameSeqString(const Identifier& id) const {
+    if (id.size() == 0) {
+      std::string s = "";
+      return s;
+    }
     NameSeq* seq = getNameSeq(id);
     std::string s = nameSeqString(*seq);
     delete seq;
