@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  7 13:29:14 PST 2001
+xmlUtil/src/docMan
+
+Added Files:
+	DocMan.cxx GDDDocMan.cxx test_docMan.cxx 
+Log Message:
+New classes and test program for XML Document Manager
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:28:36 PST 2001
 xmlUtil/src
 
