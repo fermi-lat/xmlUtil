@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: jrb  Mon Apr 23 16:26:02 PDT 2001
+xmlUtil/src makeXmlForDoc.cxx
+
+Modified Files:
+	makeXmlForDoc.cxx 
+Log Message:
+1. Modify strategy for defining id dictionary.  Now has explicit
+   tree representation.
+2. Exclude idDict from output of forProg.exe (documentation file
+   derived from complete detector description xml file)
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Apr 20 14:59:43 PDT 2001
 xmlUtil/cmt requirements
 
