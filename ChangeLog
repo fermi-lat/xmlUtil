@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan  3 11:24:52 PST 2005
+xmlUtil/src/local
+
+Modified Files:
+	outUtils.cxx 
+Log Message:
+Use xmlBase package rather than xml (changes to #includes; namespace refs)
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Jan  3 11:24:37 PST 2005
 xmlUtil/src/id
 
@@ -1519,7 +1529,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.272 2005/01/03 19:24:17 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.273 2005/01/03 19:24:37 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
