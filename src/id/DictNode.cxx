@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.10 2002/04/05 18:26:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictNode.cxx,v 1.11 2003/03/15 01:07:38 jrb Exp $
 #include <xercesc/dom/DOM_Element.hpp>
 #include <xercesc/dom/DOMString.hpp>
 #include "xml/Dom.h"
@@ -324,9 +324,49 @@ namespace xmlUtil {
     return false;
   }
 
+  /* begin to-be-edited   */
+
+  bool DictNode::allowIdentifier(Identifier::const_iterator idIt, 
+                                 Identifier::const_iterator end,
+                                 NameSeq *seq) {
+    if (!allowed(*idIt)) return false;
+    //    std::string fieldName = new std::string(
+    seq->push_back(&(m_field->getName()));
+
+    Identifier::const_iterator tmp = idIt;
+    ++tmp;
+    if (tmp == end) return true;
+
+    //look for children allowing our value for parent node
+    for (ConstNodeIterator it = m_children.begin(); it != m_children.end();
+         it++) {
+      DictNode *child = *it;
+      if ( (child->m_parConstraints == 0) ||
+           (child->m_parConstraints->allowed(*idIt)) ) {
+        if (child->allowIdentifier(++idIt, end, seq)) return true;
+      }
+    }
+    // Didn't work out so remove ourselves
+    seq->pop_back();
+
+    return false;
+  }
+
+
+
+  /* end to-be-edited   */
+
+
+
   bool DictNode::allowIdentifier(const Identifier& id, NamedId* named) {
     Identifier::const_iterator idIt = id.begin();
     return allowIdentifier(idIt, id.end(), named);
+  }
+
+
+  bool DictNode::allowIdentifier(const Identifier& id, NameSeq* seq) {
+    Identifier::const_iterator idIt = id.begin();
+    return allowIdentifier(idIt, id.end(), seq);
   }
     
   bool DictNode::allowNamedId(const NamedId& nId) {
@@ -415,7 +455,7 @@ namespace xmlUtil {
     deepCopy(toCopy);
   }
 
-  DictNode& DictNode::operator=(const DictNode& d) {
+  DictNode& DictNode::operator=(const DictNode& ) {
     throw No_Assignment();
   }
 

@@ -1,4 +1,4 @@
-// $Header: $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/DictFieldMan.cxx,v 1.6 2003/03/15 01:07:38 jrb Exp $
 
 #include "xmlUtil/id/DictFieldMan.h"
 #include "xmlUtil/id/DictField.h"
@@ -11,7 +11,7 @@ namespace xmlUtil {
 
   typedef Registry::iterator RegIterator;
 
-  DictFieldMan::DictFieldMan(int size) {
+  DictFieldMan::DictFieldMan(int /* size */) {
     m_reg = new Registry();
   }
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.7 2002/04/05 18:28:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdDict.h,v 1.8 2003/03/15 01:08:00 jrb Exp $
 #ifndef XMLUTIL_IDDICT_H
 #define XMLUTIL_IDDICT_H
 
@@ -61,12 +61,18 @@ namespace xmlUtil {
 
     //! Given an identifier (list of non-negative integers return
     //! the corresponding list of field names (empty list if invalid).
-    // Not clear anyone wants or needs this service; if not, dump it
-    //    NameSeq*     getNameSeq(const Identifier& id) const;
+    NameSeq*     getNameSeq(const Identifier& id) const;
 
     //! Given an identifier, return a full NamedIdentifier (conceptually
     //! a sequence of (name, value) pairs).
     NamedId *  getNamedId(const Identifier& id) const;
+
+    /// Given an Identifier object, return a string of the form 
+    ///   (name0,name1,name2,..)  where all punctuation except the ellipsis
+    ///                          is literally in the result.
+    /// The names are just the names of the identifier fields corresponding
+    /// to each position in the id.
+    std::string  getNameSeqString(const Identifier& id) const;
 
     const std::string& getDictName() const {return m_name;};
     int                getMajorVersion() const {return m_major;};
