@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Tue Dec  4 17:45:22 PST 2001
+xmlUtil/src/id
+
+Modified Files:
+	DictNode.cxx 
+Log Message:
+Slightly more robust check for consistent child nodes (don't attempt
+to use data structure without checking it's there first!)
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Dec  4 17:15:14 PST 2001
 xmlUtil/xmlUtil/id
 
