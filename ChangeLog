@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 31 12:08:04 PST 2002
+xmlUtil/xmlUtil
+
+Removed Files:
+	mainpage.h 
+Log Message:
+Move to recommended directory
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Jan 31 12:07:43 PST 2002
 xmlUtil/src
 
@@ -203,7 +213,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.142 2002/01/31 20:07:15 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.143 2002/01/31 20:07:45 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
