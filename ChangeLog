@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: jrb  Tue Jan 27 17:08:00 PST 2004
+xmlUtil/xmlUtil
+
+Modified Files:
+	Arith.h 
+Added Files:
+	XmlUtilException.h 
+Log Message:
+XmlUtilException.h Make a base exception class for the xmlUtil package, 
+                   itself derived from std::exception   
+Arith.h            Make new exception class derived from XmlUtilException
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Jan 27 17:06:43 PST 2004
 xmlUtil/src/id
 
@@ -1188,7 +1202,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.239 2004/01/28 01:06:17 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.240 2004/01/28 01:06:43 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
