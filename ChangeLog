@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Mon Aug 11 17:48:26 PDT 2003
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+apply pattern shared_library
+    *
+------------------------------------------------------------
 User: hansl  Thu Aug  7 07:57:39 PDT 2003
 xmlUtil/doc
 
@@ -865,7 +874,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.206 2003/08/07 01:46:01 hansl Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.207 2003/08/07 14:57:40 hansl Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
