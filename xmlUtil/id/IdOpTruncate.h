@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpTruncate.h,v 1.2 2001/08/24 22:46:38 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/IdOpTruncate.h,v 1.3 2001/09/25 21:43:06 jrb Exp $
 
 #ifndef XMLUTIL_IDOPTRUNCATE_H
 #define XMLUTIL_IDOPTRUNCATE_H
@@ -11,7 +11,7 @@ namespace xmlUtil {
   //! 
   class IdOpTruncate : public IdOperation {
   public:
-    IdOpTruncate(DOM_Element trunc);
+    IdOpTruncate(DomElement trunc);
     ~IdOpTruncate() {}
 
     virtual NamedId * convert(const NamedId& inputId);
