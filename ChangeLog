@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Fri Nov  9 13:05:58 PST 2001
+xmlUtil/xmlUtil/docMan
+
+Modified Files:
+	GDDDocMan.h 
+Removed Files:
+	DocClient.h DocMan.h 
+Log Message:
+Moved generic part of XML doc manager to xml package
+
+    *
+------------------------------------------------------------
 User: jrb  Fri Nov  9 13:05:34 PST 2001
 xmlUtil/xml
 
