@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Dec  3 10:28:36 PST 2001
+xmlUtil/xml
+
+Modified Files:
+	flightTKRMatPrim.xml 
+Log Message:
+Add missing attributes in definition of TKRBotBiasMat
+
+    *
+------------------------------------------------------------
 User: jrb  Mon Dec  3 09:01:47 PST 2001
 xmlUtil/xml
 
