@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Nov  7 13:30:28 PST 2001
+xmlUtil/xmlUtil/docMan
+
+Added Files:
+	DocClient.h DocMan.h GDDDocMan.h 
+Log Message:
+Header files for new XML Document Manager classes
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Nov  7 13:30:05 PST 2001
 xmlUtil/xmlUtil
 
