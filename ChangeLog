@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Wed Oct 24 17:57:46 PDT 2001
+xmlUtil/xml gdd.dtd
+
+Modified Files:
+	gdd.dtd 
+Log Message:
+Fix up comments a bit to make clear what's used by GLAST and what isn't
+
+    *
+------------------------------------------------------------
 User: jrb  Wed Oct 24 17:03:18 PDT 2001
 xmlUtil/xml flight-doc.xml flight-prog.xml flightDerivedConstants.xml flightIdDict.xml flightTKRDimPrim.xml flightTKROneTkr.xml gdd.dtd
 
