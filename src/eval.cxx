@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xml/src/eval.cxx,v 1.6 2001/03/27 00:18:15 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $
 /*! \file Standalone program to transform source xml file into a 
     preprocessed version suitable for most clients (documentation-type
     clients will probably stick with the original file). 
@@ -33,9 +33,9 @@ void addSourceElt(DOM_Document doc);
 void outProlog(const DOM_DocumentType& doctype, std::ostream& out);
 char * stripDollar(char *toStrip);
 
-const char chDoubleQuote = 0x22;
-const std::string dquote(&chDoubleQuote);
-const std::string myId("$Id: eval.cxx,v 1.6 2001/03/27 00:18:15 jrb Exp $");
+const char chDoubleQ = 0x22;
+const std::string dquote(&chDoubleQ);
+const std::string myId("$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -104,7 +104,7 @@ int main(int argc, char* argv[]) {
 
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id$");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
@@ -219,7 +219,7 @@ void  addSourceElt(DOM_Document doc) {
 
 /*! Input is a null-terminated character string.  Output is
  * another such with leading and trailing '$', if any, stripped.
- * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.6 2001/03/27 00:18:15 jrb Exp $" into
+ * The purpose is to turn a CVS macro, such as "$Id: eval.cxx,v 1.1.1.1 2001/03/30 00:03:31 jrb Exp $" into
  * something which will no longer be substituted for.
  */
 
