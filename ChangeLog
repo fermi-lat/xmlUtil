@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: jrb  Tue Sep 25 14:43:05 PDT 2001
+xmlUtil/xml testIdConv.xml gdd.dtd test-dict.xml testIdDict.xml
+
+Modified Files:
+	gdd.dtd test-dict.xml testIdDict.xml 
+Added Files:
+	testIdConv.xml 
+Log Message:
+First attempt at complete identifier support, including conversions.
+Error handling still inadequate.  
+More comprehensive testing would be nice.
+Identifier conversions xml data for flight instrument TBD.
+
+    *
+------------------------------------------------------------
+User: jrb  Tue Sep 25 14:43:05 PDT 2001
 xmlUtil/src/id IdConversion.cxx IdConverter.cxx IdDict.cxx IdOpCompress.cxx IdOpTruncate.cxx IdOperation.cxx NamedId.cxx testId.cxx
 
 Modified Files:
