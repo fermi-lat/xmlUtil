@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.2 2001/05/17 21:09:17 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/DictConstraints.h,v 1.3 2001/05/31 22:56:39 jrb Exp $
 
 #ifndef XMLUTIL_DICTCONSTRAINTS_H
 #define XMLUTIL_DICTCONSTRAINTS_H
@@ -13,6 +13,7 @@ namespace xmlUtil {
   public: 
     //! Build constraints object from xml representation
     DictConstraints(DOM_Element elt);
+    bool equals(const DictConstraints& other);
     ~DictConstraints(){if (m_valList) delete m_valList;}
   public:    
     //! Does the specified value satisfy the constraints?
