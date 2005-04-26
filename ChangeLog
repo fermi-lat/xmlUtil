@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: jrb  Tue Apr 26 16:27:26 PDT 2005
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+outUtils.cxx  Add #include of <string> to keep Windows compiler happy
+requirements  Reinstate 3 non-critical test programs, now that they build on both 
+              systems
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r1p1, operation: add
 Package: xmlUtil
@@ -1737,7 +1749,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.282 2005/04/13 23:50:12 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.283 2005/04/13 23:50:23 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
