@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.7 2004/01/28 01:08:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/Arith.h,v 1.8 2004/11/10 18:59:28 jrb Exp $
 #ifndef XMLUTIL_ARITH_H 
 #define XMLUTIL_ARITH_H
 
@@ -43,6 +43,7 @@ namespace xmlUtil {
       ETAG_uminus,
       ETAG_max,
       ETAG_half,
+      ETAG_sqrt,
       ETAG_n 
     } ;
 

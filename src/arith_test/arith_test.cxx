@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/arith_test/arith_test.cxx,v 1.1 2004/11/10 18:58:16 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/arith_test/arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $
 /*! \file Standalone program to test Arith class
 
  */
@@ -27,7 +27,7 @@ std::ostream *openOut(char * outfile);
 void outProlog(const XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType* doctype, 
                std::ostream& out);
 
-const std::string myId("$Id: arith_test.cxx,v 1.1 2004/11/10 18:58:16 jrb Exp $");
+const std::string myId("$Id: arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -53,7 +53,8 @@ int main(int argc, char* argv[]) {
   }
 
   xmlBase::XmlParser* parser = new xmlBase::XmlParser();
-  DOMDocument* doc = parser->parse(argv[1], "gdd");
+  //  DOMDocument* doc = parser->parse(argv[1], "gdd");
+  DOMDocument* doc = parser->parse(argv[1], "");
 
   if (doc == 0) {
     std::cout << "Document failed to parse correctly" << std::endl;
@@ -144,7 +145,7 @@ int main(int argc, char* argv[]) {
   /*
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.1 2004/11/10 18:58:16 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
