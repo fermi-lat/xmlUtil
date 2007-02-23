@@ -1,9 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.10 2004/11/10 18:58:00 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Arith.cxx,v 1.11 2005/01/03 19:23:35 jrb Exp $
 
 // #include <string>
 #include "xmlBase/Dom.h"
 #include "xmlUtil/Arith.h"
 #include <xercesc/dom/DOMDocument.hpp>
+#include <cmath>
 // #include <xercesc/dom/DOMElement.hpp>
 
     
@@ -34,6 +35,7 @@ namespace xmlUtil {
     typeNames[ETAG_uminus] = new std::string("uminus");
     typeNames[ETAG_max] = new std::string("max");
     typeNames[ETAG_half] = new std::string("half");
+    typeNames[ETAG_sqrt] = new std::string("sqrt");
 
     notesString = new (std::string) ("notes");
     lengthString = new std::string("length");
@@ -134,6 +136,16 @@ namespace xmlUtil {
         // Have a single child
         curElt = xmlBase::Dom::getFirstChildElement(m_elt);
         m_number = 0.5 * (Arith(curElt).evaluate());
+        break;
+      }
+
+      case ETAG_sqrt: {
+        curElt = xmlBase::Dom::getFirstChildElement(m_elt);
+        double sqrtArg = (Arith(curElt).evaluate());
+        if (sqrtArg < 0 ) {  // tilt!
+          throw XmlUtilException();
+        }
+        m_number = sqrt(sqrtArg);
         break;
       }
 
