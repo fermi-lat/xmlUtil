@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Fri Feb 23 11:05:25 PST 2007
+xmlUtil/src
+
+Modified Files:
+	Arith.cxx 
+Log Message:
+Add support for <sqrt> tag to Arith
+Minor update to arith_test.cxx
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r1p2, operation: add
 Package: xmlUtil
@@ -1852,7 +1863,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /a/surrey01/vol/vol2/g.glast_ground/cvs/xmlUtil/ChangeLog,v 1.287 2005/04/26 23:30:47 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.288 2005/04/26 23:30:59 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
