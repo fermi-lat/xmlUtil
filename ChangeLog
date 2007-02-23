@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: jrb  Fri Feb 23 11:05:25 PST 2007
+xmlUtil/src/arith_test
+
+Modified Files:
+	arith_test.cxx 
+Log Message:
+Add support for <sqrt> tag to Arith
+Minor update to arith_test.cxx
+
+    *
+------------------------------------------------------------
+User: jrb  Fri Feb 23 11:05:25 PST 2007
 xmlUtil/src
 
 Modified Files:
@@ -1863,7 +1874,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.288 2005/04/26 23:30:59 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.289 2007/02/23 19:05:25 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
