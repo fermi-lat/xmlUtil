@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.7 2003/10/01 16:34:44 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/NamedId.cxx,v 1.8 2004/01/09 00:55:57 jrb Exp $
 
 #include "xmlUtil/id/NamedId.h"
 
@@ -84,6 +84,18 @@ namespace xmlUtil {
     return stripped;
   }
 
+  std::vector<std::pair<std::string, unsigned> > NamedId::fieldVector() const {
+    std::vector<std::pair<std::string, unsigned> > v;
+
+    Fields*  pField = m_fields;
+    for (unsigned ix = 0; ix < size(); ix++) {
+      std::string nm = (*pField)[ix]->name;
+      unsigned val = (*pField)[ix]->value;
+      std::pair<std::string, unsigned> fld(nm, val);
+      v.push_back(fld);
+    }
+    return v;
+  }
   //! Output to an ostream.  
   std::ostream& operator<<(std::ostream& s, const NamedId& nId) {
     if (nId.size() == 0) {
