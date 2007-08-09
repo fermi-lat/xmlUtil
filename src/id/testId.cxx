@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/testId.cxx,v 1.8 2004/11/10 18:58:58 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/id/testId.cxx,v 1.9 2005/01/03 19:24:37 jrb Exp $
 
 /*! \file Stand-alone test program for id dictionary code */
 
@@ -173,6 +173,31 @@ void testQuery(xmlUtil::IdDict* dict) {
   valid = dict->idOk(nIdOk);
   std::cout << "nIdOk is " <<  ( (valid) ? "VALID" : "INVALID" );
   std::cout << std::endl;
+
+
+  xmlUtil::NamedId ribId(6);
+  ribId.addField("fLATObjects", 1);
+  ribId.addField("fACDFace", 0);
+  ribId.addField("fACDCmp", 41);
+  ribId.addField("fMeasure", 0);
+  ribId.addField("fRibbon", 2);
+  ribId.addField("fRibbonSegment", 1);
+
+  valid = dict->idOk(ribId);
+  std::cout << "ribId is " <<  ( (valid) ? "VALID" : "INVALID" );
+  std::cout << std::endl;
+
+  if (valid) {
+    Identifier *ribStripped = ribId.stripNames();
+    std::cout << "..stripped: " << (*ribStripped);
+    std::cout << "..reconstitued: " << std::endl 
+            << (*(dict->getNamedId(*ribStripped)));
+
+    std::cout << std::endl << "Just the names from ribStripped: " 
+              << std::endl << 
+    dict->getNameSeqString(*ribStripped) << std::endl;
+
+  }
 
   std::cout << "Original named Id: " << nIdOk;
   Identifier *stripped = nIdOk.stripNames();

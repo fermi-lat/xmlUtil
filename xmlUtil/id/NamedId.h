@@ -1,9 +1,10 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.10 2002/01/03 21:07:27 jrb Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/xmlUtil/id/NamedId.h,v 1.11 2003/10/01 16:34:44 jrb Exp $
 #ifndef XMLUTIL_NAMEDID_H
 #define XMLUTIL_NAMEDID_H
 
 #include <vector>
 #include <string>
+#include <utility>
 #include <iostream>
 #include "xmlUtil/id/Identifier.h"
 
@@ -88,6 +89,9 @@ namespace xmlUtil {
 
     // Append fields in order from \a toAppend 
     //void append(const NamedId& toAppend);
+
+    // Return vector of pairs corresponding to contents of named id
+    std::vector<std::pair<std::string, unsigned> > fieldVector() const;
 
     friend class DictNode;
     friend class IdOperation;
