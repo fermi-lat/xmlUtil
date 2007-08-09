@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  9 12:09:35 PDT 2007
+xmlUtil/src/id
+
+Modified Files:
+	NamedId.cxx testId.cxx 
+Log Message:
+Add utility NamedId::fieldVector for use of GlastDetSvc
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r2, operation: add
 Package: xmlUtil
@@ -1974,7 +1984,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.293 2007/02/23 20:09:53 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.294 2007/02/23 20:10:04 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
