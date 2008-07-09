@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul  9 14:13:48 PDT 2008
+GlastRelease-scons/xmlUtil
+
+Added Files:
+	SConscript xmlUtilLib.py 
+Log Message:
+Added SConscript files to packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: xmlUtil-03-04-00, operation: add
 Package: xmlUtil
@@ -2368,7 +2377,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.308 2007/08/15 22:59:14 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.309 2008/04/07 15:01:36 glastrm Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
