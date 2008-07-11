@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: glast  Thu Jul 10 17:32:27 PDT 2008
+GlastRelease-scons/xmlUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Changes to allow GR packages to build on windows
+    *
+------------------------------------------------------------
 User: glastrm  Wed Jul  9 14:13:48 PDT 2008
 GlastRelease-scons/xmlUtil
 
@@ -2377,7 +2386,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.309 2008/04/07 15:01:36 glastrm Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.310 2008/07/09 21:13:48 glastrm Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
