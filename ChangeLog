@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: glastrm  Wed Jul 23 13:30:04 PDT 2008
+xmlUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v3r4p1, operation: add
 Package: xmlUtil
@@ -2477,7 +2485,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.313 2008/07/23 20:10:02 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.314 2008/07/23 20:10:09 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
