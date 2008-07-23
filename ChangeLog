@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Wed Jul 23 13:09:40 PDT 2008
+xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added new line - version v3r4p1
+    *
+------------------------------------------------------------
 User: glast  Thu Jul 10 17:32:27 PDT 2008
 GlastRelease-scons/xmlUtil
 
@@ -2386,7 +2395,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.310 2008/07/09 21:13:48 glastrm Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.311 2008/07/11 00:32:27 glast Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
