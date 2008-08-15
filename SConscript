@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/SConscript,v 1.2 2008/07/11 00:32:27 glast Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/SConscript,v 1.3 2008/07/23 20:30:04 glastrm Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: xmlUtil-03-04-01
 Import('baseEnv')
@@ -16,16 +16,17 @@ xmlUtil = libEnv.SharedLibrary('xmlUtil', ['src/Arith.cxx', 'src/Substitute.cxx'
                                            'src/id/NamedId.cxx', 'src/id/IdKey.cxx', 'src/docMan/GDDDocMan.cxx'])
 
 progEnv.Tool('xmlUtilLib')
-byId_test = progEnv.Program('byId_test', 'src/byId_test/byId_test.cxx')
-arith_test = progEnv.Program('arith_test', 'src/arith_test/arith_test.cxx')
+byId_test = progEnv.Program('byId_test',[ 'src/byId_test/byId_test.cxx'])
+arith_test = progEnv.Program('arith_test',[ 'src/arith_test/arith_test.cxx'])
 
 eval = progEnv.Program('eval', ['src/eval.cxx', 'src/local/outUtils.cxx'])
 forProg = progEnv.Program('forProg', ['src/makeXmlForProg.cxx', 'src/local/outUtils.cxx'])
 forDoc = progEnv.Program('forDoc', ['src/makeXmlForDoc.cxx', 'src/local/outUtils.cxx'])
 
-testId = progEnv.Program('testId', 'src/id/testId.cxx')
-testDocMan = progEnv.Program('testDocMan', 'src/docMan/test_docMan.cxx')
-testKey = progEnv.Program('testKey', 'src/id/testKey.cxx')
+testId = progEnv.Program('testId',[ 'src/id/testId.cxx'])
+testDocMan = progEnv.Program('testDocMan',[ 'src/docMan/test_docMan.cxx'])
+testKey = progEnv.Program('testKey', '[src/id/testKey.cxx]')
 
-progEnv.Tool('registerObjects', package = 'xmlUtil', libraries = [xmlUtil], testApps = [byId_test, arith_test], binaries = [eval, forProg, forDoc, testId, testDocMan, testKey],
+progEnv.Tool('registerObjects', package = 'xmlUtil', libraries = [xmlUtil],
+             testApps = [byId_test, arith_test], binaries = [eval, forProg, forDoc, testId, testDocMan, testKey],
              includes = listFiles(['xmlUtil/*'], recursive = 1))
