@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Fri Aug 15 14:22:49 PDT 2008
+GlastRelease-scons/xmlUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Added SConscript files for packages
+    *
+------------------------------------------------------------
 TAG
 Tag name: xmlUtil-03-04-01, operation: add
 Package: xmlUtil
@@ -2567,7 +2576,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.316 2008/07/23 20:30:10 glastrm Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.317 2008/07/23 20:30:20 glastrm Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
