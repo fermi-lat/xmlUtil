@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/SConscript,v 1.3 2008/07/23 20:30:04 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/SConscript,v 1.4 2008/08/15 21:22:49 ecephas Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: xmlUtil-03-04-01
 Import('baseEnv')
@@ -25,8 +25,11 @@ forDoc = progEnv.Program('forDoc', ['src/makeXmlForDoc.cxx', 'src/local/outUtils
 
 testId = progEnv.Program('testId',[ 'src/id/testId.cxx'])
 testDocMan = progEnv.Program('testDocMan',[ 'src/docMan/test_docMan.cxx'])
-testKey = progEnv.Program('testKey', '[src/id/testKey.cxx]')
+testKey = progEnv.Program('testKey', ['src/id/testKey.cxx'])
 
 progEnv.Tool('registerObjects', package = 'xmlUtil', libraries = [xmlUtil],
              testApps = [byId_test, arith_test], binaries = [eval, forProg, forDoc, testId, testDocMan, testKey],
              includes = listFiles(['xmlUtil/*'], recursive = 1))
+
+
+
