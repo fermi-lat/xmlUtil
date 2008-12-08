@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Mon Dec  8 13:40:49 PST 2008
+GlastRelease-scons/xmlUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in SConscript for xmlUtil v3r4p1 (for branch-tag, GlastReleasev15r49) 
+    *
+------------------------------------------------------------
 User: ecephas  Fri Aug 15 14:22:49 PDT 2008
 GlastRelease-scons/xmlUtil
 
@@ -2576,7 +2585,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.317 2008/07/23 20:30:20 glastrm Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.318 2008/08/15 21:22:49 ecephas Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
