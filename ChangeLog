@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: xmlUtil-03-04-01, operation: mov
+Package: xmlUtil
+User: glast  Mon Dec  8 14:41:32 2008
+Files:
+  xmlUtil/SConscript  1.5
+  xmlUtil/SConscript  1.5
+
+    *
+------------------------------------------------------------
 User: ecephas  Mon Dec  8 13:40:49 PST 2008
 GlastRelease-scons/xmlUtil
 
@@ -2585,7 +2595,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.318 2008/08/15 21:22:49 ecephas Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.319 2008/12/08 21:40:49 ecephas Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
