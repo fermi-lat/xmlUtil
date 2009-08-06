@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 16:59:48 PDT 2009
+GlastRelease-scons/xmlUtil
+
+Modified Files:
+	SConscript xmlUtilLib.py 
+Log Message:
+SConscript:  use registerTargets
+xmlUtilLib.py: explicitly mention everything directly used
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: xmlUtil-03-04-01, operation: mov
 Package: xmlUtil
@@ -2842,7 +2853,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.325 2009/01/23 00:07:55 ecephas Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.326 2009/01/23 00:32:05 glastrm Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
