@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 10 16:55:43 PDT 2009
+GlastRelease-scons/xmlUtil/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Get ready for tag
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Sep 10 09:59:34 PDT 2009
 GlastRelease-scons/xmlUtil/src/arith_test
 
@@ -2873,7 +2883,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.328 2009/09/10 16:59:34 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.329 2009/09/10 16:59:34 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
