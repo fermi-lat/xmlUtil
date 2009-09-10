@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Sep 10 09:59:34 PDT 2009
+GlastRelease-scons/xmlUtil/src
+
+Modified Files:
+	Constants.cxx Substitute.cxx 
+Log Message:
+Get rid of unused variables to eliminate (harmless) compiler warnings
+
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  6 16:59:48 PDT 2009
 GlastRelease-scons/xmlUtil
 
@@ -2853,7 +2863,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.326 2009/01/23 00:32:05 glastrm Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.327 2009/08/06 23:59:48 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
