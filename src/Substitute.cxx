@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Substitute.cxx,v 1.6 2004/11/10 18:58:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/src/Substitute.cxx,v 1.7 2005/01/03 19:23:35 jrb Exp $
 
 #include <vector>
 #include <string>
@@ -47,8 +47,6 @@ namespace xmlUtil {
     
     if (std::string("true") == xmlBase::Dom::getAttribute(top, "substituted"))
       return 0;
-
-    DOMNode* curNode = top;
 
     // This is not explained anywhere in the xerces doc. that I
     // can see, but from the code in TreeWalkerImpl::acceptNode
@@ -117,7 +115,8 @@ namespace xmlUtil {
       // we may have to evaluate it.
       if (!val.size()) { // try evaluating it
         Arith curArith(constElt);
-        double evalValue = curArith.evaluate();
+        /*double evalValue = */
+        curArith.evaluate();
         curArith.saveValue();
         val = Dom::getAttribute(constElt, "value");
       }
