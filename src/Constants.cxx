@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/Constants.cxx,v 1.14 2004/11/10 18:58:01 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/src/Constants.cxx,v 1.15 2005/01/03 19:23:35 jrb Exp $
 #include <iostream>
 #include <string>
 
@@ -51,7 +51,8 @@ namespace {
       if (isInt = (typeAtt == std::string("int"))) {
         // New style:  it had better be an int!  If not, it's an error
         try {
-          int intVal = Dom::getIntAttribute(elt, "value");
+          /*int intVal = */
+          Dom::getIntAttribute(elt, "value");
         }
         catch (xmlBase::DomException ex) {
           std::cerr << "from xmlBase::Constants::normPrim " << ex.getMsg() 
@@ -168,7 +169,8 @@ namespace xmlUtil {
       //      DOMNode* parent = elt->getParentNode();
       m_walker->setCurrentNode(elt);
       DOMNode* parent = m_walker->parentNode();
-      DOMNode* oldChild =  parent->replaceChild(prim, elt);
+      /*DOMNode* oldChild =  */
+      parent->replaceChild(prim, elt);
     }
   }
 
@@ -277,7 +279,8 @@ namespace xmlUtil {
       while (curConst != 0) {
         try {
           Arith curArith(curConst);
-          double evalValue = curArith.evaluate();
+          /* double evalValue = */
+          curArith.evaluate();
 
           /*
                 for debug

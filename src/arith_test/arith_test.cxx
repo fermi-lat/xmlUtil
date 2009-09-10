@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/src/arith_test/arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/src/arith_test/arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $
 /*! \file Standalone program to test Arith class
 
  */
@@ -27,7 +27,7 @@ std::ostream *openOut(char * outfile);
 void outProlog(const XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType* doctype, 
                std::ostream& out);
 
-const std::string myId("$Id: arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $");
+const std::string myId("$Id: arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -43,7 +43,7 @@ int main(int argc, char* argv[]) {
   using XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType;
   using XERCES_CPP_NAMESPACE_QUALIFIER XMLString;
 
-  std::ostream *out;
+  // std::ostream *out;
   if (argc < 2) {  // instructions
     std::cout << "Required first argument is xml file to be parsed" 
               << std::endl;
@@ -64,8 +64,8 @@ int main(int argc, char* argv[]) {
   // Else successful.   Open output
   //  out = openOut(argv[2]);
 
-  DOMElement* docElt = doc->getDocumentElement();
-  DOMDocumentType*  doctype = doc->getDoctype(); //  check for gdd?? 
+  //  DOMElement* docElt = doc->getDocumentElement();
+  //  DOMDocumentType*  doctype = doc->getDoctype(); //  check for gdd?? 
 
   // Just try something very simple, using minimal code outside Xerces,
   //  to see if getElementById is screwed up 
@@ -145,7 +145,7 @@ int main(int argc, char* argv[]) {
   /*
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.2 2005/01/03 19:23:50 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
