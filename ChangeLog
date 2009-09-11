@@ -2,6 +2,17 @@
 TAG
 Tag name: xmlUtil-03-04-02, operation: add
 Package: xmlUtil
+User: jrb  Thu Sep 10 17:00:13 2009
+Files:
+  xmlUtil/xml/.cvsignore  1.1
+  xmlUtil/xml/test-arith.xml  1.5
+  xmlUtil/xml/primextract.xsl  1.1.1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: xmlUtil-03-04-02, operation: add
+Package: xmlUtil
 User: jrb  Thu Sep 10 17:00:07 2009
 Files:
   xmlUtil/src/eval.cxx  1.8
@@ -2970,7 +2981,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.335 2009/09/10 23:59:56 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.336 2009/09/11 00:00:07 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
