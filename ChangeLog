@@ -2,6 +2,39 @@
 TAG
 Tag name: xmlUtil-03-04-02, operation: add
 Package: xmlUtil
+User: jrb  Thu Sep 10 17:00:19 2009
+Files:
+  xmlUtil/xmlUtil/XmlUtilException.h  1.2
+  xmlUtil/xmlUtil/Arith.h  1.10
+  xmlUtil/xmlUtil/Substitute.h  1.6
+  xmlUtil/xmlUtil/Source.h  1.4
+  xmlUtil/xmlUtil/Constants.h  1.4
+  xmlUtil/xmlUtil/docMan/GDDDocMan.h  1.6
+  xmlUtil/xmlUtil/id/Identifier.h  1.1
+  xmlUtil/xmlUtil/id/IdConverterLessThan.h  1.4
+  xmlUtil/xmlUtil/id/DictFieldMan.h  1.6
+  xmlUtil/xmlUtil/id/DictNode.h  1.13
+  xmlUtil/xmlUtil/id/DictObject.h  1.1
+  xmlUtil/xmlUtil/id/IdOperation.h  1.9
+  xmlUtil/xmlUtil/id/DictField.h  1.8
+  xmlUtil/xmlUtil/id/IdDict.h  1.10
+  xmlUtil/xmlUtil/id/IdOpCompress.h  1.5
+  xmlUtil/xmlUtil/id/IdOpTruncate.h  1.5
+  xmlUtil/xmlUtil/id/NamedId.h  1.12
+  xmlUtil/xmlUtil/id/IdConversion.h  1.11
+  xmlUtil/xmlUtil/id/IdKey.h  1.3
+  xmlUtil/xmlUtil/id/IdDictMan.h  1.1
+  xmlUtil/xmlUtil/id/DictConstraints.h  1.8
+  xmlUtil/xmlUtil/id/DictVisitor.h  1.2
+  xmlUtil/xmlUtil/id/IdOpDisappear.h  1.6
+  xmlUtil/xmlUtil/id/DictValidVisitor.h  1.2
+  xmlUtil/xmlUtil/id/IdConverter.h  1.10
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: xmlUtil-03-04-02, operation: add
+Package: xmlUtil
 User: jrb  Thu Sep 10 17:00:13 2009
 Files:
   xmlUtil/xml/.cvsignore  1.1
@@ -2981,7 +3014,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.336 2009/09/11 00:00:07 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.337 2009/09/11 00:00:13 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
