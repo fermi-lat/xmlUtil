@@ -2,6 +2,44 @@
 TAG
 Tag name: xmlUtil-03-04-02, operation: add
 Package: xmlUtil
+User: jrb  Thu Sep 10 17:00:07 2009
+Files:
+  xmlUtil/src/eval.cxx  1.8
+  xmlUtil/src/Source.cxx  1.7
+  xmlUtil/src/Constants.cxx  1.16
+  xmlUtil/src/Arith.cxx  1.13
+  xmlUtil/src/Substitute.cxx  1.8
+  xmlUtil/src/mainpage.h  1.1
+  xmlUtil/src/makeXmlForProg.cxx  1.11
+  xmlUtil/src/makeXmlForDoc.cxx  1.9
+  xmlUtil/src/arith_test/arith_test.cxx  1.4
+  xmlUtil/src/byId_test/byId_test.cxx  1.2
+  xmlUtil/src/docMan/test_docMan.cxx  1.8
+  xmlUtil/src/docMan/GDDDocMan.cxx  1.9
+  xmlUtil/src/id/DictValidVisitor.cxx  1.2
+  xmlUtil/src/id/IdConversion.cxx  1.11
+  xmlUtil/src/id/DictConstraints.cxx  1.12
+  xmlUtil/src/id/Identifier.cxx  1.2
+  xmlUtil/src/id/DictNode.cxx  1.17
+  xmlUtil/src/id/IdKey.cxx  1.5
+  xmlUtil/src/id/DictField.cxx  1.5
+  xmlUtil/src/id/IdConverter.cxx  1.11
+  xmlUtil/src/id/IdOpCompress.cxx  1.5
+  xmlUtil/src/id/IdDictMan.cxx  1.1
+  xmlUtil/src/id/testId.cxx  1.10
+  xmlUtil/src/id/IdDict.cxx  1.17
+  xmlUtil/src/id/testKey.cxx  1.4
+  xmlUtil/src/id/DictFieldMan.cxx  1.8
+  xmlUtil/src/id/NamedId.cxx  1.9
+  xmlUtil/src/id/IdOpTruncate.cxx  1.5
+  xmlUtil/src/id/IdOperation.cxx  1.6
+  xmlUtil/src/local/outUtils.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: xmlUtil-03-04-02, operation: add
+Package: xmlUtil
 User: jrb  Thu Sep 10 16:59:56 2009
 Files:
   xmlUtil/doc/release.notes  1.34
@@ -2932,7 +2970,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.334 2009/09/10 23:59:51 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.335 2009/09/10 23:59:56 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
