@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/SConscript,v 1.7 2009/08/06 23:59:48 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/SConscript,v 1.8 2009/09/10 23:59:39 jrb Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
 # Version: xmlUtil-03-04-02
 Import('baseEnv')
@@ -8,7 +8,7 @@ Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('xmlUtilLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='xmlUtil', toBuild='shared')
 xmlUtil = libEnv.SharedLibrary('xmlUtil',
                                ['src/Arith.cxx', 'src/Substitute.cxx',
                                 'src/Constants.cxx', 'src/Source.cxx',
