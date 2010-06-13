@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: jrb  Sun Jun 13 00:04:45 PDT 2010
+xmlUtil/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
+User: jrb  Sun Jun 13 00:04:45 PDT 2010
 xmlUtil
 
 Modified Files:
@@ -3032,7 +3041,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.339 2010/06/11 00:48:59 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.340 2010/06/13 07:04:45 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
