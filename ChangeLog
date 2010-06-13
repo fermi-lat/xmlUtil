@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Sun Jun 13 00:04:45 PDT 2010
+xmlUtil
+
+Modified Files:
+	SConscript 
+Log Message:
+stag/GoGui_auto-tag
+    *
+------------------------------------------------------------
 User: jrb  Thu Jun 10 17:48:59 PDT 2010
 GlastRelease-scons/xmlUtil
 
@@ -3023,7 +3032,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.338 2009/09/11 00:00:19 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.339 2010/06/11 00:48:59 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
