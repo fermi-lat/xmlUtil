@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/src/arith_test/arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/src/arith_test/arith_test.cxx,v 1.4 2009/09/10 16:59:34 jrb Exp $
 /*! \file Standalone program to test Arith class
 
  */
@@ -9,6 +9,7 @@
 #include "xmlUtil/Substitute.h"
 #include "xmlUtil/Constants.h"
 #include "xmlUtil/Source.h"
+#include "facilities/commonUtilities.h"
 #include <xercesc/dom/DOMElement.hpp>
 #include <xercesc/dom/DOMNode.hpp>
 #include <xercesc/dom/DOMNodeList.hpp>
@@ -27,7 +28,7 @@ std::ostream *openOut(char * outfile);
 void outProlog(const XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType* doctype, 
                std::ostream& out);
 
-const std::string myId("$Id: arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $");
+const std::string myId("$Id: arith_test.cxx,v 1.4 2009/09/10 16:59:34 jrb Exp $");
 
 /*!
     Main program for the eval application.
@@ -43,18 +44,32 @@ int main(int argc, char* argv[]) {
   using XERCES_CPP_NAMESPACE_QUALIFIER DOMDocumentType;
   using XERCES_CPP_NAMESPACE_QUALIFIER XMLString;
 
+  facilities::commonUtilities::setupEnvironment();
+  
+  std::string infile = facilities::commonUtilities::joinPath(facilities::commonUtilities::getXmlPath("xmlUtil"), "test-arith.xml");
+  std::string outfile("-");
   // std::ostream *out;
   if (argc < 2) {  // instructions
-    std::cout << "Required first argument is xml file to be parsed" 
+    std::cout << "First argument is xml file to be parsed; using default" 
               << std::endl;
-    //    std::cout << "Required second argument is output file (- for stdout)"
-    //              << std::endl;
-    exit(0);
+    std::cout << "Second argument is output file. Using default (- for stdout)"
+              << std::endl;
+    //    exit(0);
+  }
+  else if (argc < 3) {
+    std::cout << "Second argument is output file. Using default (- for stdout)"
+              << std::endl;
+    infile = std::string(argv[1]);
+    //    exit(0);
+  } else {
+    infile = std::string(argv[1]);
+    outfile = std::string(argv[2]);
   }
 
   xmlBase::XmlParser* parser = new xmlBase::XmlParser();
   //  DOMDocument* doc = parser->parse(argv[1], "gdd");
-  DOMDocument* doc = parser->parse(argv[1], "");
+  //  DOMDocument* doc = parser->parse(argv[1], "");
+  DOMDocument* doc = parser->parse(infile.c_str(), "");
 
   if (doc == 0) {
     std::cout << "Document failed to parse correctly" << std::endl;
@@ -145,7 +160,7 @@ int main(int argc, char* argv[]) {
   /*
   // Add a <source> child to the outer gdd element
   xmlUtil::Source *source = 
-    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.3 2007/02/23 19:05:25 jrb Exp $");
+    new xmlUtil::Source(doc, "xmlUtil/v1/src/eval.exe", "$Id: arith_test.cxx,v 1.4 2009/09/10 16:59:34 jrb Exp $");
   source->add();
   
   // Output the xml declaration and all the text in the DOCTYPE (see DOMPrint)
