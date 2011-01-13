@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Thu Jan 13 13:21:47 PST 2011
+GlastRelease-scons/xmlUtil/src/arith_test
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	arith_test.cxx 
+Log Message:
+slighly better kludge for getting correct Xerces path for genmap command
+    *
+------------------------------------------------------------
 TAG
 Tag name: xmlUtil-03-04-03, operation: add
 Package: xmlUtil
@@ -3123,7 +3133,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.342 2010/06/13 07:04:45 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.343 2010/06/13 07:04:56 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
