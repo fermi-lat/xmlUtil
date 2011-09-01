@@ -1,5 +1,28 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-19-03-06, operation: add
+Package: xmlUtil
+User: heather  Thu Sep  1 11:34:40 2011
+Files:
+  xmlUtil/.cvsignore  1.4
+  xmlUtil/ChangeLog  1.342
+  xmlUtil/SConscript  1.10
+  xmlUtil/xmlUtilLib.py  1.2
+  xmlUtil/cmt/.cvsignore  1.2
+  xmlUtil/cmt/requirements  1.55
+  xmlUtil/doc/release.notes  1.35
+  xmlUtil/src/eval.cxx  1.8
+  xmlUtil/src/Source.cxx  1.7
+  xmlUtil/src/Constants.cxx  1.16
+  xmlUtil/src/Arith.cxx  1.13
+  xmlUtil/src/Substitute.cxx  1.8
+  xmlUtil/src/mainpage.h  1.1
+  xmlUtil/src/makeXmlForProg.cxx  1.11
+  xmlUtil/src/makeXmlForDoc.cxx  1.9
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-05, operation: add
 Package: xmlUtil
 User: heather  Thu Aug 25 12:56:15 2011
@@ -4228,7 +4251,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.358 2011/08/18 03:52:42 heather Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.359 2011/08/25 19:56:15 heather Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
