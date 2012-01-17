@@ -1,9 +1,10 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.6 2002/10/30 18:29:29 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/xmlUtil/id/DictFieldMan.h,v 1.7 2012/01/11 19:01:43 jrb Exp $
 
 #ifndef XMLUTIL_DICTFIELDMAN_H
 #define XMLUTIL_DICTFIELDMAN_H
 
 #include <string>
+#include <cstring>
 // hash_map is causing more trouble than it's worth, so just use map
 // everywhere
 #include <map>
