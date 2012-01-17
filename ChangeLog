@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Tue Jan 17 08:52:06 PST 2012
+GlastRelease-scons/xmlUtil/xmlUtil/id
+
+Modified Files:
+	DictFieldMan.h 
+Log Message:
+fix C library includes for gcc4.4 compilation
+    *
+------------------------------------------------------------
 TAG
 Tag name: xmlUtil-03-04-04, operation: add
 Package: xmlUtil
@@ -5761,7 +5770,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.387 2012/01/11 19:06:20 jrb Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/xmlUtil/ChangeLog,v 1.388 2012/01/11 19:06:31 jrb Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
