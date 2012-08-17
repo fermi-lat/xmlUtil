@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/SConscript,v 1.11 2012/01/11 19:06:20 jrb Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/SConscript,v 1.12 2012/01/23 19:48:16 jrb Exp $
 # Authors: Joanne Bogart <jrb@slac.stanford.edu>
-# Version: xmlUtil-03-04-05
+# Version: xmlUtil-03-05-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
