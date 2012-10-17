@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp39, operation: add
 Package: xmlUtil
+User: heather  Wed Oct 17 05:58:13 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp39, operation: add
+Package: xmlUtil
 User: heather  Wed Oct 17 05:47:16 2012
 Files:
   xmlUtil/.cvsignore  1.4
@@ -11647,7 +11655,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.488 2012/10/17 04:34:11 heather Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.489 2012/10/17 12:47:16 heather Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
