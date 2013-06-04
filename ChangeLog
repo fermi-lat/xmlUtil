@@ -1,5 +1,78 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-20-08-15, operation: add
+Package: xmlUtil
+User: heather  Tue Jun  4 13:10:37 2013
+Files:
+  xmlUtil/.cvsignore  1.4
+  xmlUtil/ChangeLog  1.474
+  xmlUtil/SConscript  1.13
+  xmlUtil/xmlUtilLib.py  1.3
+  xmlUtil/cmt/.cvsignore  1.2
+  xmlUtil/cmt/requirements  1.58
+  xmlUtil/doc/release.notes  1.38
+  xmlUtil/src/eval.cxx  1.8
+  xmlUtil/src/Source.cxx  1.7
+  xmlUtil/src/Constants.cxx  1.16
+  xmlUtil/src/Arith.cxx  1.13
+  xmlUtil/src/Substitute.cxx  1.8
+  xmlUtil/src/mainpage.h  1.1
+  xmlUtil/src/makeXmlForProg.cxx  1.11
+  xmlUtil/src/makeXmlForDoc.cxx  1.9
+  xmlUtil/src/arith_test/arith_test.cxx  1.4
+  xmlUtil/src/byId_test/byId_test.cxx  1.2
+  xmlUtil/src/docMan/test_docMan.cxx  1.8
+  xmlUtil/src/docMan/GDDDocMan.cxx  1.9
+  xmlUtil/src/id/DictValidVisitor.cxx  1.2
+  xmlUtil/src/id/IdConversion.cxx  1.11
+  xmlUtil/src/id/DictConstraints.cxx  1.12
+  xmlUtil/src/id/Identifier.cxx  1.2
+  xmlUtil/src/id/DictNode.cxx  1.17
+  xmlUtil/src/id/IdKey.cxx  1.5
+  xmlUtil/src/id/DictField.cxx  1.5
+  xmlUtil/src/id/IdConverter.cxx  1.11
+  xmlUtil/src/id/IdOpCompress.cxx  1.5
+  xmlUtil/src/id/IdDictMan.cxx  1.1
+  xmlUtil/src/id/testId.cxx  1.10
+  xmlUtil/src/id/IdDict.cxx  1.17
+  xmlUtil/src/id/testKey.cxx  1.4
+  xmlUtil/src/id/DictFieldMan.cxx  1.8
+  xmlUtil/src/id/NamedId.cxx  1.9
+  xmlUtil/src/id/IdOpTruncate.cxx  1.5
+  xmlUtil/src/id/IdOperation.cxx  1.6
+  xmlUtil/src/local/outUtils.cxx  1.4
+  xmlUtil/xml/.cvsignore  1.1
+  xmlUtil/xml/test-arith.xml  1.5
+  xmlUtil/xml/primextract.xsl  1.1.1.1
+  xmlUtil/xmlUtil/XmlUtilException.h  1.2
+  xmlUtil/xmlUtil/Arith.h  1.10
+  xmlUtil/xmlUtil/Substitute.h  1.6
+  xmlUtil/xmlUtil/Source.h  1.4
+  xmlUtil/xmlUtil/Constants.h  1.4
+  xmlUtil/xmlUtil/docMan/GDDDocMan.h  1.6
+  xmlUtil/xmlUtil/id/Identifier.h  1.1
+  xmlUtil/xmlUtil/id/IdConverterLessThan.h  1.4
+  xmlUtil/xmlUtil/id/DictFieldMan.h  1.8
+  xmlUtil/xmlUtil/id/DictNode.h  1.13
+  xmlUtil/xmlUtil/id/DictObject.h  1.1
+  xmlUtil/xmlUtil/id/IdOperation.h  1.9
+  xmlUtil/xmlUtil/id/DictField.h  1.8
+  xmlUtil/xmlUtil/id/IdDict.h  1.10
+  xmlUtil/xmlUtil/id/IdOpCompress.h  1.5
+  xmlUtil/xmlUtil/id/IdOpTruncate.h  1.5
+  xmlUtil/xmlUtil/id/NamedId.h  1.12
+  xmlUtil/xmlUtil/id/IdConversion.h  1.11
+  xmlUtil/xmlUtil/id/IdKey.h  1.3
+  xmlUtil/xmlUtil/id/IdDictMan.h  1.1
+  xmlUtil/xmlUtil/id/DictConstraints.h  1.8
+  xmlUtil/xmlUtil/id/DictVisitor.h  1.2
+  xmlUtil/xmlUtil/id/IdOpDisappear.h  1.6
+  xmlUtil/xmlUtil/id/DictValidVisitor.h  1.2
+  xmlUtil/xmlUtil/id/IdConverter.h  1.10
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-lp46, operation: add
 Package: xmlUtil
 User: heather  Sun Jun  2 21:12:56 2013
@@ -13480,7 +13553,7 @@ Modified Files:
 	flightTKRDimPrim.xml flightTKRMatPrim.xml 
 	simpleComposition.xml simpleStack.xml 
 Log Message:
-Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.514 2013/05/28 17:50:07 heather Exp $ to keep track of versions internally
+Add $Header: /nfs/slac/g/glast/ground/cvs/xmlUtil/ChangeLog,v 1.515 2013/06/03 04:12:56 heather Exp $ to keep track of versions internally
 
     *
 ------------------------------------------------------------
